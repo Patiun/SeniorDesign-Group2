@@ -33,8 +33,8 @@ public class SteamVR_Camera : MonoBehaviour
 
 	static public float sceneResolutionScale
 	{
-		get { return UnityEngine.VR.VRSettings.renderScale; }
-		set { UnityEngine.VR.VRSettings.renderScale = value; }
+		get { return UnityEngine.XR.XRSettings.eyeTextureResolutionScale; }
+		set { UnityEngine.XR.XRSettings.eyeTextureResolutionScale = value; }
 	}
 
 	#region Enable / Disable
@@ -52,7 +52,12 @@ public class SteamVR_Camera : MonoBehaviour
 		{
 			if (head != null)
 			{
-				head.GetComponent<SteamVR_TrackedObject>().enabled = false;
+				// Adjusted to this from original Valve code because head was non-null 
+				// but did not contain a steamVR_TrackedObject - Jimmy
+				SteamVR_TrackedObject x = head.GetComponent<SteamVR_TrackedObject> ();
+				if (x != null) {
+					x.enabled = false;
+				}
 			}
 
 			enabled = false;
