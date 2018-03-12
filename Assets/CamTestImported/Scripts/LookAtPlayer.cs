@@ -30,7 +30,7 @@ public class LookAtPlayer : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (state);
+//		Debug.Log (state);
 		Debug.DrawRay (transform.position, (Player.position - transform.position).normalized * _DetectionDistance, Color.red);
 		Physics.Raycast (transform.position, (Player.position - transform.position), out hit, _DetectionDistance, _mask);
 		if (hit.collider != null && hit.collider.gameObject.Equals (Player.gameObject)){

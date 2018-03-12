@@ -189,16 +189,20 @@ namespace Valve.VR.InteractionSystem
 		//-------------------------------------------------
 		void OnEnable()
 		{
-			chaperoneInfoInitializedAction.enabled = true;
-			OnChaperoneInfoInitialized(); // In case it's already initialized
+			if (chaperoneInfoInitializedAction != null) {
+				chaperoneInfoInitializedAction.enabled = true;
+				OnChaperoneInfoInitialized(); // In case it's already initialized
+			}
 		}
 
 
 		//-------------------------------------------------
 		void OnDisable()
 		{
-			chaperoneInfoInitializedAction.enabled = false;
-			HidePointer();
+			if (chaperoneInfoInitializedAction != null) {
+				chaperoneInfoInitializedAction.enabled = false;
+				HidePointer ();
+			}
 		}
 
 
