@@ -5,8 +5,10 @@ using System.Collections.Generic;
 
 public struct MapObject
 {
-    public Image Icon { get; set; }
+    public Sprite Icon { get; set; }
+    public GameObject Self { get; set; }
     public GameObject Owner { get; set; }
+    public int Region { get; set; }
 }
 
 public class MapController : MonoBehaviour
@@ -17,29 +19,34 @@ public class MapController : MonoBehaviour
     public static List<MapObject> mapObjs = new List<MapObject>();
 
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
         DrawMapIcon();
     }
 
+    //update player icon here
+    void Update()
+    {
+        
+    }
+
     //keep track of the game objects with icons to be display
-    public static void RegisterMapObject(GameObject o, Image i)
+    public static void RegisterMapObject(GameObject o, GameObject i)
     {
         //create new game object to remove reference to prefab
-        Image img = Instantiate(i);
+        GameObject img = Instantiate(i);
+
         IconEvent ie = img.GetComponent<IconEvent>();
 
         for(int j = 0; j < o.transform.childCount; j++)
         {
             if(o.transform.GetChild(j).name == "Camera")
             {
-
-                ie.addCam(o.transform.GetChild(j).GetComponent<Camera>());
+                ie.setCamera(o.transform.GetChild(j).gameObject);
                 break;
             }
         }
-        mapObjs.Add(new MapObject() { Icon = img, Owner = o });
+        mapObjs.Add(new MapObject() { Icon = img.GetComponent<Sprite>(), Self = img, Owner = o });
     }
 
     //remove the gameobject with its icon if the game object is destroyed
@@ -65,13 +72,13 @@ public class MapController : MonoBehaviour
             RectTransform rt = this.GetComponent<RectTransform>();
             Vector3[] viewCorner = new Vector3[4];
             rt.GetWorldCorners(viewCorner);
-            //to be fix as it's not updating tor relative location
-            screenPos.x = Mathf.Clamp(screenPos.x * rt.rect.width * rt.localScale.x  + viewCorner[0].x, viewCorner[0].x, viewCorner[2].x);
+
+            screenPos.x = Mathf.Clamp(screenPos.x * rt.rect.width * rt.localScale.x + viewCorner[0].x, viewCorner[0].x, viewCorner[2].x);
             screenPos.y = Mathf.Clamp(screenPos.y * rt.rect.height * rt.localScale.y * 3/4 + viewCorner[0].y, viewCorner[0].y, viewCorner[1].y);
             screenPos.z = 0;
 
-            objs.Icon.transform.SetParent(this.transform);
-            objs.Icon.transform.position = screenPos;
+            objs.Self.transform.SetParent(transform);
+            objs.Self.transform.position = screenPos;
         }
     }
 
