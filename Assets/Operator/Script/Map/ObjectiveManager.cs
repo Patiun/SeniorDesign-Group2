@@ -23,7 +23,7 @@ public class ObjectiveManager : MonoBehaviour
             GameObject o = Instantiate(prefabItem);
             Image img = o.transform.GetChild(0).GetComponent<Image>();
             Text t = o.transform.GetChild(1).GetComponent<Text>();
-            t.text = "Mighty number :" + i;
+            t.text = "Task number :" + i;
             objectives.Add(new item() { Image = img, Text = t });
             o.transform.SetParent(this.transform);
             o.transform.localScale = Vector3.one;

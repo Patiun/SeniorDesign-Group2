@@ -2,43 +2,34 @@
 using System.Collections;
 using UnityEngine.EventSystems;
 using UnityEngine.Events;
-//need to be refactor for strategy pattern
+
 public class IconEvent : MonoBehaviour
 {
 
-    private void Start()
+    protected GameObject cam;
+
+    public void setCamera(GameObject cam)
     {
-        EventTrigger head = this.gameObject.GetComponent<EventTrigger>();
-        EventTrigger.Entry entry = new EventTrigger.Entry();
-        entry.eventID = EventTriggerType.PointerClick;
-        entry.callback = new EventTrigger.TriggerEvent();
-        UnityEngine.Events.UnityAction<BaseEventData> call = new UnityAction<BaseEventData>(goToCamera);
-        entry.callback.AddListener(call);
-        head.triggers.Add(entry);
-    }
-    public void addCam(Camera c)
-    {
-        CamControl.addCam(this.gameObject, c);
+        this.cam = cam;
+        CameraMenu submenu = transform.GetChild(0).gameObject.GetComponent<CameraMenu>();
+        submenu.setCamera(cam.GetComponent<Camera>());
     }
 
-    public void goToCamera(UnityEngine.EventSystems.BaseEventData baseEvent)
+    //temp go directly to camera setting
+    public void OnMouseDown()
     {
-        CamControl.switchCamera(this.gameObject);
-        Debug.Log("Hello!");
-    }
-
-    public void disableObject()
-    {
+        //add dropdown menu here
+        CameraController.switchCamera(cam.GetComponent<Camera>());
 
     }
 
-    public void enableObject()
+    public void OnMouseOver()
     {
-
+        transform.GetChild(0).gameObject.SetActive(true);
     }
 
-    public void gainAccess()
+    void OnMouseExit()
     {
-
+        transform.GetChild(0).gameObject.SetActive(false);
     }
 }

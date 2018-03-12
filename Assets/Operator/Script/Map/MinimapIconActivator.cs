@@ -4,17 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 
 // Could this be renamed to MinimapInteractableActivator? ObjectMapping is unclear
-public class ObjectMapping : MonoBehaviour {
+public class MinimapIconActivator : MonoBehaviour {
 
     [SerializeField]
-    private Image image;
+    private GameObject img;
 
 	void Start () {
-        MapController.RegisterMapObject(this.gameObject, image);
+        MapController.RegisterMapObject(gameObject, img);
 	}
 
     private void OnDestroy()
     {
-        MapController.RemoveMapObject(this.gameObject);
+        MapController.RemoveMapObject(gameObject);
     }
 }
