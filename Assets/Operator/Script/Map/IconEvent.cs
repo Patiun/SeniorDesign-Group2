@@ -11,25 +11,25 @@ public class IconEvent : MonoBehaviour
     public void setCamera(GameObject cam)
     {
         this.cam = cam;
-        CameraMenu submenu = transform.GetChild(0).gameObject.GetComponent<CameraMenu>();
-        submenu.setCamera(cam.GetComponent<Camera>());
+        //CameraMenu submenu = transform.GetChild(0).gameObject.GetComponent<CameraMenu>();
+        //submenu.setCamera(cam.GetComponent<Camera>());
     }
 
     //temp go directly to camera setting
     public void OnMouseDown()
     {
         //add dropdown menu here
-        CameraController.switchCamera(cam.GetComponent<Camera>());
+        //CameraController.switchCamera(cam.GetComponent<Camera>());
 
     }
 
     public void OnMouseOver()
     {
-        transform.GetChild(0).gameObject.SetActive(true);
+        //transform.GetChild(0).gameObject.SetActive(true);
     }
 
     void OnMouseExit()
     {
-        transform.GetChild(0).gameObject.SetActive(false);
+        //transform.GetChild(0).gameObject.SetActive(false);
     }
 }
