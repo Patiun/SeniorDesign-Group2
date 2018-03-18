@@ -7,11 +7,12 @@ using UnityEngine.UI;
 public class MinimapIconActivator : MonoBehaviour {
 
     [SerializeField]
-    private GameObject img;
+    private GameObject image;
 
-	void Start () {
-        MapController.RegisterMapObject(gameObject, img);
-	}
+    void Awake()
+    {
+        MapController.RegisterMapObject(gameObject, image);
+    }
 
     private void OnDestroy()
     {

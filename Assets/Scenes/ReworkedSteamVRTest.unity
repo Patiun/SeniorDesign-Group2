@@ -639,7 +639,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1434586819}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -876,6 +876,32 @@ Prefab:
     - target: {fileID: 1590276791620054, guid: 2c8f760afc692414e93fc2bfa4e48006, type: 2}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114638804819681960, guid: 2c8f760afc692414e93fc2bfa4e48006,
+        type: 2}
+      propertyPath: img
+      value: 
+      objectReference: {fileID: 1082468060797154, guid: 948f5046e7dd2fc4dab6d8322f8eefb7,
+        type: 2}
+    - target: {fileID: 20150532049445426, guid: 2c8f760afc692414e93fc2bfa4e48006,
+        type: 2}
+      propertyPath: m_TargetDisplay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20150532049445426, guid: 2c8f760afc692414e93fc2bfa4e48006,
+        type: 2}
+      propertyPath: m_TargetEye
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114638804819681960, guid: 2c8f760afc692414e93fc2bfa4e48006,
+        type: 2}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 1082468060797154, guid: 948f5046e7dd2fc4dab6d8322f8eefb7,
+        type: 2}
+    - target: {fileID: 1902833342743626, guid: 2c8f760afc692414e93fc2bfa4e48006, type: 2}
+      propertyPath: m_Name
+      value: Camera
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c8f760afc692414e93fc2bfa4e48006, type: 2}
@@ -2153,6 +2179,10 @@ Prefab:
     - target: {fileID: 4302208226506738, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2083460, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
+      propertyPath: m_TargetDisplay
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114000011983135080, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}

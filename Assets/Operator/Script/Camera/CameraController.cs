@@ -33,12 +33,14 @@ public class CameraController : MonoBehaviour {
         cameraList.Add(c);
     }
 
+    //to be change when we figure out the camera layout scheme
+    //this will either switch target display but allow camera to be active
     public static void switchCamera(Camera c)
     {
         current.gameObject.SetActive(false);
         current = c;
         current.gameObject.SetActive(true);
-
+        //c.targetDisplay = 1;
     }
 
     public static void switchToMainCamera()
