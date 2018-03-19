@@ -15,6 +15,6 @@ public class DemoSphereScript : MonoBehaviour {
 	}
 
     void OnCollisionEnter(Collision collision){
-        Debug.Log(collision.gameObject.name);
+        Debug.Log(collision.gameObject.tag);
     }
 }
