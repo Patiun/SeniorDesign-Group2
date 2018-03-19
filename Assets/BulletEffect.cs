@@ -19,5 +19,6 @@ public class BulletEffect : MonoBehaviour {
 	private void OnCollisionEnter(Collision collision)
 	{
         Instantiate(sparkEffect, gameObject.transform.position, Quaternion.identity);
+        Destroy(gameObject);
 	}
 }
