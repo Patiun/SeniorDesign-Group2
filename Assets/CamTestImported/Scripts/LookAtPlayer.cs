@@ -23,8 +23,9 @@ public class LookAtPlayer : MonoBehaviour {
 
 	RaycastHit hit;
 
-	void Start() {
+	void OnEnable() {
 		start_rotation = transform.rotation;
+		Debug.Log(transform.rotation.eulerAngles);
 		targetRotationY = _SleepRotationAngle;
 	}
 

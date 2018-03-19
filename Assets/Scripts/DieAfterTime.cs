@@ -12,7 +12,7 @@ public class DieAfterTime : MonoBehaviour {
 	}
 
 	void UpdateFixed () {
-		if (deathTime > count) {
+		if (deathTime < count) {
 			count++;
 		} else {
 			Destroy (this);
