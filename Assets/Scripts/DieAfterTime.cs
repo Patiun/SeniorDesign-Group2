@@ -5,13 +5,13 @@ using UnityEngine;
 public class DieAfterTime : MonoBehaviour {
 
 	public int deathTime;
-	private int count;
+	public int count;
 
 	void Start () {
 		count = 0;
 	}
 
-	void UpdateFixed () {
+	void Update () {
 		if (deathTime > count) {
 			count++;
 		} else {

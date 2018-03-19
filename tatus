@@ -1,0 +1,192 @@
+[33mcommit 969a1941f89946894bbc24d446b9bca1ca866fc2[m
+Author: Remlik <Remlikmg@comcast.net>
+Date:   Sun Mar 18 21:01:39 2018 -0400
+
+    Added Camera and Targets to scene
+
+[33mcommit 36e33a507994488f40e0b869ee894c02a750d918[m
+Author: Roger White <roger427@comcast.net>
+Date:   Sun Mar 18 20:56:00 2018 -0400
+
+    Target model
+
+[33mcommit e8dd7a3231a28b1fca4d6defbe56f1c895233fb3[m
+Author: Roger White <roger427@comcast.net>
+Date:   Sun Mar 18 20:34:51 2018 -0400
+
+    removed die after script
+
+[33mcommit 0bd1afeace0f8cb1ddb90ae2e77efbae5642d97d[m
+Author: Roger White <roger427@comcast.net>
+Date:   Sun Mar 18 20:32:52 2018 -0400
+
+    Spark effect with bullet collision
+
+[33mcommit d41432c819c200675b1dc6aa185044dd6081cea0[m
+Author: Roger White <roger427@comcast.net>
+Date:   Sun Mar 18 20:23:22 2018 -0400
+
+    Added target prefab
+
+[33mcommit 5f6b0fdd2251a4ec2f791c2ab6791775703f861c[m
+Author: Remlik <Remlikmg@comcast.net>
+Date:   Sun Mar 18 20:15:43 2018 -0400
+
+    Tutorial Scene with Enemy
+    
+    Mostly working level. Ramp is a minor issue
+
+[33mcommit a0792e810d2c09398ee2809d802cb731fa4de6df[m
+Author: Roger White <roger427@comcast.net>
+Date:   Sun Mar 18 19:45:56 2018 -0400
+
+    Added debug script to spheres
+
+[33mcommit f6b3f53a8aae516322431bdef334d6b45d54c2ac[m
+Author: Roger White <roger427@comcast.net>
+Date:   Sun Mar 18 19:16:36 2018 -0400
+
+    updated tutorial level to VR friendly, added enemy, gun, and enemy health
+
+[33mcommit 45ce79eec06b989afa136f3f4a93f2c01e348cb2[m
+Merge: c406ce0 f995faf
+Author: Remlik <Remlikmg@comcast.net>
+Date:   Sun Mar 18 18:31:41 2018 -0400
+
+    Merge branch 'master' of https://github.com/Remlik/SeniorDesign-Group2
+
+[33mcommit f995faf9c5337724c96f560c971ceb94a03f8ec4[m
+Merge: 7997e33 f32ae83
+Author: Alexander <ac3433@drexel.edu>
+Date:   Sun Mar 18 13:36:35 2018 -0400
+
+    Merge branch 'master' of github.com:Remlik/SeniorDesign-Group2
+
+[33mcommit 7997e33ddacbb12199f2bfbae24b0264f6c60000[m
+Author: Alexander <ac3433@drexel.edu>
+Date:   Sun Mar 18 13:33:27 2018 -0400
+
+    Changes
+     - Made menu system to be more abstract to execute the functionality of the object than only camera.
+    
+    Fixes
+     - Smoothing menu dropdown and selection area
+
+[33mcommit b90a2b6ddd6e23d453cb4b87884af8a6ad5526e3[m
+Author: Alexander <ac3433@drexel.edu>
+Date:   Sun Mar 18 13:32:49 2018 -0400
+
+    made menu system more abstract to handle other objects not only camera actions
+
+[33mcommit c406ce0c8e2551a55c4b7d28d9a82a2d21266caf[m
+Merge: f0142f1 f32ae83
+Author: Remlik <Remlikmg@comcast.net>
+Date:   Mon Mar 12 18:06:46 2018 -0400
+
+    Merge branch 'master' of https://github.com/Remlik/SeniorDesign-Group2
+
+[33mcommit f0142f181d1ed84c4a7a39ff89f34844316120a0[m
+Author: Remlik <Remlikmg@comcast.net>
+Date:   Mon Mar 12 18:06:43 2018 -0400
+
+    Video Demo Stuff
+    
+    New Scene and updat to Agent Prefab with layers for making the Demo Video
+
+[33mcommit f32ae8335d6a470bed79d4f829c750d54d16f6cd[m
+Author: Roger White <roger427@comcast.net>
+Date:   Mon Mar 12 18:03:33 2018 -0400
+
+    added level
+
+[33mcommit 86452b81ccd7d2018286872a09dda32367fb61d0[m
+Merge: 910aef6 7413d15
+Author: James Swanick <swanijam@gmail.com>
+Date:   Mon Mar 12 17:53:56 2018 -0400
+
+    Merge branch 'master' of https://github.com/Remlik/SeniorDesign-Group2
+
+[33mcommit 910aef6495996944547483ad56d27a87c2fe9ee4[m
+Author: James Swanick <swanijam@gmail.com>
+Date:   Mon Mar 12 17:53:53 2018 -0400
+
+    Remove annoying Debug lines in editor mode
+
+[33mcommit 7413d153c8572bea721f44b6f3bb49593f8fd795[m
+Author: Roger White <roger427@comcast.net>
+Date:   Mon Mar 12 17:06:41 2018 -0400
+
+    Added tutorial level with non-vr character controller and nav mesh enemy to chase player
+
+[33mcommit ef3fa5759de336f4e7ecb566b8a93c78857d4b74[m
+Author: Alexander <ac3433@drexel.edu>
+Date:   Mon Mar 12 14:54:07 2018 -0400
+
+    Added
+     - Menu upon hovoring
+    
+    Fixed
+     - Go to camera upon click
+
+[33mcommit fa1ccb3695748828db6b398cbc18b5bded942c98[m
+Author: James Swanick <swanijam@gmail.com>
+Date:   Mon Mar 12 05:09:36 2018 -0400
+
+    Added Activation of Camera objects to map after pressing chosen button for a certain amount of time.
+
+[33mcommit 86378f1c7a24ceb4b0dc4d31f65ca1b35b67b345[m
+Author: James Swanick <swanijam@gmail.com>
+Date:   Mon Mar 5 19:28:07 2018 -0500
+
+    prototyping camera follow player and sphere casting
+
+[33mcommit a161ae79b814499903ecaccf1960d5d70d032dcf[m
+Author: Alexander <ac3433@drexel.edu>
+Date:   Mon Mar 5 00:41:53 2018 -0500
+
+    Transfering personal UI to this project
+    Added Features
+     - Objective Listing
+     - Mapping to UI
+            - Map contains icons place holder
+    Known Issues
+     - Icon won't transfer to camera attach
+    
+    Need to finish transfer
+     - Keybinding script
+
+[33mcommit 1b84590a68f3ca53d439dba7abbcc117c7065e6b[m
+Author: Remlik <Remlikmg@comcast.net>
+Date:   Wed Feb 28 22:24:08 2018 -0500
+
+    Agent Functionality
+    
+    Teleporting turned off
+    Walking working
+    Grabbing is now with Grip buttons
+    Trigger will use an item you are holding if it can be used
+    Gun can be picked up and shot
+    (Gun snaps to the controller location wise but the angles havn't been working out so I just wanted to push something up)
+    Basic Turret Script set up
+    Files put in proper folders
+
+[33mcommit d29d79ea1f1de11d157d848494ea11fb33d820f0[m
+Author: James Swanick <swanijam@gmail.com>
+Date:   Thu Feb 8 03:08:59 2018 -0500
+
+    Opened Greg's test scene and fixed a handful of SteamVR plugin errors.
+    - A few of the APIs (esp. VRSettings vs. XRSettings) were out of data with regard to 2017.3.0p2 (they switched to XR settings in 2017.3).
+    - The teleport visible material had had its shader replaced with a shader that was incompatible with the SteamVR Camera.
+    - There was a reference to a SteamVR_Trackable component on the head transform by the SteamVR Camera script that didn't match up with the prefab Player. Added an extra line for it to give up when there is no such componenet.
+
+[33mcommit 08a1007dc6ecd90c4679202a6c5c237007f230c1[m
+Author: Remlik <Remlikmg@comcast.net>
+Date:   Mon Feb 5 19:17:45 2018 -0500
+
+    First Push with HMD and Controller support using SteamVR Plugin.
+
+[33mcommit 1c8b5ac917fdfbf3c2ee172309d7f96005df6ccf[m
+Author: Remlik <Remlikmg@comcast.net>
+Date:   Mon Oct 2 18:46:57 2017 -0400
+
+    Initial commit

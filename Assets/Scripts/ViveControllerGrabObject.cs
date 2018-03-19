@@ -121,6 +121,7 @@ public class ViveControllerGrabObject : MonoBehaviour {
 			ItemUse itemUse = objectInHand.GetComponent<ItemUse> ();
 			if (itemUse != null) {
 				itemUse.Use ();
+				Controller.TriggerHapticPulse (durationMicroSec: 1000);
 			}
 		}
 	}
