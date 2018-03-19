@@ -7,6 +7,8 @@ public class IconDropdown : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     private bool isOpen;
     private GameObject obj; //obj can be camera, door, etc...
 
+    public GameObject camera;
+
     void Awake()
     {
         container = transform.Find("Container").gameObject;
@@ -14,6 +16,8 @@ public class IconDropdown : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
         if (container == null)
             Debug.Log("Icon Dropdown Script: Cannot find Container object  in the child of the parent " + gameObject.name + "game object.");
+
+        SetMenuInteraction();
     }
 
 	void Update () {
@@ -48,7 +52,8 @@ public class IconDropdown : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
         if(aimb != null)
         {
-            aimb.InteractiveObject = obj;
+            //aimb.InteractiveObject = obj;
+            aimb.InteractiveObject = camera;
         }
         else
         {

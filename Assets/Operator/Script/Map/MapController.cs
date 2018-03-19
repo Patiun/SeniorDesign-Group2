@@ -16,19 +16,21 @@ public class MapController : MonoBehaviour
 {
     [SerializeField]
     private Camera mapCam;
+    public float x;
+    public float y;
 
     public static List<MapObject> fixedMapObjects = new List<MapObject>();
 
 
     private void Start()
     {
-        DrawFixedPositionMapIcon();
+
     }
 
     //update player icon here
     void Update()
     {
-        
+        DrawFixedPositionMapIcon();
     }
 
     //keep track of the game objects with icons to be display
@@ -80,12 +82,17 @@ public class MapController : MonoBehaviour
             Vector3[] viewCorner = new Vector3[4];
             rt.GetWorldCorners(viewCorner);
 
-            screenPos.x = Mathf.Clamp(screenPos.x * rt.rect.width * rt.localScale.x * .90f + viewCorner[0].x, viewCorner[0].x, viewCorner[2].x);
-            screenPos.y = Mathf.Clamp(screenPos.y * rt.rect.height * rt.localScale.y * 3/4 + viewCorner[0].y, viewCorner[0].y, viewCorner[1].y);
+            screenPos.x = Mathf.Clamp(screenPos.x * rt.rect.width * rt.localScale.x * x+ viewCorner[0].x, viewCorner[0].x, viewCorner[2].x);
+            screenPos.y = Mathf.Clamp(screenPos.y * rt.rect.height * rt.localScale.y * y+ viewCorner[0].y, viewCorner[0].y, viewCorner[1].y);
             screenPos.z = 0;
 
             objs.Self.transform.SetParent(transform);
             objs.Self.transform.position = screenPos;
+
+            Debug.Log("Camera obj view space x " + screenPos.x);
+            Debug.Log("Camera obj view space y " + screenPos.y);
+            Debug.Log("Camera obj name " + objs.Self.name);
+            
         }
     }
 

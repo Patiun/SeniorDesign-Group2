@@ -11,8 +11,8 @@ public class CameraController : MonoBehaviour {
     private Camera mainCam;
     private static Camera mCam; //just a work around;
 
-	// Use this for initialization
-	void Start () {
+    private void Awake()
+    {
         cameraList = new List<Camera>();
 
         if (mainCam != null)
@@ -25,8 +25,8 @@ public class CameraController : MonoBehaviour {
         {
             Debug.Log("Error: Add main camera to Cam Control class");
         }
-	}
-	
+    }
+
     //not needed yet
     public static void addCam(Camera c)
     {
