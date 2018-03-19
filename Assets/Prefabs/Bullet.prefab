@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114117260878056372}
   - component: {fileID: 114975555480236530}
   - component: {fileID: 54200338309750792}
+  - component: {fileID: 114643177969823480}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: AgentBullet
@@ -112,6 +113,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2892fe6af9069e44b9cccbdd8dd9225e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114643177969823480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1798454876181710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d1f5a3d9cc92448f9e0f28f367fb5f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sparkEffect: {fileID: 100000, guid: b12f7220d047e4c8a8f4b94a75c5b998, type: 2}
 --- !u!114 &114975555480236530
 MonoBehaviour:
   m_ObjectHideFlags: 1
