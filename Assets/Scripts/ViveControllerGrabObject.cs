@@ -58,13 +58,15 @@ public class ViveControllerGrabObject : MonoBehaviour {
 	{
 		objectInHand = collidingObject;
 		collidingObject = null;
-		ItemUse itemUse = objectInHand.GetComponent<ItemUse> ();
-		if (itemUse != null) {
-			AnchorObject (itemUse);
+		if (objectInHand.tag != "CannotGrab") {
+			ItemUse itemUse = objectInHand.GetComponent<ItemUse> ();
+			if (itemUse != null) {
+				AnchorObject (itemUse);
+			}
+			var joint = AddFixedJoint ();
+			joint.connectedBody = objectInHand.GetComponent<Rigidbody> ();
+			objectInHand.GetComponent<Collider> ().enabled = false;
 		}
-		var joint = AddFixedJoint();
-		joint.connectedBody = objectInHand.GetComponent<Rigidbody>();
-		objectInHand.GetComponent<Collider> ().enabled = false;
 	}
 
 	private FixedJoint AddFixedJoint()
