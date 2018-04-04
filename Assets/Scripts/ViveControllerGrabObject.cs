@@ -78,13 +78,26 @@ public class ViveControllerGrabObject : MonoBehaviour {
 	}
 
 	private void AnchorObject(ItemUse itemUse) {
+//		Vector3 obj_pos = objectInHand.transform.position;
+//		Vector3 anchor_pos = itemUse.GetAnchorPoint ().position;
+//		Vector3 difference = anchor_pos - obj_pos;
+//		Vector3 target = transform.position;// - difference;
+//		Quaternion rotation = transform.rotation;
+//		objectInHand.transform.position = target;
+//		objectInHand.transform.rotation = Quaternion.Euler (rotation.eulerAngles - itemUse.GetAnchorEulerAngles());
+//
+
+
+		Quaternion rotation = transform.rotation;
+		objectInHand.transform.rotation = Quaternion.Euler (rotation.eulerAngles - itemUse.GetAnchorEulerAngles());
+
 		Vector3 obj_pos = objectInHand.transform.position;
 		Vector3 anchor_pos = itemUse.GetAnchorPoint ().position;
-		Vector3 difference = anchor_pos - obj_pos;
-		Vector3 target = transform.position - difference;
-		Quaternion rotation = transform.rotation;
-		objectInHand.transform.position = target;
-		objectInHand.transform.rotation = Quaternion.Euler (rotation.eulerAngles - itemUse.GetAnchorEulerAngles());
+		Vector3 target_pos = snapPoint.position;
+		Vector3 anchor_2_obj = obj_pos - anchor_pos;
+		Vector3 obj_2_target = target_pos - obj_pos;
+		objectInHand.transform.position = obj_pos + anchor_2_obj + obj_2_target;
+
 	}
 
 	private void ReleaseObject()
