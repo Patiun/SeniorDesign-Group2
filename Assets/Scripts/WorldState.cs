@@ -56,7 +56,7 @@ public class WorldState : MonoBehaviour {
 			}
 		}
 		if (isInvestigating) {
-			if (count >= InvestigatingTime*1000) {
+			if (count >= InvestigateTime*1000) {
 				isInvestigating = false;
 				state = lastState;
 				lastState = State.Investigating;
