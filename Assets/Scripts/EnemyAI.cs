@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour {
     public enum State { Default, Investigate, MoveTo, Attack, Doors };
+    public WorldState worldState;
+
     public State cState;
     public State prevState;
+
+    public bool isAlone;
+    public bool hasCalled = false;
 
     public float InvestigatingTime = 1;
     public float MoveToTime = 1;
@@ -41,14 +46,14 @@ public class EnemyAI : MonoBehaviour {
     {
         if(cState == State.Default){
             prevState = cState;
-            cState = State.Investigate;
+            SetStateInvestigate();
         }
         else if(cState == State.Investigate){
-            cState = State.Investigate;
+            SetStateInvestigate();
         }
         else if(cState == State.MoveTo){
             prevState = cState;
-            cState = State.Investigate;
+            SetStateInvestigate();
         }
         else if(cState == State.Attack){
             prevState = cState;
@@ -56,11 +61,18 @@ public class EnemyAI : MonoBehaviour {
         }
         else if(cState == State.Doors){
             prevState = cState;
-            cState = State.Investigate;
+            SetStateInvestigate();
         }
     }
 
     public void MajorActivity(){
+        worldState.state = WorldState.State.Alert;
+
+        if(isAlone == true){
+            CallForBackup();
+            hasCalled = true;
+        }
+
         if(cState == State.Default){
             prevState = cState;
             cState = State.MoveTo;
@@ -72,16 +84,16 @@ public class EnemyAI : MonoBehaviour {
         else if (cState == State.MoveTo)
         {
             prevState = cState;
-            cState = State.Investigate;
+            SetStateInvestigate();
         }
         else if(cState == State.Attack){
             prevState = cState;
-            cState = State.Investigate;
+            SetStateInvestigate();
         }
         else if (cState == State.Doors)
         {
             prevState = cState;
-            cState = State.Investigate;
+            SetStateInvestigate();
         }
         else{}
         count = 0;
@@ -93,7 +105,7 @@ public class EnemyAI : MonoBehaviour {
         count = 0;
     }
 
-    public void CallingForBackup(){
+    public void CallForBackup(){
         
     }
 
@@ -119,6 +131,17 @@ public class EnemyAI : MonoBehaviour {
 
     public State GetState(){
         return cState;
+    }
+
+    public void SetStateInvestigate(){
+        cState = State.Investigate;
+        if (worldState.state == WorldState.State.Investigating)
+        {
+            worldState.state = WorldState.State.Cautious;
+        }
+        else{
+            worldState.state = WorldState.State.Investigating;
+        }
     }
 }
 
