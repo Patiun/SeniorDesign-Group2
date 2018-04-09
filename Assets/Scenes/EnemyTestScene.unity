@@ -557,10 +557,13 @@ MonoBehaviour:
   isAlone: 0
   hasCalled: 0
   InvestigatingTime: 0.5
-  MoveToTime: 1
+  MoveToTime: 25
   count: 0
   investigate_prefab: {fileID: 1037255310293686, guid: 51d014b52cf527f4ba3e9cae81f3f367,
     type: 2}
+  targetLocation: {x: 0, y: 0, z: 0}
+  preInvestigateTarget: {x: 0, y: 0, z: 0}
+  statePreInvestigate: 0
 --- !u!54 &664227760
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -680,9 +683,11 @@ MonoBehaviour:
   - {fileID: 626966285}
   - {fileID: 2141972889}
   - {fileID: 714009127}
+  curTargetLocation: {x: 0, y: 0, z: 0}
   curPatrolTarget: 0
   closeEnough: 0.25
   remaining: 0
+  isStopped: 0
 --- !u!1 &714009127
 GameObject:
   m_ObjectHideFlags: 0

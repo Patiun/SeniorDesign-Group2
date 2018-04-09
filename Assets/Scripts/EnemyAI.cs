@@ -13,12 +13,16 @@ public class EnemyAI : MonoBehaviour {
     public bool hasCalled = false;
 
     public float InvestigatingTime = 1;
-    public float MoveToTime = 1;
+    public float MoveToTime = 10;
 
     public int count = 0;
 
+	//DEBUG
 	public GameObject investigate_prefab;
+
 	private Vector3 targetLocation;
+	private Vector3 preInvestigateTarget;
+	private State statePreInvestigate;
 	private EnemyMovment movement;
 
 	void Start(){
@@ -31,14 +35,23 @@ public class EnemyAI : MonoBehaviour {
 	void Update(){
         switch (cState){
 			case State.Investigate:
-				if (movement.isStopped) {
+				if (movement.isStopped) { //DO THE INVESTIGATING
 					if (count >= InvestigatingTime * 1000) {
-						cState = prevState;
-						prevState = State.Investigate;
-						if (cState == State.Default) {
-							movement.ReturnToPatrol ();
-						}
-						count = 0;
+						switch (statePreInvestigate) {
+							case State.Default:
+								ToDefault ();
+								break;
+							case State.Doors:
+								ToDoors ();
+								break;
+							case State.MoveTo:
+								ToMoveTo (preInvestigateTarget);
+								break;
+							default:
+								ToDefault ();
+								break;
+							}
+							count = 0;
 					} else {
 						count += 1;
 					}
@@ -46,9 +59,12 @@ public class EnemyAI : MonoBehaviour {
                 break;
             case State.MoveTo:
 				if (movement.isStopped){
-                    cState = State.Default;
-                    prevState = State.MoveTo;
-					movement.ReturnToPatrol ();
+					if (count >= MoveToTime) {
+						ToDefault ();
+						count = 0;
+					} else {
+						count +=1;
+					}
                 }
                 break;
             default:
@@ -57,52 +73,42 @@ public class EnemyAI : MonoBehaviour {
 
 		//DEBUG STUFF
 		if (Input.GetMouseButtonDown (0)) {
-			targetLocation = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-			targetLocation.y = 0;
-			MajorActivity ();
+			Vector3 tempTargetLocation = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+			tempTargetLocation.y = 0;
+			MajorActivity (tempTargetLocation);
 		}
 
 		if (Input.GetMouseButtonDown (1)) {
-			targetLocation = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-			targetLocation.y = 0;
+			Vector3 tempTargetLocation = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+			tempTargetLocation.y = 0;
 			GameObject invest = Instantiate (investigate_prefab);
-			invest.transform.position = targetLocation;
-			MinorActivity ();
+			invest.transform.position = tempTargetLocation;
+			MinorActivity (tempTargetLocation);
 		}
 	}
 
-	public void MinorActivity()
+	public void MinorActivity(Vector3 target)
     {
         worldState.MinorActivity();
         switch (cState){
 			case State.Investigate:
-				movement.InvestigateLocation (targetLocation);
-                cState = State.Investigate;
+				ToInvestigate(target);
                 break;
-            case State.MoveTo:
-				movement.InvestigateLocation (targetLocation);
-                prevState = cState;
-                cState = State.Investigate;
+			case State.MoveTo:
                 break;
 			case State.Attack:
-				prevState = cState;
-				cState = State.MoveTo;
-				movement.MoveTo (targetLocation); //targetLocation needs to be set to the player
+				ToMoveTo (target);//targetLocation needs to be set to the player
                 break;
-            case State.Doors:
-				movement.InvestigateLocation (targetLocation);
-                prevState = cState;
-                cState = State.Investigate;
+			case State.Doors:
+				ToInvestigate (target);
                 break;
-            default:
-				movement.InvestigateLocation (targetLocation);
-                prevState = cState;
-                cState = State.Investigate;
+			default:
+				ToInvestigate (target);
                 break;
         }
     }
 
-    public void MajorActivity(){
+	public void MajorActivity(Vector3 target){
         worldState.MajorActivity();
 
         if(isAlone == true && !hasCalled){
@@ -112,42 +118,30 @@ public class EnemyAI : MonoBehaviour {
 
         switch(cState){
 			case State.Investigate:
-				prevState = cState;
-				cState = State.MoveTo;
-				movement.MoveTo (targetLocation);
+				ToMoveTo (target);
                 break;
-            case State.MoveTo:
-				movement.InvestigateLocation (targetLocation);
-                prevState = cState;
-                cState = State.Investigate;
+			case State.MoveTo:
+				ToInvestigate (target);
                 break;
-            case State.Attack:
-				movement.InvestigateLocation (targetLocation);
-                prevState = cState;
-                cState = State.Investigate;
+			case State.Attack:
+				ToInvestigate (target);
                 break;
-            case State.Doors:
-				movement.InvestigateLocation (targetLocation);
-                prevState = cState;
-                cState = State.Investigate;
+			case State.Doors:
+				ToMoveTo (target);
                 break;
 			default:
-				movement.MoveTo (targetLocation);
-                prevState = cState;
-                cState = State.MoveTo;
+				ToMoveTo (target);
                 break;
         }
     }
 
-    public void CalledForBackup(){
-        prevState = cState;
-        cState = State.MoveTo;
-		movement.MoveTo (targetLocation); //Need to get the callers location
+	public void CalledForBackup(Vector3 callerLocation){
+		ToMoveTo (callerLocation); //Need to get the callers location
         count = 0;
     }
 
     public void CallForBackup(){
-        
+		Debug.Log ("HELP!");
     }
 
     public void NearDoor(){
@@ -165,11 +159,63 @@ public class EnemyAI : MonoBehaviour {
         count = 0;
     }
 
-    public void SpottedPlayer(){
-        prevState = cState;
-        cState = State.Attack;
-        count = 0;
+	public void SpottedPlayer(Vector3 playerLocation){
+		targetLocation = playerLocation;
+		ToAttack ();
     }
+
+	private void ToDefault() {
+		if (cState != State.Default) {
+			prevState = cState;
+			cState = State.Default;
+			movement.ReturnToPatrol ();
+			count = 0;
+		}
+	}
+
+	private void ToMoveTo(Vector3 target) {
+		if (cState != State.MoveTo) {
+			targetLocation = target;
+			prevState = cState;
+			cState = State.MoveTo;
+			movement.MoveTo (targetLocation);
+			count = 0;
+		}
+	}
+
+	private void ToInvestigate(Vector3 target) {
+		if (cState != State.Investigate) {
+			preInvestigateTarget = targetLocation;
+			targetLocation = target;
+			prevState = cState;
+			statePreInvestigate = prevState;
+			cState = State.Investigate;
+			movement.InvestigateLocation (targetLocation);
+			count = 0;
+		} else {
+			targetLocation = target;
+			movement.InvestigateLocation (targetLocation);
+			count = 0;
+		}
+	}
+
+	private void ToAttack() {
+		if (cState != State.Attack) {
+			prevState = cState;
+			cState = State.Attack;
+			count = 0;
+
+		}
+	}
+
+	private void ToDoors() {
+		if (cState != State.Doors) {
+			prevState = cState;
+			cState = State.Doors;
+			count = 0;
+
+		}
+	}
 
     public State GetState(){
         return cState;

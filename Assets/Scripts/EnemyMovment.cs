@@ -29,6 +29,8 @@ public class EnemyMovment : MonoBehaviour {
 			} else {
 				isStopped = true;
 			}
+		} else {
+			isStopped = false;
 		}
 
 		//DEBUG STUFF
@@ -59,6 +61,7 @@ public class EnemyMovment : MonoBehaviour {
 				targetPointIndex = i;
 			}
 		}
+		curPatrolTarget = targetPointIndex;
 		nav.SetDestination (patrolPoints [targetPointIndex].transform.position);
 	}
 
