@@ -15,7 +15,7 @@ public class DieAfterTime : MonoBehaviour {
 		if (deathTime > count) {
 			count++;
 		} else {
-			Destroy (this);
+			Destroy (this.gameObject);
 		}
 	}
 }
