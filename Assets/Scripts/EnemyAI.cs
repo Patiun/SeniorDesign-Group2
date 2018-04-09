@@ -119,7 +119,7 @@ public class EnemyAI : MonoBehaviour {
                 prevState = cState;
                 cState = State.Doors;
                 break;
-            case default:
+            default:
                 prevState = cState;
                 cState = State.Doors;
                 break;
