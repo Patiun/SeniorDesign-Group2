@@ -23,80 +23,84 @@ public class EnemyAI : MonoBehaviour {
 	}
 
 	void Update(){
-        if(cState == State.Investigate){
-            if(count >= InvestigatingTime * 1000){
-                cState = prevState;
-                prevState = State.Investigate;
-                count = 0;
-            }
-            else{
-                count += 1;
-            }
+        switch (cState){
+            case State.Investigate:
+                if (count >= InvestigatingTime * 1000){
+                    cState = prevState;
+                    prevState = State.Investigate;
+                    count = 0;
+                }
+                else{
+                    count += 1;
+                }
+                break;
+            case State.MoveTo:
+                if (count >= MoveToTime * 1000){
+                    cState = State.Default;
+                    prevState = State.MoveTo;
+                }
+                break;
+            default:
+                break;
         }
-        else if(cState == State.MoveTo){
-            if(count >= MoveToTime * 1000){
-                cState = State.Default;
-                prevState = State.MoveTo;
-            }
-        }
-        else{}
 	}
 
 	public void MinorActivity()
     {
-        if(cState == State.Default){
-            prevState = cState;
-            SetStateInvestigate();
-        }
-        else if(cState == State.Investigate){
-            SetStateInvestigate();
-        }
-        else if(cState == State.MoveTo){
-            prevState = cState;
-            SetStateInvestigate();
-        }
-        else if(cState == State.Attack){
-            prevState = cState;
-            cState = State.MoveTo;
-        }
-        else if(cState == State.Doors){
-            prevState = cState;
-            SetStateInvestigate();
+        worldState.MinorActivity();
+        switch (cState){
+            case State.Investigate:
+                cState = State.Investigate;
+                break;
+            case State.MoveTo:
+                prevState = cState;
+                cState = State.Investigate;
+                break;
+            case State.Attack:
+                prevState = cState;
+                cState = State.MoveTo;
+                break;
+            case State.Doors:
+                prevState = cState;
+                cState = State.Investigate;
+                break;
+            default:
+                prevState = cState;
+                cState = State.Investigate;
+                break;
         }
     }
 
     public void MajorActivity(){
-        worldState.state = WorldState.State.Alert;
+        worldState.MajorActivity();
 
         if(isAlone == true){
             CallForBackup();
             hasCalled = true;
         }
 
-        if(cState == State.Default){
-            prevState = cState;
-            cState = State.MoveTo;
+        switch(cState){
+            case State.Investigate:
+                prevState = cState;
+                cState = State.MoveTo;
+                break;
+            case State.MoveTo:
+                prevState = cState;
+                cState = State.Investigate;
+                break;
+            case State.Attack:
+                prevState = cState;
+                cState = State.Investigate;
+                break;
+            case State.Doors:
+                prevState = cState;
+                cState = State.Investigate;
+                break;
+            default:
+                prevState = cState;
+                cState = State.MoveTo;
+                break;
         }
-        else if(cState == State.Investigate){
-            prevState = cState;
-            cState = State.MoveTo;
-        }
-        else if (cState == State.MoveTo)
-        {
-            prevState = cState;
-            SetStateInvestigate();
-        }
-        else if(cState == State.Attack){
-            prevState = cState;
-            SetStateInvestigate();
-        }
-        else if (cState == State.Doors)
-        {
-            prevState = cState;
-            SetStateInvestigate();
-        }
-        else{}
-        count = 0;
     }
 
     public void CalledForBackup(){
@@ -110,16 +114,17 @@ public class EnemyAI : MonoBehaviour {
     }
 
     public void NearDoor(){
-        if (cState == State.Default)
-        {
-            prevState = cState;
-            cState = State.Doors;
+        switch(cState){
+            case State.MoveTo:
+                prevState = cState;
+                cState = State.Doors;
+                break;
+            case default:
+                prevState = cState;
+                cState = State.Doors;
+                break;
+
         }
-        else if (cState == State.MoveTo){
-            prevState = cState;
-            cState = State.Doors;
-        }
-        else{}
         count = 0;
     }
 
@@ -131,17 +136,6 @@ public class EnemyAI : MonoBehaviour {
 
     public State GetState(){
         return cState;
-    }
-
-    public void SetStateInvestigate(){
-        cState = State.Investigate;
-        if (worldState.state == WorldState.State.Investigating)
-        {
-            worldState.state = WorldState.State.Cautious;
-        }
-        else{
-            worldState.state = WorldState.State.Investigating;
-        }
     }
 }
 
