@@ -5,10 +5,11 @@ using UnityEngine;
 public class DebugController : MonoBehaviour {
 
 	public bool isDebugging = false;
+	public WorldState worldState;
+	private WorldState.State lastState;
 
 	// Use this for initialization
 	void Start () {
-		
 	}
 	
 	// Update is called once per frame
@@ -23,9 +24,20 @@ public class DebugController : MonoBehaviour {
 		}
 
 		if (isDebugging) {
-
-
-
+			if (Input.GetKeyDown("up")) {
+				worldState.MajorActivity();
+			}
+			if (Input.GetKeyDown("down")) {
+				worldState.MinorActivity();
+			}
+			if (Input.GetKeyDown("r")) {
+				worldState.Reset();
+			}
+			WorldState.State curState = worldState.GetState ();
+			if (curState != lastState) {
+				Debug.Log (curState);
+				lastState = curState;
+			}
 		}
 	}
 }

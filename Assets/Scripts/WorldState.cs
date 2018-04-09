@@ -60,7 +60,7 @@ public class WorldState : MonoBehaviour {
 				isInvestigating = false;
 				state = lastState;
 				lastState = State.Investigating;
-				state = State.Cautious;
+				//state = State.Cautious;
 				count = 0;
 			} else {
 				count += 1;
@@ -97,6 +97,18 @@ public class WorldState : MonoBehaviour {
 			lastState = state;
 			state = State.Investigating;
 		}
+	}
+
+	//DEBUG ONLY
+	public void Reset() {
+		isAsleep = true;
+		isAlert = false;
+		isCautious = false;
+		isCoolingDown = false;
+		isInvestigating = false;
+		state = State.Asleep;
+		lastState = state;
+		count = 0;
 	}
 
 	public State GetState() {
