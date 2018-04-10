@@ -13,20 +13,25 @@ public class EnemyAI : MonoBehaviour {
     public bool hasCalled = false;
 
     public float InvestigatingTime = 1;
+	public float investigateRate = 50;
     public float MoveToTime = 10;
+	public float followRange = 10;
 
     public int count = 0;
 
 	//DEBUG
 	public GameObject investigate_prefab;
 
+	public GameObject target;
 	private Vector3 targetLocation;
 	private Vector3 preInvestigateTarget;
 	private State statePreInvestigate;
 	private EnemyMovment movement;
+	private EnemySight sight;
 
 	void Start(){
 		movement = GetComponent<EnemyMovment> ();
+		sight = GetComponent<EnemySight> ();
         cState = State.Default;
 		movement.ReturnToPatrol (); //Start Patroling
         prevState = cState;
@@ -53,6 +58,9 @@ public class EnemyAI : MonoBehaviour {
 							}
 							count = 0;
 					} else {
+						if (count % investigateRate == 0) {
+							sight.Investigate ();
+						}
 						count += 1;
 					}
 				}
@@ -67,6 +75,13 @@ public class EnemyAI : MonoBehaviour {
 					}
                 }
                 break;
+			case State.Attack:
+				if (!sight.LookAt (target)) {
+					ToInvestigate (target.transform.position);
+				} else {
+					movement.MoveInRange (target.transform.position, followRange);
+				}
+				break;
             default:
                 break;
         }
@@ -159,10 +174,22 @@ public class EnemyAI : MonoBehaviour {
         count = 0;
     }
 
-	public void SpottedPlayer(Vector3 playerLocation){
-		targetLocation = playerLocation;
+	public void SpottedPlayer(RaycastHit hit){
+		if(isAlone == true && !hasCalled){
+			CallForBackup();
+			hasCalled = true;
+		}
+
+		GameObject player = hit.collider.gameObject;
+		target = player;
+
+		targetLocation = player.transform.position;
 		ToAttack ();
     }
+
+	public void LostSightOfPlayer(Vector3 playerLocation) {
+		ToInvestigate (playerLocation);
+	}
 
 	private void ToDefault() {
 		if (cState != State.Default) {
@@ -204,7 +231,7 @@ public class EnemyAI : MonoBehaviour {
 			prevState = cState;
 			cState = State.Attack;
 			count = 0;
-
+			movement.MoveTo (targetLocation);
 		}
 	}
 

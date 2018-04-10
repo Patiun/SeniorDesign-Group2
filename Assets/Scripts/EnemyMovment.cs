@@ -28,8 +28,10 @@ public class EnemyMovment : MonoBehaviour {
 				AdvancePatrol ();
 			} else {
 				isStopped = true;
+				//nav.isStopped = true;
 			}
 		} else {
+			//nav.isStopped = false;
 			isStopped = false;
 		}
 
@@ -66,9 +68,17 @@ public class EnemyMovment : MonoBehaviour {
 	}
 
 	public void MoveTo(Vector3 target) {
+		nav.isStopped = false;
 		curTargetLocation = target;
 		isPatrolling = false;
 		nav.SetDestination (target);
+	}
+
+	public void MoveInRange(Vector3 target, float range) {
+		nav.SetDestination (target);
+		if (nav.remainingDistance <= range) {
+			nav.isStopped = true;
+		}
 	}
 
 	public void InvestigateLocation(Vector3 target) {
