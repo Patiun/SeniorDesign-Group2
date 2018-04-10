@@ -28,16 +28,21 @@ public class EnemyAI : MonoBehaviour {
 	private State statePreInvestigate;
 	private EnemyMovment movement;
 	private EnemySight sight;
+	private EnemyAttack weapon;
+	private EnemyNearby nearby;
 
 	void Start(){
 		movement = GetComponent<EnemyMovment> ();
 		sight = GetComponent<EnemySight> ();
+		weapon = GetComponent<EnemyAttack> ();
+		nearby = GetComponent<EnemyNearby> ();
         cState = State.Default;
 		movement.ReturnToPatrol (); //Start Patroling
         prevState = cState;
 	}
 
 	void Update(){
+		isAlone = nearby.isAlone;
         switch (cState){
 			case State.Investigate:
 				if (movement.isStopped) { //DO THE INVESTIGATING
@@ -79,7 +84,9 @@ public class EnemyAI : MonoBehaviour {
 				if (!sight.LookAt (target)) {
 					ToInvestigate (target.transform.position);
 				} else {
-					movement.MoveInRange (target.transform.position, followRange);
+					if (movement.MoveInRange (target.transform.position, followRange)) {
+						weapon.Shoot ();
+					}
 				}
 				break;
             default:
@@ -126,10 +133,7 @@ public class EnemyAI : MonoBehaviour {
 	public void MajorActivity(Vector3 target){
         worldState.MajorActivity();
 
-        if(isAlone == true && !hasCalled){
-            CallForBackup();
-            hasCalled = true;
-        }
+        CallForBackup(target);
 
         switch(cState){
 			case State.Investigate:
@@ -151,12 +155,15 @@ public class EnemyAI : MonoBehaviour {
     }
 
 	public void CalledForBackup(Vector3 callerLocation){
-		ToMoveTo (callerLocation); //Need to get the callers location
-        count = 0;
+		if (cState != State.Attack) {
+			ToMoveTo (callerLocation); //Need to get the callers location
+			count = 0;
+		}
     }
 
-    public void CallForBackup(){
-		Debug.Log ("HELP!");
+	public void CallForBackup(Vector3 target){
+		nearby.Call (target);
+		//Debug.Log ("HELP!");
     }
 
     public void NearDoor(){
@@ -175,13 +182,11 @@ public class EnemyAI : MonoBehaviour {
     }
 
 	public void SpottedPlayer(RaycastHit hit){
-		if(isAlone == true && !hasCalled){
-			CallForBackup();
-			hasCalled = true;
-		}
 
 		GameObject player = hit.collider.gameObject;
 		target = player;
+
+		CallForBackup(player.transform.position);
 
 		targetLocation = player.transform.position;
 		ToAttack ();
@@ -193,6 +198,7 @@ public class EnemyAI : MonoBehaviour {
 
 	private void ToDefault() {
 		if (cState != State.Default) {
+			weapon.Discard ();
 			prevState = cState;
 			cState = State.Default;
 			movement.ReturnToPatrol ();

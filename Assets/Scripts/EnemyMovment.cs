@@ -17,7 +17,6 @@ public class EnemyMovment : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		nav = GetComponent<UnityEngine.AI.NavMeshAgent> ();
-		//nav.SetDestination (patrolPoints [curPatrolTarget].transform.position);
 	}
 	
 	// Update is called once per frame
@@ -74,11 +73,13 @@ public class EnemyMovment : MonoBehaviour {
 		nav.SetDestination (target);
 	}
 
-	public void MoveInRange(Vector3 target, float range) {
+	public bool MoveInRange(Vector3 target, float range) {
 		nav.SetDestination (target);
 		if (nav.remainingDistance <= range) {
 			nav.isStopped = true;
+			return true;
 		}
+		return false;
 	}
 
 	public void InvestigateLocation(Vector3 target) {
