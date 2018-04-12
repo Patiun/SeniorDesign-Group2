@@ -85,6 +85,7 @@ public class EnemyAI : MonoBehaviour {
 					ToInvestigate (target.transform.position);
 				} else {
 					if (movement.MoveInRange (target.transform.position, followRange)) {
+						nearby.ShareWithFriends (target);
 						weapon.Shoot ();
 					}
 				}
@@ -226,6 +227,12 @@ public class EnemyAI : MonoBehaviour {
 			count = 0;
 			movement.MoveTo (targetLocation);
 		}
+	}
+
+	public void JoinAttackWithFriends(GameObject newTarget) {
+		target = newTarget;
+		targetLocation = target.transform.position;
+		ToAttack ();
 	}
 
 	private void ToDoors() {

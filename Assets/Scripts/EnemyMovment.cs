@@ -75,7 +75,7 @@ public class EnemyMovment : MonoBehaviour {
 		curTargetLocation.x += dX;
 		curTargetLocation.z += dZ;
 		isPatrolling = false;
-		nav.SetDestination (target);
+		nav.SetDestination (curTargetLocation);
 	}
 
 	public bool MoveInRange(Vector3 target, float range) {

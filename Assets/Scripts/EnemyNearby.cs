@@ -7,6 +7,7 @@ public class EnemyNearby : MonoBehaviour {
 	public List<EnemyAI> nearbyAllies;
 	public int aloneThreshold = 5;
 	public bool isAlone;
+	public float friendShareDistance = 3;
 
 	// Use this for initialization
 	void Start () {
@@ -33,6 +34,14 @@ public class EnemyNearby : MonoBehaviour {
 	public void OnTiggerExit(Collider col) {
 		if (col.tag == "Enemy") {
 			nearbyAllies.Remove (col.gameObject.GetComponent<EnemyAI> ());
+		}
+	}
+
+	public void ShareWithFriends(GameObject sharedTarget) {
+		foreach (EnemyAI ally in nearbyAllies) {
+			if (Vector3.Distance (transform.position, ally.transform.position) <= friendShareDistance) {
+				ally.JoinAttackWithFriends (sharedTarget);
+			}
 		}
 	}
 }
