@@ -11,6 +11,7 @@ public class EnemyMovment : MonoBehaviour {
 	public float closeEnough = 0.1f;
 	public float remaining = 0.0f;
 	public bool isStopped;
+	public float targetVariance = 2f;
 
 	private UnityEngine.AI.NavMeshAgent nav;
 
@@ -69,6 +70,10 @@ public class EnemyMovment : MonoBehaviour {
 	public void MoveTo(Vector3 target) {
 		nav.isStopped = false;
 		curTargetLocation = target;
+		float dX = Random.Range (-targetVariance, targetVariance);
+		float dZ = Random.Range (-targetVariance, targetVariance);
+		curTargetLocation.x += dX;
+		curTargetLocation.z += dZ;
 		isPatrolling = false;
 		nav.SetDestination (target);
 	}

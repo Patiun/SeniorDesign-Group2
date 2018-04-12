@@ -30,7 +30,7 @@ GameObject:
   - component: {fileID: 114604924624935564}
   - component: {fileID: 195496657822013258}
   - component: {fileID: 135484924241908938}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Enemy_Test
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1387220231348788}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.5, y: 0.5, z: -19.9}
+  m_LocalPosition: {x: 15.1, y: 0.5, z: -19.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4064846227982004}
@@ -260,7 +260,7 @@ BoxCollider:
   m_GameObject: {fileID: 1437066115025684}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -280,8 +280,8 @@ MonoBehaviour:
   prevState: 0
   isAlone: 0
   hasCalled: 0
-  InvestigatingTime: 0.5
-  investigateRate: 25
+  InvestigatingTime: 0.7
+  investigateRate: 1
   MoveToTime: 25
   followRange: 10
   count: 0
@@ -328,6 +328,7 @@ MonoBehaviour:
   closeEnough: 0.25
   remaining: 0
   isStopped: 0
+  targetVariance: 2
 --- !u!114 &114246896596251404
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -341,10 +342,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sightRange: 15
   sightRadius: 0.75
-  turnSpeed: 100
+  turnSpeed: 120
   layerMask:
     serializedVersion: 2
     m_Bits: 99841
+  direction: -1
+  anglesElapsed: 0
+  angleIteration: 60
+  targetAngle: 60
+  countSweeps: 1
+  maxSweeps: 4
+  pivotRange: 15
 --- !u!114 &114604924624935564
 MonoBehaviour:
   m_ObjectHideFlags: 1

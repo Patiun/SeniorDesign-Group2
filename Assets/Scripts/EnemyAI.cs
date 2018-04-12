@@ -92,21 +92,6 @@ public class EnemyAI : MonoBehaviour {
             default:
                 break;
         }
-
-		//DEBUG STUFF
-		if (Input.GetMouseButtonDown (0)) {
-			Vector3 tempTargetLocation = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-			tempTargetLocation.y = 0;
-			MajorActivity (tempTargetLocation);
-		}
-
-		if (Input.GetMouseButtonDown (1)) {
-			Vector3 tempTargetLocation = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-			tempTargetLocation.y = 0;
-			GameObject invest = Instantiate (investigate_prefab);
-			invest.transform.position = tempTargetLocation;
-			MinorActivity (tempTargetLocation);
-		}
 	}
 
 	public void MinorActivity(Vector3 target)
@@ -218,6 +203,7 @@ public class EnemyAI : MonoBehaviour {
 
 	private void ToInvestigate(Vector3 target) {
 		if (cState != State.Investigate) {
+			sight.ResetInvestigation ();
 			preInvestigateTarget = targetLocation;
 			targetLocation = target;
 			prevState = cState;
@@ -226,6 +212,7 @@ public class EnemyAI : MonoBehaviour {
 			movement.InvestigateLocation (targetLocation);
 			count = 0;
 		} else {
+			sight.ResetInvestigation ();
 			targetLocation = target;
 			movement.InvestigateLocation (targetLocation);
 			count = 0;
