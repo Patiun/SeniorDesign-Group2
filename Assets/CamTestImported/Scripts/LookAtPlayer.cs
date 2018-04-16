@@ -20,8 +20,13 @@ public class LookAtPlayer : MonoBehaviour {
 	private Quaternion start_rotation;
 	private float targetRotationY;
 	private Camera_state state = Camera_state.ASLEEP;
+	private WorldAIHandler worldAIHandler;
 
 	RaycastHit hit;
+
+	void Start() {
+		worldAIHandler = GameObject.FindObjectOfType<WorldAIHandler> ();
+	}
 
 	void OnEnable() {
 		start_rotation = transform.rotation;
@@ -50,6 +55,7 @@ public class LookAtPlayer : MonoBehaviour {
 			}
 		} else if (state == Camera_state.FOLLOWING) {
 			transform.rotation = Quaternion.Lerp (transform.rotation, Quaternion.LookRotation(Player.position - transform.position), Time.deltaTime);
+			worldAIHandler.AlertEnemies (Player.position);
 		}
 	}
 
