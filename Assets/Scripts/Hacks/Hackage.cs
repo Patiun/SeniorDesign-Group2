@@ -6,6 +6,9 @@ public class Hackage : MonoBehaviour {
     [Tooltip("Decide how difficulty level of the puzzles in order to fully control the object")]
     private PuzzleDifficultiesLevel _difficultyLevel = PuzzleDifficultiesLevel.None;
 
+    [SerializeField]
+    private GameObject icon;
+
     private void Start()
     {
         //In order for the rest of the script to work, it must have the associating object type tag so it can be used to execute it's functionality
@@ -15,7 +18,7 @@ public class Hackage : MonoBehaviour {
 
 
     /// <summary>
-    /// Request to the Hack Manager to do hacking. 
+    /// Send notification there is a object to be hack.
     /// <remark> 
     /// Will be put into notification system.
     /// This is to be called when another object such as the mainframe or such that the agent is interacting request the operator to hack it
@@ -23,7 +26,7 @@ public class Hackage : MonoBehaviour {
     /// </summary>
     public void RequestHack()
     {
-
+        NotificationManager.Instance.HackNotify(gameObject, _difficultyLevel);
     }
 
     /// <summary>
@@ -42,6 +45,7 @@ public class Hackage : MonoBehaviour {
     /// </summary>
     public void StartHack()
     {
-
+        HackManager.Instance.InitializeHacking(gameObject, icon, _difficultyLevel);
     }
+
 }

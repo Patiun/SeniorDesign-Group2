@@ -5,9 +5,6 @@ public class IconDropdown : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
     private GameObject container;
     private bool isOpen;
-    private GameObject obj; //obj can be camera, door, etc...
-
-    public GameObject camera;
 
     void Awake()
     {
@@ -16,8 +13,6 @@ public class IconDropdown : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
         if (container == null)
             Debug.Log("Icon Dropdown Script: Cannot find Container object  in the child of the parent " + gameObject.name + "game object.");
-
-        SetMenuInteraction();
     }
 
 	void Update () {
@@ -37,28 +32,5 @@ public class IconDropdown : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     public void OnPointerExit(PointerEventData eventData)
     {
         isOpen = false;
-    }
-
-    public void SetInteractiveObject(GameObject o)
-    {
-        obj = o;
-        SetMenuInteraction();
-    }
-
-    //find the child object container to get the script to set the interaction with the object
-    private void SetMenuInteraction()
-    {
-        AbstractIconMenuButton aimb = container.GetComponent<AbstractIconMenuButton>();     
-
-        if(aimb != null)
-        {
-            //aimb.InteractiveObject = obj;
-            aimb.InteractiveObject = camera;
-        }
-        else
-        {
-            Debug.LogError("IconDropDown script in the " + gameObject.name + " cannot find the 'AbstractIconMenuButton' script in the child");
-        }
-
     }
 }

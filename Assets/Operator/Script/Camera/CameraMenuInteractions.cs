@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[System.Obsolete("Please use CameraMenu.cs")]
 public class CameraMenuInteractions : AbstractIconMenuButton
 {
 

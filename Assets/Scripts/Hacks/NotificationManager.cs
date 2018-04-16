@@ -67,4 +67,33 @@ public class NotificationManager : MonoBehaviour
         _turrets = new List<GameObject>();
     }
 
+    public void HackNotify(GameObject obj, PuzzleDifficultiesLevel level)
+    {
+        if (obj.tag.Equals("Untagged"))
+            Debug.LogErrorFormat("Notification Manager cannot work with '%s' without tags", obj.name);
+        else
+        {
+            switch(obj.tag)
+            {
+                case "Camera":
+                    CameraNotification(obj, level);
+                    break;
+                case "Door":
+                    DoorNotifcation(obj, level);
+                    break;
+            }
+        }
+    }
+
+    private void CameraNotification(GameObject camera, PuzzleDifficultiesLevel level)
+    {
+
+    }
+
+    private void DoorNotifcation(GameObject door, PuzzleDifficultiesLevel level)
+    {
+
+    }
+
+
 }
