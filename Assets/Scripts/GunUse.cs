@@ -38,4 +38,10 @@ public class GunUse : ItemUse {
 	public override Vector3 GetAnchorEulerAngles () {
 		return new Vector3 (0, 0, 0);
 	}
+
+	public void OnCollisionEnter(Collision c) {
+		if (c.gameObject.tag.Equals("PlayerHand")) {
+			Debug.Log("highlight this");
+		}
+	}
 }

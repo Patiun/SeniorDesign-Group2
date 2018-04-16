@@ -31,6 +31,9 @@ public class ViveControllerGrabObject : MonoBehaviour {
 		{
 			return;
 		}
+		if (collidingObject.GetComponent<OutlineMirrorObject> () != null) {
+			collidingObject.GetComponent<OutlineMirrorObject> ().activeOutlines = true;
+		}
 		collidingObject = col.gameObject;
 	}
 
@@ -49,13 +52,17 @@ public class ViveControllerGrabObject : MonoBehaviour {
 		if (!collidingObject)
 		{
 			return;
+		} else if (collidingObject.GetComponent<OutlineMirrorObject> () != null) {
+			collidingObject.GetComponent<OutlineMirrorObject> ().activeOutlines = false;
 		}
-
 		collidingObject = null;
 	}
 
 	private void GrabObject()
 	{
+		if (collidingObject != null && collidingObject.GetComponent<OutlineMirrorObject> () != null) {
+			collidingObject.GetComponent<OutlineMirrorObject> ().activeOutlines = false;
+		}
 		objectInHand = collidingObject;
 		collidingObject = null;
 		if (objectInHand.tag != "CannotGrab") {
