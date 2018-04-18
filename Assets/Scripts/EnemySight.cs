@@ -22,6 +22,8 @@ public class EnemySight : MonoBehaviour {
 
 	private EnemyAI eai;
 
+	RaycastHit hit;
+
 	// Use this for initialization
 	void Start () {
 		eai = GetComponent<EnemyAI> ();
@@ -40,7 +42,7 @@ public class EnemySight : MonoBehaviour {
 	}
 
 	public void PlayerSweep(GameObject player) {
-		RaycastHit hit;
+		//RaycastHit hit;
 		//Debug.DrawRay(transform.position,transform.forward*sightRange,Color.white);
 		if (Physics.SphereCast(transform.position,sightRadius,player.transform.position-transform.position,out hit,Mathf.Infinity,layerMask.value)){
 			Debug.DrawRay(transform.position,(player.transform.position-transform.position)*hit.distance,Color.yellow);
@@ -53,7 +55,7 @@ public class EnemySight : MonoBehaviour {
 
 	public bool LookAt(GameObject target) {
 		transform.LookAt (target.transform.position);
-		RaycastHit hit;
+		//RaycastHit hit;
 		if (Physics.Raycast (transform.position, transform.forward,out hit, sightRange, layerMask.value)) {
 			if (hit.collider.tag == "Player") {
 				return true;
@@ -65,7 +67,7 @@ public class EnemySight : MonoBehaviour {
 	}
 
 	public void PlayerNearby(GameObject player) {
-		RaycastHit hit;
+		//RaycastHit hit;
 		Debug.DrawRay (transform.position, player.transform.position - transform.position, Color.cyan);
 		if (Physics.SphereCast(transform.position,sightRadius,player.transform.position-transform.position,out hit,Mathf.Infinity,layerMask.value)) {
 			if (hit.collider.tag == "Player") {
@@ -103,6 +105,13 @@ public class EnemySight : MonoBehaviour {
 			targetAngle = countSweeps * angleIteration;
 			//float pivotAngle = Random.Range (-pivotRange, pivotRange);
 			//transform.RotateAround (transform.position, transform.up, pivotAngle);
+		}
+	}
+
+	void OnDrawGizmos() {
+		if (hit.point != null) {
+			Gizmos.color = Color.yellow;
+			Gizmos.DrawSphere (hit.point, sightRadius);
 		}
 	}
 }
