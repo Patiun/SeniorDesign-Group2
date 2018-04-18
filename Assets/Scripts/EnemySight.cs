@@ -50,7 +50,7 @@ public class EnemySight : MonoBehaviour {
 	public bool LookAt(GameObject target) {
 		transform.LookAt (target.transform.position);
 		RaycastHit hit;
-		if (Physics.Raycast (transform.position, transform.forward,out hit, sightRange, layerMask)) {
+		if (Physics.Raycast (transform.position, transform.forward,out hit, sightRange, layerMask.value)) {
 			if (hit.collider.tag == "Player") {
 				return true;
 			} else {
@@ -58,6 +58,16 @@ public class EnemySight : MonoBehaviour {
 			}
 		}
 		return false;
+	}
+
+	public void PlayerNearby(GameObject player) {
+		RaycastHit hit;
+		Debug.DrawRay (transform.position, player.transform.position - transform.position, Color.cyan);
+		if (Physics.SphereCast(transform.position,sightRadius,player.transform.position-transform.position,out hit,Mathf.Infinity,layerMask.value)) {
+			if (hit.collider.tag == "Player") {
+				transform.LookAt (player.transform.position);
+			}
+		}
 	}
 
 	public void ResetInvestigation() {
