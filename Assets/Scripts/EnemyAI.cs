@@ -142,7 +142,7 @@ public class EnemyAI : MonoBehaviour {
 
 	public void CalledForBackup(Vector3 callerLocation){
 		if (cState != State.Attack) {
-			ToMoveTo (callerLocation); //Need to get the callers location
+			ToInvestigate(callerLocation); //Need to get the callers location
 			count = 0;
 		}
     }
@@ -168,7 +168,7 @@ public class EnemyAI : MonoBehaviour {
     }
 
 	public void SpottedPlayer(RaycastHit hit){
-
+		worldState.MajorActivity ();
 		GameObject player = hit.collider.gameObject;
 		target = player;
 
@@ -222,6 +222,7 @@ public class EnemyAI : MonoBehaviour {
 
 	private void ToAttack() {
 		if (cState != State.Attack) {
+			worldState.MajorActivity ();
 			prevState = cState;
 			cState = State.Attack;
 			count = 0;
@@ -247,5 +248,9 @@ public class EnemyAI : MonoBehaviour {
     public State GetState(){
         return cState;
     }
+
+	public float GetDetectionTime() {
+		return worldState.GetDetectionTime ();
+	}
 }
 

@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class EnemyNearby : MonoBehaviour {
 
-	public List<EnemyAI> nearbyAllies;
+	public List<GameObject> nearbyAllies;
 	public int aloneThreshold = 5;
 	public bool isAlone;
 	public float friendShareDistance = 3;
 
 	// Use this for initialization
 	void Start () {
-		nearbyAllies = new List<EnemyAI> ();
+		nearbyAllies = new List<GameObject> ();
 	}
 	
 	// Update is called once per frame
@@ -20,27 +20,27 @@ public class EnemyNearby : MonoBehaviour {
 	}
 
 	public void Call(Vector3 target) {
-		foreach (EnemyAI ally in nearbyAllies) {
-			ally.CalledForBackup (target);
+		foreach (GameObject ally in nearbyAllies) {
+			ally.GetComponent<EnemyAI>().CalledForBackup (target);
 		}
 	}
 
 	public void OnTriggerEnter(Collider col) {
 		if (col.tag == "Enemy") {
-			nearbyAllies.Add(col.gameObject.GetComponent<EnemyAI>());
+			nearbyAllies.Add(col.gameObject);
 		}
 	}
 
-	public void OnTiggerExit(Collider col) {
+	public void OnTriggerExit(Collider col) {
 		if (col.tag == "Enemy") {
-			nearbyAllies.Remove (col.gameObject.GetComponent<EnemyAI> ());
+			nearbyAllies.Remove(col.gameObject);
 		}
 	}
 
 	public void ShareWithFriends(GameObject sharedTarget) {
-		foreach (EnemyAI ally in nearbyAllies) {
+		foreach (GameObject ally in nearbyAllies) {
 			if (Vector3.Distance (transform.position, ally.transform.position) <= friendShareDistance) {
-				ally.JoinAttackWithFriends (sharedTarget);
+				ally.GetComponent<EnemyAI>().JoinAttackWithFriends (sharedTarget);
 			}
 		}
 	}

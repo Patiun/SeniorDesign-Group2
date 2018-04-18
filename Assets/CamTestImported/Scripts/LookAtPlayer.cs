@@ -13,6 +13,7 @@ public class LookAtPlayer : MonoBehaviour {
 	public bool Following = true;
 //	public float FollowSnapSpeedCoefficient = .2f;
 	public float LookDelay = 1.5f;
+	private float originalLookTime;
 	public LayerMask _mask;
 	public float _DetectionDistance = 6f;
 	public float _SleepRotationAngle = 30f;
@@ -21,16 +22,18 @@ public class LookAtPlayer : MonoBehaviour {
 	private float targetRotationY;
 	private Camera_state state = Camera_state.ASLEEP;
 	private WorldAIHandler worldAIHandler;
+	public WorldState worldState;
 
 	RaycastHit hit;
 
 	void Start() {
 		worldAIHandler = GameObject.FindObjectOfType<WorldAIHandler> ();
+		originalLookTime = worldState.GetDetectionTime();
 	}
 
 	void OnEnable() {
 		start_rotation = transform.rotation;
-		Debug.Log(transform.rotation.eulerAngles);
+		//Debug.Log(transform.rotation.eulerAngles);
 		targetRotationY = _SleepRotationAngle;
 	}
 
@@ -38,7 +41,7 @@ public class LookAtPlayer : MonoBehaviour {
 	void Update () {
 //		Debug.Log (state);
 		Debug.DrawRay (transform.position, (Player.position - transform.position).normalized * _DetectionDistance, Color.red);
-		Physics.Raycast (transform.position, (Player.position - transform.position), out hit, _DetectionDistance, _mask);
+		Physics.Raycast (transform.position, (Player.position - transform.position), out hit, _DetectionDistance, _mask.value);
 		if (hit.collider != null && hit.collider.gameObject.Equals (Player.gameObject)){
 			if (state != Camera_state.FOLLOWING && state != Camera_state.WAKING_UP) {
 				StartCoroutine (WakeUp ());
@@ -61,7 +64,7 @@ public class LookAtPlayer : MonoBehaviour {
 
 	private IEnumerator WakeUp() {
 		state = Camera_state.WAKING_UP;
-		yield return new WaitForSeconds (LookDelay);
+		yield return new WaitForSeconds (LookDelay*worldState.GetDetectionTime()/originalLookTime);
 		state = Camera_state.FOLLOWING;
 	} 
 

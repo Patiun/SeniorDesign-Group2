@@ -18,6 +18,11 @@ public class WorldState : MonoBehaviour {
 	public bool isCoolingDown;
 	public bool isInvestigating;
 
+	//In Seconds
+	public float alertDetectionTime = 0.2f;
+	public float cautiousDetectionTime = 0.5f;
+	public float asleepDetectioNTime = 0.8f;
+
 	public int count = 0;
 
 	// Use this for initialization
@@ -113,6 +118,19 @@ public class WorldState : MonoBehaviour {
 
 	public State GetState() {
 		return state;
+	}
+
+	public float GetDetectionTime() {
+		switch (state) {
+		case State.Alert:
+			return alertDetectionTime;
+		case State.Cautious:
+			return cautiousDetectionTime;
+		case State.Asleep:
+			return asleepDetectioNTime;
+		default:
+			return asleepDetectioNTime;
+		}
 	}
 
 }
