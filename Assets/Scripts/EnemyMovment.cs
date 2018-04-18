@@ -17,7 +17,6 @@ public class EnemyMovment : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		nav = GetComponent<UnityEngine.AI.NavMeshAgent> ();
 	}
 	
 	// Update is called once per frame
@@ -52,6 +51,9 @@ public class EnemyMovment : MonoBehaviour {
 	}
 
 	public void ReturnToPatrol() {
+		if (nav == null) {
+			nav = GetComponent<UnityEngine.AI.NavMeshAgent> ();
+		}
 		isPatrolling = true;
 		float minDistance = float.MaxValue;
 		int targetPointIndex = 0;
