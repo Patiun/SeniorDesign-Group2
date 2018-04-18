@@ -36,12 +36,16 @@ public class EnemySight : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+	}
+
+	public void PlayerSweep(GameObject player) {
 		RaycastHit hit;
 		//Debug.DrawRay(transform.position,transform.forward*sightRange,Color.white);
-		if (Physics.SphereCast(transform.position,sightRadius,transform.forward,out hit,sightRange,layerMask.value)){
-			Debug.DrawRay(transform.position,transform.forward*hit.distance,Color.yellow);
+		if (Physics.SphereCast(transform.position,sightRadius,player.transform.position-transform.position,out hit,Mathf.Infinity,layerMask.value)){
+			Debug.DrawRay(transform.position,(player.transform.position-transform.position)*hit.distance,Color.yellow);
 			if (hit.collider.gameObject.tag == "Player") {
-				Debug.DrawRay(transform.position,transform.forward*hit.distance,Color.green);
+				Debug.DrawRay(transform.position,(player.transform.position-transform.position)*hit.distance,Color.green);
 				eai.SpottedPlayer (hit);
 			}
 		}
