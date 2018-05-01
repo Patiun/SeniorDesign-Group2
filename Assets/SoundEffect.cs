@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SoundEffect : MonoBehaviour {
 
-    public Transform noiseSphere;
-    public float TimeUnitlSilent;
+	public GameObject noiseSphere;
+	public float noiseScale;
 
 	// Use this for initialization
 	void Start () {
@@ -19,9 +19,10 @@ public class SoundEffect : MonoBehaviour {
 
 	public void OnCollisionEnter(Collision collision)
 	{
-        Instantiate(noiseSphere, gameObject.transform.position, Quaternion.identity);
-        float scale = collision.relativeVelocity.magnitude;
-        noiseSphere.transform.localScale = new Vector3(scale, scale, scale);
-        Destroy(noiseSphere, TimeUnitlSilent);
+		if (collision.gameObject.tag != "Player") {
+			GameObject obj = Instantiate (noiseSphere, gameObject.transform.position, Quaternion.identity);
+			float scale = collision.relativeVelocity.magnitude*noiseScale;
+			obj.transform.localScale = new Vector3 (scale, scale, scale);
+		}
 	}
 }
