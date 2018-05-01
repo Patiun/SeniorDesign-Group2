@@ -51,9 +51,9 @@
 			float yRelative = saturate((IN.worldPos.y - _WorldStartCoordinateY) / _EffectHeightY);
 			float gradientValue = tex2D (_GradientGrayscale, float2(IN.worldPos.x/10, yRelative)).r; // on a greyscale r is the same g,b, and a
 			#ifdef FLIPCOLORS
-       			c = lerp(_Color1, _Color2, (1 - gradientValue.r)) * (1 + (c -.5));
+       			c *= lerp(_Color1, _Color2, (1 - gradientValue.r));
        		#else
-       			c = lerp(_Color1, _Color2, gradientValue.r) * (1 + (c -.5));
+       			c *= lerp(_Color1, _Color2, gradientValue.r);
        		#endif
        		o.Albedo = c.rgb;
 			o.Alpha = c.a;
