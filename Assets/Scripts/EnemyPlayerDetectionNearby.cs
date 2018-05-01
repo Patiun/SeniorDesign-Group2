@@ -18,13 +18,13 @@ public class EnemyPlayerDetectionNearby : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col) {
 		if (col.tag == "Player") {
-			es.PlayerNearby (col.gameObject);
+			es.PlayerNearby (col.ClosestPoint(transform.position));
 		}
 	}
 
 	void OnTriggerStay(Collider col) {
 		if (col.tag == "Player") {
-			es.PlayerNearby (col.gameObject);
+			es.PlayerNearby (col.ClosestPoint(transform.position));
 		}
 	}
 }

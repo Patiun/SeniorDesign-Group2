@@ -12,7 +12,7 @@ public class UpdatePlayerTags : MonoBehaviour {
 		coliders = GetComponentsInChildren<Collider> ();
 		for (int i = 0; i < coliders.Length; i++) {
 			coliders [i].gameObject.tag = "Player";
-			coliders [i].gameObject.layer = playerLayer.value;
+			coliders [i].gameObject.layer = 9;
 		}
 	}
 	
