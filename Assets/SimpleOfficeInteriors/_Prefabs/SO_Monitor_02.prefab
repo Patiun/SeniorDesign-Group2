@@ -10,6 +10,13 @@ GameObject:
   - component: {fileID: 430318}
   - component: {fileID: 3357184}
   - component: {fileID: 2377520}
+  - component: {fileID: 114036186489837802}
+  - component: {fileID: 64553309147384054}
+  - component: {fileID: 114182775512033648}
+  - component: {fileID: 114050586170686344}
+  - component: {fileID: 114693219362400726}
+  - component: {fileID: 54647097331954358}
+  - component: {fileID: 114458834579729466}
   m_Layer: 0
   m_Name: SO_Monitor_02
   m_TagString: Untagged
@@ -23,13 +30,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 194476}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.4026477, z: -0, w: 0.915355}
+  m_LocalPosition: {x: -33.296, y: -0.4807185, z: -42.022}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 47.488003, z: 0}
 --- !u!23 &2377520
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -82,3 +89,126 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 194476}
   m_IsPrefabParent: 1
+--- !u!54 &54647097331954358
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194476}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &64553309147384054
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194476}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: f1625c90320f8a54a972ff6c07e03be6, type: 3}
+--- !u!114 &114036186489837802
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noiseSphere: {fileID: 0}
+  noiseScale: 0
+--- !u!114 &114050586170686344
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec2ac476f2fc9a45a4e69712580a603, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  precisionGrab: 0
+  rightSnapHandle: {fileID: 0}
+  leftSnapHandle: {fileID: 0}
+  throwVelocityWithAttachDistance: 0
+  throwMultiplier: 1
+  onGrabCollisionDelay: 0
+--- !u!114 &114182775512033648
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3abaf4521bf2344ea21ed3020b98eb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableWhenIdle: 1
+  touchHighlightColor: {r: 0, g: 0.7058824, b: 1, a: 0}
+  allowedTouchControllers: 0
+  ignoredColliders: []
+  isGrabbable: 1
+  holdButtonToGrab: 0
+  stayGrabbedOnTeleport: 1
+  validDrop: 1
+  grabOverrideButton: 0
+  allowedGrabControllers: 0
+  grabAttachMechanicScript: {fileID: 114050586170686344}
+  secondaryGrabActionScript: {fileID: 114693219362400726}
+  isUsable: 0
+  holdButtonToUse: 1
+  useOnlyIfGrabbed: 0
+  pointerActivatesUseAction: 0
+  useOverrideButton: 0
+  allowedUseControllers: 0
+  usingState: 0
+--- !u!114 &114458834579729466
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc2315305343a584e8758755b54117c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clipOnTouch: {fileID: 0}
+  strengthOnTouch: 0
+  durationOnTouch: 0
+  intervalOnTouch: 0.05
+  clipOnGrab: {fileID: 0}
+  strengthOnGrab: 0
+  durationOnGrab: 0
+  intervalOnGrab: 0.05
+  clipOnUse: {fileID: 0}
+  strengthOnUse: 0
+  durationOnUse: 0
+  intervalOnUse: 0.05
+--- !u!114 &114693219362400726
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

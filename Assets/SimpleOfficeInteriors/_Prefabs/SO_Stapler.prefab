@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 2326636}
   - component: {fileID: 64183926160731142}
   - component: {fileID: 114303623794789950}
-  - component: {fileID: 54566675144422688}
-  - component: {fileID: 114474347890142252}
-  - component: {fileID: 114893499960704022}
-  - component: {fileID: 114904014198680912}
-  - component: {fileID: 114093275997230804}
+  - component: {fileID: 54644403096541032}
+  - component: {fileID: 114720757947062840}
+  - component: {fileID: 114832802420089630}
+  - component: {fileID: 114222463517542888}
+  - component: {fileID: 114986894718689026}
   m_Layer: 0
   m_Name: SO_Stapler
   m_TagString: Untagged
@@ -30,13 +30,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 188960}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1764698, y: -1.115, z: -3.031}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.32727075, y: -0.491, z: -2.9559994}
+  m_LocalScale: {x: 0.50000024, y: 0.5, z: 0.50000024}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!23 &2326636
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -89,7 +89,7 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 188960}
   m_IsPrefabParent: 1
---- !u!54 &54566675144422688
+--- !u!54 &54644403096541032
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -114,11 +114,11 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: bca9d2b86c9695a40ae24af8c1e0e744, type: 3}
---- !u!114 &114093275997230804
+--- !u!114 &114222463517542888
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -126,28 +126,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 188960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3abaf4521bf2344ea21ed3020b98eb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ec2ac476f2fc9a45a4e69712580a603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disableWhenIdle: 1
-  touchHighlightColor: {r: 0, g: 0.7103448, b: 1, a: 0}
-  allowedTouchControllers: 0
-  ignoredColliders: []
-  isGrabbable: 1
-  holdButtonToGrab: 1
-  stayGrabbedOnTeleport: 1
-  validDrop: 1
-  grabOverrideButton: 0
-  allowedGrabControllers: 0
-  grabAttachMechanicScript: {fileID: 114904014198680912}
-  secondaryGrabActionScript: {fileID: 114893499960704022}
-  isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
-  pointerActivatesUseAction: 0
-  useOverrideButton: 0
-  allowedUseControllers: 0
-  usingState: 0
+  precisionGrab: 0
+  rightSnapHandle: {fileID: 0}
+  leftSnapHandle: {fileID: 0}
+  throwVelocityWithAttachDistance: 0
+  throwMultiplier: 1
+  onGrabCollisionDelay: 0
 --- !u!114 &114303623794789950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -161,8 +148,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
     type: 2}
-  TimeUnitlSilent: 0.5
---- !u!114 &114474347890142252
+  noiseScale: 0
+--- !u!114 &114720757947062840
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -185,7 +172,7 @@ MonoBehaviour:
   strengthOnUse: 0
   durationOnUse: 0
   intervalOnUse: 0.05
---- !u!114 &114893499960704022
+--- !u!114 &114832802420089630
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -196,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114904014198680912
+--- !u!114 &114986894718689026
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -204,12 +191,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 188960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ec2ac476f2fc9a45a4e69712580a603, type: 3}
+  m_Script: {fileID: 11500000, guid: a3abaf4521bf2344ea21ed3020b98eb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precisionGrab: 0
-  rightSnapHandle: {fileID: 0}
-  leftSnapHandle: {fileID: 0}
-  throwVelocityWithAttachDistance: 0
-  throwMultiplier: 1
-  onGrabCollisionDelay: 0
+  disableWhenIdle: 1
+  touchHighlightColor: {r: 0, g: 0.7058824, b: 1, a: 0}
+  allowedTouchControllers: 0
+  ignoredColliders: []
+  isGrabbable: 1
+  holdButtonToGrab: 1
+  stayGrabbedOnTeleport: 1
+  validDrop: 1
+  grabOverrideButton: 0
+  allowedGrabControllers: 0
+  grabAttachMechanicScript: {fileID: 114222463517542888}
+  secondaryGrabActionScript: {fileID: 114832802420089630}
+  isUsable: 0
+  holdButtonToUse: 1
+  useOnlyIfGrabbed: 0
+  pointerActivatesUseAction: 0
+  useOverrideButton: 0
+  allowedUseControllers: 0
+  usingState: 0
