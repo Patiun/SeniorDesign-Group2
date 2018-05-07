@@ -22,7 +22,10 @@ public class SoundFunctionality : MonoBehaviour {
 
 	public void OnTriggerEnter(Collider col) {
 		if (col.tag == "Enemy" && col.isTrigger == false) {
-			col.gameObject.GetComponent<EnemyAI> ().MinorActivity (transform.position);
+			EnemyAI brain = col.gameObject.GetComponent<EnemyAI> ();
+			if (brain != null) {
+				brain.MinorActivity (transform.position);
+			}
 		}
 	}
 }
