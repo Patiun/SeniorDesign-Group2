@@ -25,4 +25,9 @@ public class PlayerHealth : MonoBehaviour {
 			curHP = maxHP;
 		}
 	}
+
+	public void InstaKill() {
+		curHP = 0;
+		GetComponent<GameState> ().LoseLevel ();
+	}
 }
