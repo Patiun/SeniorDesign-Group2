@@ -13,7 +13,7 @@ public class PlayerHealth : MonoBehaviour {
 	
 	public void DoDamage(int dmg) {
 		curHP -= dmg;
-		if (curHP < 0) {
+		if (curHP <= 0) {
 			GetComponent<GameState> ().LoseLevel ();
 			curHP = 0;
 		}
