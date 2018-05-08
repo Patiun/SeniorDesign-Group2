@@ -37,7 +37,7 @@ public class FanRotation : MonoBehaviour {
 
 	public void OnTriggerEnter(Collider collider)
 	{
-        if(collider.gameObject.tag == "Player"){
+        if(collider.gameObject.tag == "Player" && on){
             playerHealth.InstaKill();
         }
 	}
