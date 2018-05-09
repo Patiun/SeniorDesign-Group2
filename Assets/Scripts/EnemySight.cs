@@ -61,7 +61,8 @@ public class EnemySight : MonoBehaviour {
 	}
 
 	public bool LookAt(GameObject target) {
-		transform.LookAt (target.transform.position);
+		Vector3 targetPosition = target.GetComponent<Collider> ().ClosestPoint (transform.position);
+		transform.LookAt (targetPosition);
 		//RaycastHit hit;
 		if (Physics.Raycast (transform.position, transform.forward,out hit, sightRange, layerMask.value)) {
 			if (hit.collider.tag == "Player") {
