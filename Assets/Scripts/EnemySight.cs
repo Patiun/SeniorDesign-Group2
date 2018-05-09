@@ -55,13 +55,13 @@ public class EnemySight : MonoBehaviour {
 		}
 	}
 
-	public void PlayerSweep(GameObject player) {
+	public void PlayerSweep(Vector3 player) {
 		//RaycastHit hit;
 		//Debug.DrawRay(transform.position,transform.forward*sightRange,Color.white);
-		if (Physics.SphereCast(transform.position,sightRadius * timeToSpotPlayer/originalTimeToSpotPlayer,player.transform.position-transform.position,out hit,Mathf.Infinity,layerMask.value)){
-			Debug.DrawRay(transform.position,(player.transform.position-transform.position)*hit.distance,Color.yellow);
+		if (Physics.SphereCast(transform.position,sightRadius * timeToSpotPlayer/originalTimeToSpotPlayer,player-transform.position,out hit,Mathf.Infinity,layerMask.value)){
+			Debug.DrawRay(transform.position,(player-transform.position)*hit.distance,Color.yellow);
 			if (hit.collider.gameObject.tag == "Player") {
-				Debug.DrawRay (transform.position, (player.transform.position - transform.position) * hit.distance, Color.green);
+				Debug.DrawRay (transform.position, (player - transform.position) * hit.distance, Color.green);
 				seesPlayer = true;
 				//eai.SpottedPlayer (hit);
 			} else {
@@ -84,12 +84,12 @@ public class EnemySight : MonoBehaviour {
 		return false;
 	}
 
-	public void PlayerNearby(GameObject player) {
+	public void PlayerNearby(Vector3 player) {
 		//RaycastHit hit;
-		Debug.DrawRay (transform.position, player.transform.position - transform.position, Color.cyan);
-		if (Physics.SphereCast(transform.position,sightRadius* timeToSpotPlayer/originalTimeToSpotPlayer,player.transform.position-transform.position,out hit,Mathf.Infinity,layerMask.value)) {
+		Debug.DrawRay (transform.position, player - transform.position, Color.cyan);
+		if (Physics.SphereCast(transform.position,sightRadius* timeToSpotPlayer/originalTimeToSpotPlayer,player-transform.position,out hit,Mathf.Infinity,layerMask.value)) {
 			if (hit.collider.tag == "Player") {
-				transform.LookAt (player.transform.position);
+				transform.LookAt (player);
 			}
 		}
 	}

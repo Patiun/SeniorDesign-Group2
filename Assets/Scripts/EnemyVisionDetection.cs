@@ -8,13 +8,13 @@ public class EnemyVisionDetection : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col) {
 		if (col.tag == "Player") {
-			es.PlayerSweep (col.gameObject);
+			es.PlayerSweep (col.ClosestPoint(transform.position));
 		}
 	}
 
 	void OnTriggerStay(Collider col) {
 		if (col.tag == "Player") {
-			es.PlayerSweep (col.gameObject);
+			es.PlayerSweep (col.ClosestPoint(transform.position));
 		}
 	}
 }
