@@ -110,7 +110,6 @@ public class EnemySight : MonoBehaviour {
 	}
 
 	public void Investigate() {
-        Debug.Log("***Investigate***");
 		if (countSweeps <= maxSweeps) {
 			if (anglesElapsed < targetAngle) {
 				float angle = Time.deltaTime * turnSpeed;
