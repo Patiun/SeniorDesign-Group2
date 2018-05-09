@@ -19,9 +19,6 @@ public class EnemyAI : MonoBehaviour {
 
     public int count = 0;
 
-	//DEBUG
-	public GameObject investigate_prefab;
-
 	public GameObject target;
 	private Vector3 targetLocation;
 	private Vector3 preInvestigateTarget;
