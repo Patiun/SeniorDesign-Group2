@@ -31,7 +31,6 @@ public class EnemySight : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Debug.Log("***START***");
 		eai = GetComponent<EnemyAI> ();
 		start_direction = direction;
 		start_anglesElapsed = anglesElapsed;
@@ -57,7 +56,6 @@ public class EnemySight : MonoBehaviour {
 	}
 
 	public void PlayerSweep(Vector3 player) {
-        Debug.Log("***PlayerSweep***");
 		//RaycastHit hit;
 		//Debug.DrawRay(transform.position,transform.forward*sightRange,Color.white);
 		if (Physics.SphereCast(transform.position,sightRadius * timeToSpotPlayer/originalTimeToSpotPlayer,player-transform.position,out hit,Mathf.Infinity,layerMask.value)){
@@ -74,7 +72,6 @@ public class EnemySight : MonoBehaviour {
 	}
 
 	public bool LookAt(GameObject target) {
-        Debug.Log("***LookAt***");
 		transform.LookAt (target.transform.position);
 		//RaycastHit hit;
 		if (Physics.Raycast (transform.position, transform.forward,out hit, sightRange, layerMask.value)) {
@@ -88,7 +85,6 @@ public class EnemySight : MonoBehaviour {
 	}
 
 	public void PlayerNearby(Vector3 player) {
-        Debug.Log("***PlayerNearby***");
 		//RaycastHit hit;
 		Debug.DrawRay (transform.position, player - transform.position, Color.cyan);
 		if (Physics.SphereCast(transform.position,sightRadius* timeToSpotPlayer/originalTimeToSpotPlayer,player-transform.position,out hit,Mathf.Infinity,layerMask.value)) {
@@ -99,7 +95,6 @@ public class EnemySight : MonoBehaviour {
 	}
 
 	public void ResetInvestigation() {
-        Debug.Log("***ResetInvestigation***");
 		if (Time.time % 2 == 0) {
 			start_direction *= -1;
 		}
@@ -110,6 +105,7 @@ public class EnemySight : MonoBehaviour {
 	}
 
 	public void Investigate() {
+		//!!!!!!!!!!!!!! LERP HERE !!!!!!!!!!!!!!!!!!!
 		if (countSweeps <= maxSweeps) {
 			if (anglesElapsed < targetAngle) {
 				float angle = Time.deltaTime * turnSpeed;
