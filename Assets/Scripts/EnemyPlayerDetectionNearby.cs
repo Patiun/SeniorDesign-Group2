@@ -17,13 +17,13 @@ public class EnemyPlayerDetectionNearby : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col) {
-		if (col.tag == "Player") {
+		if (col.tag == "Player"  && !es.seesPlayer) {
 			es.PlayerNearby (col.ClosestPoint(transform.position));
 		}
 	}
 
 	void OnTriggerStay(Collider col) {
-		if (col.tag == "Player") {
+		if (col.tag == "Player"  && !es.seesPlayer) {
 			es.PlayerNearby (col.ClosestPoint(transform.position));
 		}
 	}

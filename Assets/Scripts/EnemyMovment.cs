@@ -29,15 +29,13 @@ public class EnemyMovment : MonoBehaviour {
 				if (!isStopped) {
 					isStopped = true;
 					nav.isStopped = true;
-					//nav.destination = transform.position;
-					Debug.Log ("[DEBUG] Navmesh is stopped");
+					//Debug.Log ("[DEBUG] Navmesh is stopped");
 				}
 			}
 		} else {
 			if (isStopped) {
 				nav.isStopped = false;
 				isStopped = false;
-				Debug.Log ("[DEBUG] Navmesh is resumed");
 			}
 		}
 

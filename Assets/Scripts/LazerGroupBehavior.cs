@@ -13,7 +13,6 @@ public class LazerGroupBehavior : MonoBehaviour {
     // Use this for initialization
     void Start(){
         lazers = lazerGroup.GetComponentsInChildren<LazerBehavior>();
-        Debug.Log(lazers.Length);
         randomize();
     }
 	

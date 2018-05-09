@@ -13,11 +13,10 @@ public class EnemyAI : MonoBehaviour {
     public bool hasCalled = false;
 
     public float InvestigatingTime = 1;
-	public float investigateRate = 50;
     public float MoveToTime = 10;
 	public float followRange = 10;
 
-    public int count = 0;
+    public float count = 0;
 
 	public GameObject target;
 	private Vector3 targetLocation;
@@ -43,7 +42,7 @@ public class EnemyAI : MonoBehaviour {
         switch (cState){
 			case State.Investigate:
 				if (movement.isStopped) { //DO THE INVESTIGATING
-					if (count >= InvestigatingTime * 1000) {
+					if (count >= InvestigatingTime) {
 						switch (statePreInvestigate) {
 							case State.Default:
 								ToDefault ();
@@ -60,10 +59,8 @@ public class EnemyAI : MonoBehaviour {
 							}
 							count = 0;
 					} else {
-						if (count % investigateRate == 0) {
-							sight.Investigate ();
-						}
-						count += 1;
+						sight.Investigate ();
+						count += Time.deltaTime;
 					}
 				}
                 break;
@@ -73,12 +70,15 @@ public class EnemyAI : MonoBehaviour {
 						ToDefault ();
 						count = 0;
 					} else {
-						count +=1;
+						count += Time.deltaTime;
 					}
                 }
                 break;
-			case State.Attack:
+		case State.Attack:
+				//Debug.Log ("[DEBUG] Attacking " + target.gameObject.name);
 				if (!sight.LookAt (target)) {
+				//Debug.Log ("[DEBUG] Lost sight of player object: "+target.gameObject.name);
+					sight.seesPlayer = false;
 					ToInvestigate (target.transform.position);
 				} else {
 					if (movement.MoveInRange (target.transform.position, followRange)) {
