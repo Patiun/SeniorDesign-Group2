@@ -6,6 +6,7 @@ public class LazerGroupBehavior : MonoBehaviour {
 
     public GameObject lazerGroup;
     public int timeBetween;
+	public int downTime;
     public bool groupOn;
     private LazerBehavior[] lazers;
     private int count = 0;
@@ -34,6 +35,9 @@ public class LazerGroupBehavior : MonoBehaviour {
         } else {
             randomize();
             index = 0;
+			if(groupOn == false){
+				StartCoroutine(waitSeconds());
+			}
         }
 	}
 
@@ -48,6 +52,11 @@ public class LazerGroupBehavior : MonoBehaviour {
         }
         //Debug.Log(lazers.Length);
     }
+
+	IEnumerator waitSeconds(){
+		yield return new WaitForSeconds(downTime);
+		groupOn = true;
+	}
 
 
 }
