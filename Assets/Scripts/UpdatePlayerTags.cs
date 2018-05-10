@@ -13,6 +13,7 @@ public class UpdatePlayerTags : MonoBehaviour {
 		for (int i = 0; i < coliders.Length; i++) {
 			coliders [i].gameObject.tag = "Player";
 			coliders [i].gameObject.layer = 9;
+			coliders [i].gameObject.AddComponent<PlayerCollisionDebug> ();
 		}
 	}
 	
