@@ -69,6 +69,12 @@ public class CameraMenu : MonoBehaviour
 
     }
 
+    public void Hack()
+    {
+        HackManager.Instance.InitializeHacking(gameObject, PuzzleDifficultiesLevel.Easy);
+        DisplayFullWtihoutHackMenu();
+    }
+
 #region Enable or Disable Methods
     /// <summary>
     /// Switch out the menu listing based on the enable or disable.
@@ -151,7 +157,7 @@ public class CameraMenu : MonoBehaviour
         GameObject hack = transform.Find("HackButton").gameObject;
 
         if (hack != null)
-            hack.SetActive(true);
+            hack.SetActive(false);
 
         ActivateFullMenu();
     }

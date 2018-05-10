@@ -45,7 +45,7 @@ public class Hackage : MonoBehaviour {
     /// </summary>
     public void StartHack()
     {
-        HackManager.Instance.InitializeHacking(gameObject, icon, _difficultyLevel);
+        //HackManager.Instance.InitializeHacking(gameObject, icon, _difficultyLevel);
     }
 
 }

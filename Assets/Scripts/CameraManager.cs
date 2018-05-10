@@ -77,4 +77,8 @@ public class CameraManager : MonoBehaviour {
         SwitchCamera(_mainCamera);
     }
 
+    public void DisableCurrent()
+    {
+        _currentCamera.SetActive(false);
+    }
 }

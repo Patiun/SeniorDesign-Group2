@@ -52,15 +52,43 @@ public class HackManager : MonoBehaviour
 
     }
 
+    [SerializeField]
+    private GameObject BruteForce;
+
+    private GameObject CurrentObjectHack;
+    private bool InProgress;
+
+    private void Start()
+    {
+        InProgress = false;
+    }
+
+
     /// <summary>
     /// Change the screen of the operaator to start hacking the type of puzzle
     /// </summary>
-    /// <param name="obj">The object to be hack</param>
+    /// <param name="icon">The object to be hack</param>
     /// <param name="level">The difficulty of the puzzle</param>
-    public void InitializeHacking(GameObject obj, GameObject icon, PuzzleDifficultiesLevel level)
+    public void InitializeHacking(GameObject icon, PuzzleDifficultiesLevel level)
     {
+        CurrentObjectHack = icon;
+        switch(level)
+        {
+            case PuzzleDifficultiesLevel.Easy:
+                BruteForce.SetActive(true);
+                CameraManager.Instance.DisableCurrent();
+                break;
+        }
         icon.SetActive(true);
     }
 
+    public void FinishHacking(bool pass)
+    {
+        if(pass)
+        {
+            
+        }
+        CameraManager.Instance.SwitchMainCamera();
+    }
 
 }

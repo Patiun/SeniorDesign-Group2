@@ -12,6 +12,7 @@ public struct MapObject
     public int Region { get; set; }
 }
 
+[Obsolete]
 public class MapController : MonoBehaviour
 {
     [SerializeField]
@@ -46,10 +47,10 @@ public class MapController : MonoBehaviour
         {
             
             GameObject cam = o.transform.Find("Camera").gameObject;
-            if (cam != null)
-                iconDropdown.SetInteractiveObject(cam);
-            else
-                Debug.LogError("Map Controller script cannot find the child object 'Camera' from " + cam.name + "game object");
+            //if (cam != null)
+            //    //iconDropdown.SetInteractiveObject(cam);
+            //else
+            //    Debug.LogError("Map Controller script cannot find the child object 'Camera' from " + cam.name + "game object");
         }
         else
             Debug.LogError("Map Controller script cannot find container child from " + img.name);
