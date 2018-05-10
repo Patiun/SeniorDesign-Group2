@@ -19,7 +19,7 @@ public class SoundEffect : MonoBehaviour {
 
 	public void OnCollisionEnter(Collision collision)
 	{
-		if (collision.gameObject.tag != "Player") {
+		if (collision.gameObject.tag != "Player" && collision.gameObject.tag != "Enemy") {
 			GameObject obj = Instantiate (noiseSphere, gameObject.transform.position, Quaternion.identity);
 			float scale = collision.impulse.magnitude*noiseScale;
 			obj.transform.localScale = new Vector3 (scale, scale, scale);

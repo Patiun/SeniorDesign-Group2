@@ -34,4 +34,12 @@ public class LazerBehavior : MonoBehaviour {
             }
         }
 	}
+
+	void OnTriggerEnter(Collider col) {
+		if (!col.isTrigger && col.tag != "Enemy" && col.tag != "Bullet" && col.tag != "Wall" && col.tag != "Trap") {
+			//Debug.Log ("[DEBUG] Laser hit " + col.gameObject.name);
+			WorldAIHandler ws = GameObject.FindGameObjectWithTag ("GameController").GetComponent<WorldAIHandler> ();
+			ws.AlertEnemies (transform.position);
+		}
+	}
 }

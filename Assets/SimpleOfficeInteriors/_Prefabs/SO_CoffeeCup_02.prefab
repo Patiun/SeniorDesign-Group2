@@ -10,13 +10,20 @@ GameObject:
   - component: {fileID: 478494}
   - component: {fileID: 3328868}
   - component: {fileID: 2307328}
-  - component: {fileID: 64329565486127894}
   - component: {fileID: 114806740236889338}
   - component: {fileID: 114212023808555990}
   - component: {fileID: 114555455022263146}
   - component: {fileID: 114808453176521982}
   - component: {fileID: 54177431896946816}
   - component: {fileID: 114353590589726738}
+  - component: {fileID: 65395482460113494}
+  - component: {fileID: 65506899944811272}
+  - component: {fileID: 65649382940400320}
+  - component: {fileID: 65914105186953356}
+  - component: {fileID: 65220054097416988}
+  - component: {fileID: 65131367124971892}
+  - component: {fileID: 65992879992866780}
+  - component: {fileID: 65187267010397788}
   m_Layer: 0
   m_Name: SO_CoffeeCup_02
   m_TagString: Untagged
@@ -104,8 +111,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64329565486127894
-MeshCollider:
+--- !u!65 &65131367124971892
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -113,11 +120,93 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: d85c515392b7ae54989177c7f1a6e31f, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.063756086, y: 0.040526927, z: 0.059803955}
+  m_Center: {x: -0.10526753, y: 0.08041188, z: -0.00030348168}
+--- !u!65 &65187267010397788
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 133514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.20832352, y: 0.006059885, z: 0.20833269}
+  m_Center: {x: 0.03239586, y: 0.0030299425, z: -0.000000894655}
+--- !u!65 &65220054097416988
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 133514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.063756086, y: 0.03759277, z: 0.059803955}
+  m_Center: {x: -0.10526753, y: 0.18970609, z: -0.00030348168}
+--- !u!65 &65395482460113494
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 133514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03611629, y: 0.2693845, z: 0.20833269}
+  m_Center: {x: 0.11849892, y: 0.13469225, z: -0.0000008875985}
+--- !u!65 &65506899944811272
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 133514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.038154237, y: 0.2693845, z: 0.20833269}
+  m_Center: {x: -0.0537053, y: 0.13469225, z: -0.0000008858877}
+--- !u!65 &65649382940400320
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 133514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.13471459, y: 0.2693845, z: 0.036801055}
+  m_Center: {x: 0.032446895, y: 0.13469225, z: 0.08576413}
+--- !u!65 &65914105186953356
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 133514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.13471459, y: 0.2693845, z: 0.037168957}
+  m_Center: {x: 0.03244679, y: 0.13469225, z: -0.08646597}
+--- !u!65 &65992879992866780
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 133514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030021552, y: 0.071332574, z: 0.059803955}
+  m_Center: {x: -0.122134455, y: 0.13615549, z: -0.00030353497}
 --- !u!114 &114212023808555990
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -134,7 +223,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0

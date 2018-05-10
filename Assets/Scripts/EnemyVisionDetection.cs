@@ -7,13 +7,13 @@ public class EnemyVisionDetection : MonoBehaviour {
 	public EnemySight es;
 
 	void OnTriggerEnter(Collider col) {
-		if (col.tag == "Player") {
+		if (col.tag == "Player" && !es.seesPlayer) {
 			es.PlayerSweep (col.ClosestPoint(transform.position));
 		}
 	}
 
 	void OnTriggerStay(Collider col) {
-		if (col.tag == "Player") {
+		if (col.tag == "Player"  && !es.seesPlayer) {
 			es.PlayerSweep (col.ClosestPoint(transform.position));
 		}
 	}

@@ -15,12 +15,7 @@ public class EnemySight : MonoBehaviour {
 	public bool seesPlayer = false;
 
 	public int direction = -1;
-	public float anglesElapsed = 0;
-	public float angleIteration = 60;
-	public float targetAngle = 60;
-	public float countSweeps = 1;
-	public float maxSweeps = 3;
-	public float pivotRange = 15;
+	public float degreesPerSecond = 30;
 
 	private int start_direction;
 	private float start_anglesElapsed,start_angleIteration,start_targetAngle,start_countSweeps,start_maxSweeps ,start_pivotRange;
@@ -33,12 +28,6 @@ public class EnemySight : MonoBehaviour {
 	void Start () {
 		eai = GetComponent<EnemyAI> ();
 		start_direction = direction;
-		start_anglesElapsed = anglesElapsed;
-		start_angleIteration =angleIteration;
-		start_targetAngle = targetAngle;
-		start_countSweeps = countSweeps;
-		start_maxSweeps = maxSweeps;
-		start_pivotRange = pivotRange;
 		timeToSpotPlayer = eai.GetDetectionTime ();
 		originalTimeToSpotPlayer = timeToSpotPlayer;
 	}
@@ -72,7 +61,8 @@ public class EnemySight : MonoBehaviour {
 	}
 
 	public bool LookAt(GameObject target) {
-		transform.LookAt (target.transform.position);
+		Vector3 targetPosition = target.GetComponent<Collider> ().ClosestPoint (transform.position);
+		transform.LookAt (targetPosition);
 		//RaycastHit hit;
 		if (Physics.Raycast (transform.position, transform.forward,out hit, sightRange, layerMask.value)) {
 			if (hit.collider.tag == "Player") {
@@ -99,31 +89,34 @@ public class EnemySight : MonoBehaviour {
 			start_direction *= -1;
 		}
 		direction = start_direction;
-		anglesElapsed = start_anglesElapsed;
-		targetAngle = start_targetAngle;
-		countSweeps = start_countSweeps;
 	}
 
 	public void Investigate() {
-		if (countSweeps <= maxSweeps) {
-			if (anglesElapsed < targetAngle) {
-				float angle = Time.deltaTime * turnSpeed;
-				anglesElapsed += angle;
-				transform.RotateAround (transform.position, transform.up, direction*angle);
-			} else {
-				countSweeps++;
-				direction *= -1;
-				targetAngle = countSweeps * angleIteration;
-				anglesElapsed = 0;
-			}
-		} else {
-			//direction *= -1;
-			anglesElapsed = 0;
-			countSweeps = 1;
-			targetAngle = countSweeps * angleIteration;
-			//float pivotAngle = Random.Range (-pivotRange, pivotRange);
-			//transform.RotateAround (transform.position, transform.up, pivotAngle);
-		}
+		//!!!!!!!!!!!!!! LERP HERE !!!!!!!!!!!!!!!!!!!
+//		if (countSweeps <= maxSweeps) {
+//			if (anglesElapsed < targetAngle) {
+//				float angle = Time.deltaTime * turnSpeed;
+//				anglesElapsed += angle;
+//				transform.RotateAround (transform.position, transform.up, direction*angle);
+//			} else {
+//				countSweeps++;
+//				direction *= -1;
+//				targetAngle = countSweeps * angleIteration;
+//				anglesElapsed = 0;
+//			}
+//		} else {
+//			//direction *= -1;
+//			anglesElapsed = 0;
+//			countSweeps = 1;
+//			targetAngle = countSweeps * angleIteration;
+//			//float pivotAngle = Random.Range (-pivotRange, pivotRange);
+//			//transform.RotateAround (transform.position, transform.up, pivotAngle);
+//		}
+
+		Vector3 angles = transform.eulerAngles;
+		angles.y += direction*degreesPerSecond*Time.deltaTime;
+		Quaternion newRotation = Quaternion.Euler (angles);
+		transform.rotation = Quaternion.Slerp (transform.rotation, newRotation, 10);
 	}
 
 	void OnDrawGizmos() {

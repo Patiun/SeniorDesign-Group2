@@ -6,16 +6,19 @@ public class PlayerHealth : MonoBehaviour {
 
 	public int maxHP;
 	public int curHP;
+	public bool immortal = false;
 	// Use this for initialization
 	void Start () {
 		curHP = maxHP;
 	}
 	
 	public void DoDamage(int dmg) {
-		curHP -= dmg;
-		if (curHP <= 0) {
-			GetComponent<GameState> ().LoseLevel ();
-			curHP = 0;
+		if (!immortal) {
+			curHP -= dmg;
+			if (curHP <= 0) {
+				GetComponent<GameState> ().LoseLevel ();
+				curHP = 0;
+			}
 		}
 	}
 
@@ -27,7 +30,9 @@ public class PlayerHealth : MonoBehaviour {
 	}
 
 	public void InstaKill() {
-		curHP = 0;
-		GetComponent<GameState> ().LoseLevel ();
+		if (!immortal) {
+			curHP = 0;
+			GetComponent<GameState> ().LoseLevel ();
+		}
 	}
 }

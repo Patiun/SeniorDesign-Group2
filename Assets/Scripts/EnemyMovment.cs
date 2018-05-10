@@ -26,12 +26,17 @@ public class EnemyMovment : MonoBehaviour {
 			if (isPatrolling) {
 				AdvancePatrol ();
 			} else {
-				isStopped = true;
-				//nav.isStopped = true;
+				if (!isStopped) {
+					isStopped = true;
+					nav.isStopped = true;
+					//Debug.Log ("[DEBUG] Navmesh is stopped");
+				}
 			}
 		} else {
-			//nav.isStopped = false;
-			isStopped = false;
+			if (isStopped) {
+				nav.isStopped = false;
+				isStopped = false;
+			}
 		}
 
 		//DEBUG STUFF
@@ -70,20 +75,27 @@ public class EnemyMovment : MonoBehaviour {
 	}
 
 	public void MoveTo(Vector3 target) {
-		nav.isStopped = false;
+		if (nav.isStopped) {
+			nav.isStopped = false;
+		}
 		curTargetLocation = target;
 		float dX = Random.Range (-targetVariance, targetVariance);
 		float dZ = Random.Range (-targetVariance, targetVariance);
 		curTargetLocation.x += dX;
 		curTargetLocation.z += dZ;
+		curTargetLocation.y = transform.position.y;
 		isPatrolling = false;
 		nav.SetDestination (curTargetLocation);
+		if (nav.pathStatus == UnityEngine.AI.NavMeshPathStatus.PathInvalid) {
+			MoveTo (target);
+		}
 	}
 
 	public bool MoveInRange(Vector3 target, float range) {
 		nav.SetDestination (target);
 		if (nav.remainingDistance <= range) {
 			nav.isStopped = true;
+			nav.SetDestination(transform.position);
 			return true;
 		}
 		return false;
