@@ -34,4 +34,11 @@ public class LazerBehavior : MonoBehaviour {
             }
         }
 	}
+
+	void OnTriggerEnter(Collider col) {
+		if (col.tag != "Enemy" && col.tag != "Bullet") {
+			WorldAIHandler ws = GameObject.FindGameObjectWithTag ("GameController").GetComponent<WorldAIHandler> ();
+			ws.AlertEnemies (transform.position);
+		}
+	}
 }

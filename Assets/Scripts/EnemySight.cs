@@ -114,7 +114,7 @@ public class EnemySight : MonoBehaviour {
 //		}
 
 		Vector3 angles = transform.eulerAngles;
-		angles.y += degreesPerSecond*Time.deltaTime;
+		angles.y += direction*degreesPerSecond*Time.deltaTime;
 		Quaternion newRotation = Quaternion.Euler (angles);
 		transform.rotation = Quaternion.Slerp (transform.rotation, newRotation, 10);
 	}

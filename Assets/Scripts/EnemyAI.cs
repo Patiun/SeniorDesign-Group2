@@ -78,6 +78,12 @@ public class EnemyAI : MonoBehaviour {
 				//Debug.Log ("[DEBUG] Attacking " + target.gameObject.name);
 				if (!sight.LookAt (target)) {
 				//Debug.Log ("[DEBUG] Lost sight of player object: "+target.gameObject.name);
+					float angleBetween = Vector3.Angle(transform.forward,target.transform.position-transform.position);
+					if (angleBetween < 0) {
+						sight.direction = -1;
+					} else {
+						sight.direction = 1;
+					}
 					sight.seesPlayer = false;
 					ToInvestigate (target.transform.position);
 				} else {
