@@ -553,7 +553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f5624576c60a9a40b14a5dce0601919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootCooldown: 0.2
+  shootCooldown: 0.07
   barrels:
   - {fileID: 1047683191246460}
   - {fileID: 1065194623352612}
@@ -565,7 +565,7 @@ MonoBehaviour:
   count: 0
   bulletPrefab: {fileID: 1512051314456328, guid: 54f92aedd6bbd4dee9436d141cac58c5,
     type: 2}
-  bulletVelocity: 100
+  bulletVelocity: 1000
 --- !u!114 &114738859846873554
 MonoBehaviour:
   m_ObjectHideFlags: 1

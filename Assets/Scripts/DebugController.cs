@@ -7,8 +7,9 @@ public class DebugController : MonoBehaviour {
 
 	public bool isDebugging = false;
 	public WorldState worldState;
-	public GameObject targetEnemy;
+	public PlayerHealth playerHealth;
 
+	public GameObject targetEnemy;
 	public float rotationSpeed = 1f, angleIterationSpeed = 25f;
 
 	private WorldState.State lastState;
@@ -40,6 +41,9 @@ public class DebugController : MonoBehaviour {
 			}
 			if (Input.GetKeyDown (KeyCode.Backspace)) {
 				SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
+			}
+			if (Input.GetKeyDown ("I")) {
+				playerHealth.immortal = true;
 			}
 			WorldState.State curState = worldState.GetState ();
 			if (curState != lastState) {
