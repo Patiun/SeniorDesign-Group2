@@ -60,6 +60,7 @@ GameObject:
   - component: {fileID: 114526605734822454}
   - component: {fileID: 114316049466792446}
   - component: {fileID: 114355562126774642}
+  - component: {fileID: 65866792605104888}
   m_Layer: 0
   m_Name: VentCover
   m_TagString: VentCover
@@ -127,7 +128,7 @@ Transform:
   m_GameObject: {fileID: 1930899047657522}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.72, z: 0.82}
   m_Children:
   - {fileID: 4169677809757988}
   m_Father: {fileID: 4313449065424072}
@@ -168,8 +169,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1221752368019598}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -25.481, y: -0.65, z: -3.223}
-  m_LocalScale: {x: 1, y: 0.7188564, z: 0.82494617}
+  m_LocalPosition: {x: -6.1451893, y: -5.9013085, z: 37.66993}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4968173915295388}
   - {fileID: 4090157440716374}
@@ -197,7 +198,7 @@ Transform:
   m_GameObject: {fileID: 1538655106445406}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.72, z: 0.82}
   m_Children: []
   m_Father: {fileID: 4313449065424072}
   m_RootOrder: 0
@@ -216,7 +217,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 3aaaf498d61af4a3eb463d073828b666, type: 2}
+  - {fileID: 2100000, guid: ca8ef1b8d2562ad46a2f9785a2312519, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -348,7 +349,7 @@ MeshCollider:
   m_GameObject: {fileID: 1538655106445406}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
@@ -366,6 +367,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.12983131, y: 1.8063653, z: 1.6973116}
   m_Center: {x: 0.0009813309, y: -0.7572423, z: 0.03585594}
+--- !u!65 &65866792605104888
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1538655106445406}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.025400002, y: 1.6256002, z: 1.6256003}
+  m_Center: {x: 0.0000000013969839, y: -0.75634784, z: 0.000011444092}
 --- !u!95 &95599688449936494
 Animator:
   serializedVersion: 3

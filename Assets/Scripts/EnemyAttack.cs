@@ -74,6 +74,7 @@ public class EnemyAttack : MonoBehaviour {
 	private void FireBullet(Transform muzzle) {
 		GameObject bullet = Instantiate (bulletPrefab);
 		bullet.transform.position = muzzle.position;
+		bullet.transform.rotation = muzzle.rotation;
 		bullet.GetComponent<Rigidbody> ().AddForce (muzzle.forward * bulletVelocity);
 		timeLastFired = Time.time;
 	}

@@ -8,7 +8,7 @@ public class PlayerCollisionDebug : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col) {
 		if (!col.isTrigger) {
-			Debug.Log ("[DEBUG] Player collided with " + col.gameObject.name);
+			//Debug.Log ("[DEBUG] Player collided with " + col.gameObject.name);
 			lastHit = col.gameObject;
 		}
 	}

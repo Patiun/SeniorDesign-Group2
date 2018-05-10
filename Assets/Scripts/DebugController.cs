@@ -42,8 +42,14 @@ public class DebugController : MonoBehaviour {
 			if (Input.GetKeyDown (KeyCode.Backspace)) {
 				SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
 			}
-			if (Input.GetKeyDown ("I")) {
-				playerHealth.immortal = true;
+			if (Input.GetKeyDown ("i")) {
+				if (!playerHealth.immortal) {
+					playerHealth.immortal = true;
+					Debug.Log ("[DEBUG] Agent is now Immortal");
+				} else {
+					playerHealth.immortal = true;
+					Debug.Log ("[DEBUG] Agent is now Immortal");
+				}
 			}
 			WorldState.State curState = worldState.GetState ();
 			if (curState != lastState) {
