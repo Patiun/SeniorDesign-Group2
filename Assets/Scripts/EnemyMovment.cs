@@ -95,6 +95,7 @@ public class EnemyMovment : MonoBehaviour {
 		nav.SetDestination (target);
 		if (nav.remainingDistance <= range) {
 			nav.isStopped = true;
+			nav.SetDestination(transform.position);
 			return true;
 		}
 		return false;

@@ -87,10 +87,9 @@ public class EnemyAI : MonoBehaviour {
 					sight.seesPlayer = false;
 					ToInvestigate (target.transform.position);
 				} else {
-					if (movement.MoveInRange (target.transform.position, followRange)) {
-						nearby.ShareWithFriends (target);
-						weapon.Shoot ();
-					}
+					movement.MoveInRange (targetLocation, followRange);
+					nearby.ShareWithFriends (target);
+					weapon.HasTarget (targetLocation);
 				}
 				break;
             default:
@@ -177,7 +176,7 @@ public class EnemyAI : MonoBehaviour {
 
 		CallForBackup(player.transform.position);
 
-		targetLocation = player.transform.position;
+		targetLocation = hit.point;
 		ToAttack ();
     }
 
