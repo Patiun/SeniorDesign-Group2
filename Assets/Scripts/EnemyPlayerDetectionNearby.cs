@@ -6,6 +6,8 @@ public class EnemyPlayerDetectionNearby : MonoBehaviour {
 
 	public EnemySight es;
 
+	//private ObjectStrangeLocation objToInvestigate;
+
 	// Use this for initialization
 	void Start () {
 		

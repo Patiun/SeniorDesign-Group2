@@ -26,7 +26,7 @@ public class EnemyAI : MonoBehaviour {
 	private EnemySight sight;
 	private EnemyAttack weapon;
 	private EnemyNearby nearby;
-
+    
 	void Start(){
 		movement = GetComponent<EnemyMovment> ();
 		sight = GetComponent<EnemySight> ();
