@@ -34,7 +34,7 @@ public class BruteForcePuzzle : MonoBehaviour
         }
     }
 
-    private void Reset()
+    public void Reset()
     {
         bar.fillAmount = 0;
         count = 0;

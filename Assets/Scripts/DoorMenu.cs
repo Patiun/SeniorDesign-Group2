@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DoorMenu : MonoBehaviour
+public class DoorMenu : AbstractHackMenu
 {
     [SerializeField]
     private GameObject door;
@@ -30,5 +30,10 @@ public class DoorMenu : MonoBehaviour
     public void CallUnlock()
     {
         door_scr.Unlock();
+    }
+
+    public override void NotifyHackStatus(bool status)
+    {
+        throw new System.NotImplementedException();
     }
 }

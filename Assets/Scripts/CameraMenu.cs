@@ -2,12 +2,15 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class CameraMenu : MonoBehaviour
+public class CameraMenu : AbstractHackMenu
 {
     [SerializeField]
     private GameObject _cameraObject;
     [SerializeField]
     private float _distruptTimer = 5;
+    [SerializeField]
+    private PuzzleDifficultiesLevel level;
+
     private bool _enable;
 
 
@@ -71,8 +74,7 @@ public class CameraMenu : MonoBehaviour
 
     public void Hack()
     {
-        HackManager.Instance.InitializeHacking(gameObject, PuzzleDifficultiesLevel.Easy);
-        DisplayFullWtihoutHackMenu();
+        HackManager.Instance.InitializeHacking(this, level);
     }
 
 #region Enable or Disable Methods
@@ -160,5 +162,13 @@ public class CameraMenu : MonoBehaviour
             hack.SetActive(false);
 
         ActivateFullMenu();
+    }
+
+    public override void NotifyHackStatus(bool status)
+    {
+        if(status)
+        {
+            DisplayFullWtihoutHackMenu();
+        }
     }
 }

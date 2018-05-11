@@ -55,7 +55,11 @@ public class HackManager : MonoBehaviour
     [SerializeField]
     private GameObject BruteForce;
 
-    private GameObject CurrentObjectHack;
+    [SerializeField]
+    private GameObject TypingSim;
+
+    private PuzzleDifficultiesLevel currentLevel;
+    private AbstractHackMenu CurrentObjectHack;
     private bool InProgress;
 
     private void Start()
@@ -63,32 +67,56 @@ public class HackManager : MonoBehaviour
         InProgress = false;
     }
 
-
     /// <summary>
     /// Change the screen of the operaator to start hacking the type of puzzle
     /// </summary>
     /// <param name="icon">The object to be hack</param>
     /// <param name="level">The difficulty of the puzzle</param>
-    public void InitializeHacking(GameObject icon, PuzzleDifficultiesLevel level)
+    public void InitializeHacking(AbstractHackMenu icon, PuzzleDifficultiesLevel level)
     {
         CurrentObjectHack = icon;
-        switch(level)
+        currentLevel = level;
+        switch (level)
         {
             case PuzzleDifficultiesLevel.Easy:
                 BruteForce.SetActive(true);
                 CameraManager.Instance.DisableCurrent();
                 break;
+            case PuzzleDifficultiesLevel.Medium:
+                TypingSim.SetActive(true);
+                CameraManager.Instance.DisableCurrent();
+                break;
         }
-        icon.SetActive(true);
+        
     }
 
     public void FinishHacking(bool pass)
     {
         if(pass)
         {
-            
+            CurrentObjectHack.NotifyHackStatus(pass);
         }
-        CameraManager.Instance.SwitchMainCamera();
+
+        ResetHack();
+    }
+
+    public void ResetHack()
+    {
+        switch (currentLevel)
+        {
+            case PuzzleDifficultiesLevel.Easy:
+                BruteForcePuzzle bfp = BruteForce.GetComponent<BruteForcePuzzle>();
+                bfp.Reset();
+                CameraManager.Instance.SwitchMainCamera();
+                break;
+            case PuzzleDifficultiesLevel.Medium:
+                WordManager w = TypingSim.GetComponent<WordManager>();
+                w.Reset();
+                CameraManager.Instance.SwitchMainCamera();
+                break;
+        }
+
+        currentLevel = PuzzleDifficultiesLevel.None;
     }
 
 }
