@@ -6,6 +6,8 @@ public class DoorMenu : AbstractHackMenu
     [SerializeField]
     private GameObject door;
     private Door door_scr;
+    [SerializeField]
+    private PuzzleDifficultiesLevel level;
 
     private void Start()
     {
@@ -32,8 +34,39 @@ public class DoorMenu : AbstractHackMenu
         door_scr.Unlock();
     }
 
+    public void Hack()
+    {
+        HackManager.Instance.InitializeHacking(this, level);
+    }
+
+    public void DisplayFullMenuWithoutHack()
+    {
+        GameObject hack = transform.Find("HackButton").gameObject;
+        GameObject open = transform.Find("OpenButton").gameObject;
+        GameObject close = transform.Find("CloseButton").gameObject;
+        GameObject unlock = transform.Find("UnlockButton").gameObject;
+        GameObject lockb = transform.Find("LockButton").gameObject;
+
+        if (open != null)
+            open.SetActive(true);
+        if (close != null)
+            close.SetActive(true);
+
+        if (unlock != null)
+            unlock.SetActive(true);
+
+        if (lockb != null)
+            lockb.SetActive(true);
+
+        if (hack != null)
+            hack.SetActive(false);
+    }
+
     public override void NotifyHackStatus(bool status)
     {
-        throw new System.NotImplementedException();
+        if(status)
+        {
+            DisplayFullMenuWithoutHack();
+        }
     }
 }

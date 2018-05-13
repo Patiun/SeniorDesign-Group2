@@ -7,7 +7,7 @@ public class WordDisplay : MonoBehaviour
     [SerializeField]
     private Text text;
     [SerializeField]
-    private float fallSpeed = 1f;
+    private float fallSpeed = 80f;
 
     public void SetWord(string word)
     {
@@ -22,12 +22,18 @@ public class WordDisplay : MonoBehaviour
 
     public void RemoveWord()
     {
-        Destroy(gameObject);
+        if(gameObject != null)
+            Destroy(gameObject);
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.Translate(0, -fallSpeed * Time.deltaTime, 0);
+    }
+
+    public string GetWord()
+    {
+        return text.text;
     }
 }

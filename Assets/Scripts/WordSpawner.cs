@@ -16,9 +16,10 @@ public class WordSpawner : MonoBehaviour
 
     public WordDisplay Spawn()
     {
-        Vector3 rand = new Vector3(Random.Range(min, max), 7);
+        Vector3 rand = new Vector3(Random.Range(min, max), 0);
 
-        GameObject word = Instantiate(wordPrefab, rand, Quaternion.identity, wordCanvas);
+        GameObject word = Instantiate(wordPrefab, rand, Quaternion.identity, gameObject.transform);
+        word.transform.localPosition = rand;
         WordDisplay wordDisplay = word.GetComponent<WordDisplay>();
 
         return wordDisplay;

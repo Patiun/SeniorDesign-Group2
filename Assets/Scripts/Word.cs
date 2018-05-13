@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Word
 {
-    [SerializeField]
+    
     private string word;
 
     private int typeIndex;
@@ -12,10 +12,10 @@ public class Word
 
     public Word(string word, WordDisplay display)
     {
-        word = this.word;
+        this.word = word;
         typeIndex = 0;
 
-        display = this.display;
+        this.display = display;
         display.SetWord(word);
     }
 
@@ -40,5 +40,10 @@ public class Word
         else
             return false;
 
+    }
+
+    public string GetWord()
+    {
+        return word;
     }
 }

@@ -16,19 +16,38 @@ public class WordManager : MonoBehaviour {
     [SerializeField]
     public WordSpawner wordSpawner;
     [SerializeField]
-    private int maxSize;
+    [Tooltip("How many needed to type to beat it")]
+    private int winCondition;
+    [SerializeField]
+    float timeDelay;
     private bool hasActiveWord;
     private Word activeWord;
+    private float nextWordTime;
 
     private int count;
+
+    private int fail;
     private void Start()
     {
+        fail = 0;
         count = 0;
+        nextWordTime = 0;
+        words = new List<Word>();
     }
 
     private void Update()
     {
-        foreach(char letter in Input.inputString)
+        if (fail > 1)
+            Reset();
+
+        if (Time.time >= nextWordTime)
+        {
+            AddWord();
+            nextWordTime = Time.time + timeDelay;
+            timeDelay *= .99f;
+        }
+
+        foreach (char letter in Input.inputString)
         {
             TypeLetter(letter);
         }
@@ -50,6 +69,19 @@ public class WordManager : MonoBehaviour {
                 activeWord.TypeLetter();
             }
         }
+        else
+        {
+            foreach (Word word in words)
+            {
+                if (word.GetNextLetter() == letter)
+                {
+                    activeWord = word;
+                    hasActiveWord = true;
+                    word.TypeLetter();
+                    break;
+                }
+            }
+        }
 
         if(hasActiveWord == activeWord.WordTyped())
         {
@@ -57,8 +89,9 @@ public class WordManager : MonoBehaviour {
             words.Remove(activeWord);
             count++;
 
-            if(count >= maxSize)
+            if(count >= winCondition)
             {
+                HackManager.Instance.FinishHacking(true);
                 Reset();
             }
         }
@@ -72,8 +105,25 @@ public class WordManager : MonoBehaviour {
 
     public void Reset()
     {
+        CameraManager.Instance.SwitchMainCamera();
         count = 0;
-
+        fail = 0;
+        words.RemoveRange(0, words.Count);
+        activeWord = null;
+        
         gameObject.SetActive(false);
+        nextWordTime = 0;
+        foreach (Transform child in wordSpawner.transform)
+            Destroy(child.gameObject);
+    }
+
+    public void IncrementFailWord(GameObject obj)
+    {
+        if(activeWord.GetWord().Contains(obj.GetComponent<WordDisplay>().GetWord()))
+        {
+            activeWord = null;
+            hasActiveWord = false;
+        }
+        fail++;
     }
 }
