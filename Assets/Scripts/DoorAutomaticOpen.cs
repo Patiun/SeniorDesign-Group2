@@ -32,7 +32,7 @@ public class DoorAutomaticOpen : MonoBehaviour {
 
 	public void OnTriggerExit(Collider col) {
 		if (accepted.Contains(col.gameObject.tag) && !col.isTrigger) {
-			Debug.Log ("Enemy Left");
+			//Debug.Log ("Enemy Left");
 			door.Close();
 			//locationLogic.lastPosition = door.gameObject.transform.position;
 		}

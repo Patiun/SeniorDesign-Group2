@@ -39,6 +39,17 @@ public class DebugController : MonoBehaviour {
 			if (Input.GetKeyDown("r")) {
 				worldState.Reset();
 			}
+			if (Input.GetKeyDown ("d")) {
+				GameObject[] doors = GameObject.FindGameObjectsWithTag ("Door");
+				foreach (GameObject door in doors) {
+					Door doorS = door.GetComponent<Door> ();
+					if (doorS.isClosed || doorS.isClosing) {
+						doorS.Open ();
+					} else {
+						doorS.Close ();
+					}
+				}
+			}
 			if (Input.GetKeyDown (KeyCode.Backspace)) {
 				SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
 			}

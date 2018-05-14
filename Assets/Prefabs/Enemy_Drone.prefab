@@ -338,12 +338,12 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1783758988581212}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 2100000, guid: 209e31f855d617744ab0d9dc7531da6a, type: 2}
   m_StaticBatchInfo:
@@ -406,12 +406,12 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1587672581177798}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 2100000, guid: 209e31f855d617744ab0d9dc7531da6a, type: 2}
   m_StaticBatchInfo:
@@ -786,12 +786,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f5624576c60a9a40b14a5dce0601919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootCooldown: 0.07
+  shootCooldown: 0.1
   barrels:
   - {fileID: 1047683191246460}
   - {fileID: 1065194623352612}
   barrelIndex: 0
-  warmUpTime: 1
+  warmUpTime: 2
   warmedUp: 0
   timeLastFired: 0
   forcedCoolDownTime: 5
