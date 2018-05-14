@@ -23,6 +23,8 @@ public class LookAtPlayer : MonoBehaviour {
 	private Camera_state state = Camera_state.ASLEEP;
 	private WorldAIHandler worldAIHandler;
 	public WorldState worldState;
+	public CameraFieldOfView cameraFOV;
+	private Vector3 playerLocation;
 
 	RaycastHit hit;
 
@@ -40,11 +42,17 @@ public class LookAtPlayer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 //		Debug.Log (state);
-		Debug.DrawRay (transform.position, (Player.position - transform.position).normalized * _DetectionDistance, Color.red);
-		Physics.Raycast (transform.position, (Player.position - transform.position), out hit, _DetectionDistance, _mask.value);
-		if (hit.collider != null && hit.collider.gameObject.Equals (Player.gameObject)){
-			if (state != Camera_state.FOLLOWING && state != Camera_state.WAKING_UP) {
-				StartCoroutine (WakeUp ());
+		//INSERT COLLIDER CHECK HERE
+		if (cameraFOV.hasPlayer) {
+			playerLocation = cameraFOV.playerLocation;
+			Debug.DrawRay (transform.position, (playerLocation - transform.position).normalized * _DetectionDistance, Color.red);
+			Physics.Raycast (transform.position, (playerLocation - transform.position), out hit, _DetectionDistance, _mask.value);
+			if (hit.collider != null && hit.collider.gameObject.tag == "Player") {
+				if (state != Camera_state.FOLLOWING && state != Camera_state.WAKING_UP) {
+					StartCoroutine (WakeUp ());
+				}
+			} else {
+				state = Camera_state.ASLEEP;
 			}
 		} else {
 			state = Camera_state.ASLEEP;
@@ -57,8 +65,8 @@ public class LookAtPlayer : MonoBehaviour {
 				targetRotationY *= -1;
 			}
 		} else if (state == Camera_state.FOLLOWING) {
-			transform.rotation = Quaternion.Lerp (transform.rotation, Quaternion.LookRotation(Player.position - transform.position), Time.deltaTime);
-			worldAIHandler.AlertEnemies (Player.position);
+			transform.rotation = Quaternion.Lerp (transform.rotation, Quaternion.LookRotation(playerLocation - transform.position), Time.deltaTime);
+			worldAIHandler.AlertEnemies (playerLocation);
 		}
 	}
 
