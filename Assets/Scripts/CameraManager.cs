@@ -81,4 +81,9 @@ public class CameraManager : MonoBehaviour {
     {
         _currentCamera.SetActive(false);
     }
+
+    public GameObject GetCurrentCamera()
+    {
+        return _currentCamera;
+    }
 }

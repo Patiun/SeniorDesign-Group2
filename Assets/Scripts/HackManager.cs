@@ -58,6 +58,9 @@ public class HackManager : MonoBehaviour
     [SerializeField]
     private GameObject TypingSim;
 
+    [SerializeField]
+    private GameObject LinePizzle;
+
     private PuzzleDifficultiesLevel currentLevel;
     private AbstractHackMenu CurrentObjectHack;
     private bool InProgress;
@@ -86,6 +89,10 @@ public class HackManager : MonoBehaviour
                 TypingSim.SetActive(true);
                 CameraManager.Instance.DisableCurrent();
                 break;
+            case PuzzleDifficultiesLevel.Hard:
+                LinePizzle.SetActive(true);
+                CameraManager.Instance.DisableCurrent();
+                break;
         }
         
     }
@@ -112,6 +119,11 @@ public class HackManager : MonoBehaviour
             case PuzzleDifficultiesLevel.Medium:
                 WordManager w = TypingSim.GetComponent<WordManager>();
                 w.Reset();
+                CameraManager.Instance.SwitchMainCamera();
+                break;
+            case PuzzleDifficultiesLevel.Hard:
+                GridLevelManager g = LinePizzle.GetComponent<GridLevelManager>();
+                g.Reset();
                 CameraManager.Instance.SwitchMainCamera();
                 break;
         }
