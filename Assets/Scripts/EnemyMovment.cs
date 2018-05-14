@@ -12,6 +12,7 @@ public class EnemyMovment : MonoBehaviour {
 	public float remaining = 0.0f;
 	public bool isStopped;
 	public float targetVariance = 2f;
+	public HackEnemies hackEnemies;
 
 	private UnityEngine.AI.NavMeshAgent nav;
 
@@ -21,28 +22,40 @@ public class EnemyMovment : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		remaining = nav.remainingDistance;
-		if (remaining <= closeEnough) {
-			if (isPatrolling) {
-				AdvancePatrol ();
-			} else {
-				if (!isStopped) {
-					isStopped = true;
-					nav.isStopped = true;
-					//Debug.Log ("[DEBUG] Navmesh is stopped");
+		if (hackEnemies.isHacked == false)
+		{
+			remaining = nav.remainingDistance;
+			if (remaining <= closeEnough)
+			{
+				if (isPatrolling)
+				{
+					AdvancePatrol();
+				}
+				else
+				{
+					if (!isStopped)
+					{
+						isStopped = true;
+						nav.isStopped = true;
+						//Debug.Log ("[DEBUG] Navmesh is stopped");
+					}
 				}
 			}
-		} else {
-			if (isStopped) {
-				nav.isStopped = false;
-				isStopped = false;
+			else
+			{
+				if (isStopped)
+				{
+					nav.isStopped = false;
+					isStopped = false;
+				}
 			}
-		}
 
-		//DEBUG STUFF
+			//DEBUG STUFF
 
-		if (Input.GetKeyDown("space")) {
-			ReturnToPatrol ();
+			if (Input.GetKeyDown("space"))
+			{
+				ReturnToPatrol();
+			}
 		}
 	}
 

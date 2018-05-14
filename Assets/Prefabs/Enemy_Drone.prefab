@@ -165,6 +165,7 @@ GameObject:
   - component: {fileID: 114286842416208242}
   - component: {fileID: 114247150742060564}
   - component: {fileID: 135211633493003646}
+  - component: {fileID: 114728685984463086}
   m_Layer: 0
   m_Name: Enemy_Drone
   m_TagString: Enemy
@@ -292,8 +293,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1790997225388674}
-  m_LocalRotation: {x: -0.00000003774895, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.396, y: 0.95, z: -29.263}
+  m_LocalRotation: {x: -0.00000003774895, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 14.53603, y: -7.625598, z: -13.496684}
   m_LocalScale: {x: 0.4888726, y: 0.48887247, z: 0.48887247}
   m_Children:
   - {fileID: 4963347033361186}
@@ -344,7 +345,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 121fbf1c2ba34dc44899ac999df64243, type: 3}
+  - {fileID: 2100000, guid: 209e31f855d617744ab0d9dc7531da6a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -412,7 +413,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 6dfd11553e41d244a970a197852170c0, type: 3}
+  - {fileID: 2100000, guid: 209e31f855d617744ab0d9dc7531da6a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -472,7 +473,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1714767604678990}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -506,7 +507,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1986500658988498}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -707,6 +708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   es: {fileID: 114247150742060564}
+  aI: {fileID: 0}
 --- !u!114 &114286842416208242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -734,6 +736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   es: {fileID: 114247150742060564}
+  aI: {fileID: 114738859846873554}
 --- !u!114 &114544364885447280
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -759,6 +762,7 @@ MonoBehaviour:
   remaining: 0
   isStopped: 0
   targetVariance: 1.15
+  hackEnemies: {fileID: 114728685984463086}
 --- !u!114 &114575287825946980
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -795,6 +799,22 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1512051314456328, guid: 54f92aedd6bbd4dee9436d141cac58c5,
     type: 2}
   bulletVelocity: 1000
+--- !u!114 &114728685984463086
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1790997225388674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13d6ceaa443fa437f848d5acd635cd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHacked: 0
+  downTime: 5
+  visionFieldOfView: {fileID: 1714767604678990}
+  visionNearby: {fileID: 1986500658988498}
+  operatorView: {fileID: 1767604713805278}
 --- !u!114 &114738859846873554
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -849,7 +869,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 2
-  m_Speed: 7
+  m_Speed: 5.5
   m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 100
