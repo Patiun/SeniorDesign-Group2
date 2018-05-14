@@ -123,7 +123,7 @@ public class GridLevelManager : MonoBehaviour {
         CreateSpecialTile();
         CreateCircleNode();
 
-        
+        CanvasManager.Instance.DisableRayCastingBlocker();
     }
 
     private void CreateInteractableTile()
@@ -266,7 +266,7 @@ public class GridLevelManager : MonoBehaviour {
         CreateInteractableTile();
         CreateSpecialTile();
         CreateCircleNode();
-
+        CanvasManager.Instance.EnableRayCastingBlocker();
         gameObject.SetActive(false);
     }
 

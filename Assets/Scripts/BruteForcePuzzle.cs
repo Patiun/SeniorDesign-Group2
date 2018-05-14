@@ -26,7 +26,7 @@ public class BruteForcePuzzle : MonoBehaviour
             HackManager.Instance.FinishHacking(true);
             Reset();
         }
-        else if (Input.anyKey && !Input.GetMouseButton(0) && !Input.GetMouseButton(0) && !Input.GetKey(KeyCode.Escape) && !Input.GetKey(KeyCode.Space))
+        else if (Input.anyKeyDown && !Input.GetMouseButton(0) && !Input.GetMouseButton(0) && !Input.GetKey(KeyCode.Escape) && !Input.GetKey(KeyCode.Space))
         {
             count++;
             msg.text = string.Format("Brute Forcing ({0}/{1})", count, size);
