@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 208859619625351856}
   m_Layer: 15
   m_Name: Door
-  m_TagString: CannotGrab
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58,7 +58,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4807773703750598}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: lightstrip (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 4364308197813258}
   - component: {fileID: 33371800027951398}
   - component: {fileID: 23996538913789422}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: lightstrip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 4669184246341116}
   - component: {fileID: 33136404088510452}
   - component: {fileID: 23234269354837380}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: lightstrip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4073938747217376}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: lightstrip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1386136198327586}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5802612, y: -8.329597, z: -28.053684}
+  m_LocalPosition: {x: -1.2579699, y: -8.329597, z: -35.223686}
   m_LocalScale: {x: 2.6500008, y: 3.1799998, z: 0.5300002}
   m_Children:
   - {fileID: 4670179136093584}
@@ -462,8 +462,8 @@ Rigidbody:
   m_GameObject: {fileID: 1174993335481356}
   serializedVersion: 2
   m_Mass: 5
-  m_Drag: 6
-  m_AngularDrag: 0.05
+  m_Drag: 0
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -600,7 +600,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1447666835
+  randomSeed: 1305143997
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -4006,7 +4006,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -559674580
+  randomSeed: -285109708
   InitialModule:
     serializedVersion: 3
     enabled: 1

@@ -24,7 +24,7 @@ public class ObjectStrangeLocation : MonoBehaviour {
 
 	public void OnCollisionEnter(Collision collision){
 		currentPosition = transform.position;
-		if(Vector3.Distance(currentPosition, lastPosition) > maximumSafeDistance){
+		if(Mathf.Abs(Vector3.Distance(currentPosition, lastPosition)) > maximumSafeDistance){
 			needsInvestigation = true;
 			lastPosition = currentPosition;
 		}
