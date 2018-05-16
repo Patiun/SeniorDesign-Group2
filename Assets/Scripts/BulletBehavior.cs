@@ -21,5 +21,8 @@ public class BulletBehavior : MonoBehaviour {
 			GameObject.FindGameObjectWithTag ("GameController").GetComponent<PlayerHealth> ().DoDamage (damageValue);
 			Destroy (this.gameObject);
 		}
+		else if(col.gameObject.tag == "Interactible"){
+			col.GetComponent<DestructableObject>().takeDamage(damageValue);
+		}
 	}
 }
