@@ -12,6 +12,7 @@ public class Door : MonoBehaviour {
 	public bool isLocked = true;
 	public bool isOpening;
 	public bool isClosing;
+	public ParticleSystem[] closingPoofParticles;
 
 	private Rigidbody rb;
 	private Vector3 starting_pos;
@@ -38,6 +39,9 @@ public class Door : MonoBehaviour {
 			if (transform.position.y <= starting_pos.y) {
 				isClosing = false;
 				isClosed = true;
+				foreach (ParticleSystem p in closingPoofParticles) {
+					p.Emit (100);
+				}
 			}
 		}
 	}
