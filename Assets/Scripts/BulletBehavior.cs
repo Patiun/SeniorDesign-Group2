@@ -16,10 +16,13 @@ public class BulletBehavior : MonoBehaviour {
 		
 	}
 
-	void OnCollisionEnter(Collision col) {
-		if (col.collider.isTrigger && col.gameObject.tag == "Player") {
+	void OnTriggerEnter(Collider col) {
+		if (col.gameObject.tag == "Player") {
 			GameObject.FindGameObjectWithTag ("GameController").GetComponent<PlayerHealth> ().DoDamage (damageValue);
 			Destroy (this.gameObject);
+		}
+		else if(col.gameObject.tag == "Interactible"){
+			col.GetComponent<DestructableObject>().takeDamage(damageValue);
 		}
 	}
 }
