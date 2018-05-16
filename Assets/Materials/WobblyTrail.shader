@@ -5,6 +5,7 @@
 	}
 	SubShader {
 		Tags { "RenderType"="Transparent" "Queue"="Transparent" }
+		Cull Off
 		LOD 200
 		BindChannels {
     	    Bind "vertex", vertex
