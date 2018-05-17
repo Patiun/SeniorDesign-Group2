@@ -23,7 +23,6 @@ public class WingAngles : MonoBehaviour {
 		float newRotation = -160f + 160f * nma.velocity.magnitude / WingPrimaryAxisScaling;
 		float noise = Mathf.PerlinNoise (Time.time * (wobbleFrequency), 0f) * wobbleStrength;
 		newRotation += noise;
-		Debug.Log (noise);
 		WingPrimaryAxis.localRotation = Quaternion.Lerp(WingPrimaryAxis.localRotation, 
 											Quaternion.Euler(newRotation, 0f, 0f),
 											WingPrimaryAxisLerpScale
