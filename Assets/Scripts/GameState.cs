@@ -6,6 +6,7 @@ public class GameState : MonoBehaviour {
 
 	private float startTime;
 	private float endTime;
+	public AudioSource gameOverSound;
 
 	// Use this for initialization
 	void Start () {
@@ -25,5 +26,6 @@ public class GameState : MonoBehaviour {
 	public void LoseLevel() {
 		endTime = Time.time;
 		Debug.Log ("You lose!");
+		gameOverSound.Play ();
 	}
 }
