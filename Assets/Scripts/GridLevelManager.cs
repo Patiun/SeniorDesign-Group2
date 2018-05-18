@@ -267,7 +267,9 @@ public class GridLevelManager : MonoBehaviour {
         CreateSpecialTile();
         CreateCircleNode();
         CanvasManager.Instance.EnableRayCastingBlocker();
+        CameraManager.Instance.SwitchMainCamera();
         gameObject.SetActive(false);
+        
     }
 
 
