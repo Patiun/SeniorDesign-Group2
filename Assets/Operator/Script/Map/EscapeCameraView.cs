@@ -9,8 +9,8 @@ public class EscapeCameraView : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.Escape))
         {
-            CameraController.switchToMainCamera();
             HackManager.Instance.ResetHack();
+            CameraManager.Instance.SwitchMainCamera();
         }
     }
 }

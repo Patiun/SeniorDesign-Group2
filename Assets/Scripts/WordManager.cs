@@ -24,6 +24,8 @@ public class WordManager : MonoBehaviour {
     private Word activeWord;
     private float nextWordTime;
 
+    private float startTime;
+    private float elapsedTime;
     private int count;
 
     private int fail;
@@ -33,26 +35,44 @@ public class WordManager : MonoBehaviour {
         count = 0;
         nextWordTime = 0;
         words = new List<Word>();
+        startTime = Time.time;
+    }
+
+    private void OnEnable()
+    {
+        if(HackManager.Instance.InProgress)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     private void Update()
     {
+        elapsedTime = Time.time - startTime;
         if (fail > 1)
+        {
             Reset();
+            return;
+        }
+            
 
-        if (Time.time >= nextWordTime)
+        if (elapsedTime >= nextWordTime)
         {
             AddWord();
             nextWordTime = Time.time + timeDelay;
             timeDelay *= .99f;
         }
 
-        foreach (char letter in Input.inputString)
+        if(words.Count != 0)
         {
-            TypeLetter(letter);
+            foreach (char letter in Input.inputString)
+            {
+                TypeLetter(letter);
+            }
         }
-    }
 
+    }
+    
     public void AddWord()
     {
         Word word = new Word(GenerateRandomWord(), wordSpawner.Spawn());
@@ -82,20 +102,25 @@ public class WordManager : MonoBehaviour {
                 }
             }
         }
-
-        if(hasActiveWord == activeWord.WordTyped())
+        if(activeWord != null)
         {
-            hasActiveWord = false;
-            words.Remove(activeWord);
-            count++;
-
-            if(count >= winCondition)
+            if (hasActiveWord == activeWord.WordTyped())
             {
-                HackManager.Instance.FinishHacking(true);
-                Reset();
+                hasActiveWord = false;
+                words.Remove(activeWord);
+                count++;
+                
+                if (count >= winCondition)
+                {
+                    HackManager.Instance.FinishHacking(true);
+                    Reset();
+                }
+                AddWord();
             }
         }
+
     }
+
 
     public string GenerateRandomWord()
     {
@@ -112,18 +137,24 @@ public class WordManager : MonoBehaviour {
         activeWord = null;
         
         gameObject.SetActive(false);
-        nextWordTime = 0;
+        nextWordTime = elapsedTime + timeDelay;
         foreach (Transform child in wordSpawner.transform)
             Destroy(child.gameObject);
     }
 
     public void IncrementFailWord(GameObject obj)
     {
-        if(activeWord.GetWord().Contains(obj.GetComponent<WordDisplay>().GetWord()))
+        if(activeWord != null)
         {
-            activeWord = null;
-            hasActiveWord = false;
+            if (activeWord.GetWord().Contains(obj.GetComponent<WordDisplay>().GetWord()))
+            {
+                words.Remove(activeWord);
+                activeWord = null;
+                hasActiveWord = false;
+            }
         }
+
+        Destroy(obj);
         fail++;
     }
 }

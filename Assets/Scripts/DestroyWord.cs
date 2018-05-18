@@ -9,6 +9,5 @@ public class DestroyWord : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         manager.IncrementFailWord(other.gameObject);
-        Destroy(other.gameObject);
     }
 }

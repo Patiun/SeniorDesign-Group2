@@ -36,7 +36,9 @@ public class DoorMenu : AbstractHackMenu
 
     public void Hack()
     {
-        HackManager.Instance.InitializeHacking(this, level);
+        if(!HackManager.Instance.InProgress)
+            HackManager.Instance.InitializeHacking(this, level);
+        
     }
 
     public void DisplayFullMenuWithoutHack()
