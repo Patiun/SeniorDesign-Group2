@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.UI;
 public class LazerMenu : AbstractHackMenu
 {
     [SerializeField]
@@ -39,5 +39,8 @@ public class LazerMenu : AbstractHackMenu
 
         if (disable != null)
             disable.SetActive(true);
+
+        GameObject parent = transform.parent.gameObject;
+        parent.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
     }
 }

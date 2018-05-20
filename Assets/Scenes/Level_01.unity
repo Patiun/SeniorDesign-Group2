@@ -550,7 +550,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114682668669698456, guid: 8e1b27cfd1c5409469d743c3bad15629, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 8e1b27cfd1c5409469d743c3bad15629, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &272406203
@@ -1615,6 +1616,33 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8a2b0fc41119ad847807d22519c23dfe, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &833933839 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1011396278616636, guid: 8e1b27cfd1c5409469d743c3bad15629,
+    type: 2}
+  m_PrefabInternal: {fileID: 226446547}
+--- !u!1 &837560268 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1114710189164066, guid: d3f53182c873fc742bb0c50a00a90aba,
+    type: 2}
+  m_PrefabInternal: {fileID: 1900633984}
+--- !u!114 &837560269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 837560268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85a046ff0c9c334e9d2ade0cb20e8b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentHolder: {fileID: 833933839}
+  textBox: {fileID: 1143442140901400, guid: 2d2bffccc789ff040ad0a74989c4ffed, type: 2}
+  objectives:
+  - Disable Camera
+  - Open Door for Agent
+  - Guide Agent to the elevator
 --- !u!1 &849009149 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1668571046952748, guid: a6640494854034a16bd77b50b0e73f8e,
