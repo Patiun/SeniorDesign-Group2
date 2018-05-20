@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class WinCanvasBehavior : MonoBehaviour {
+public class CanvasBehavior : MonoBehaviour {
 
+	public bool winningPrompt;
 	public string userPrompt;
 	public string[] prompts;
 	public float timeBtwKeys;
@@ -77,7 +78,16 @@ public class WinCanvasBehavior : MonoBehaviour {
 	}
 
 	void nextLevel(){
-		Debug.Log("NEXTLEVEL");
+		if (winningPrompt)
+		{
+			if (SceneManager.GetActiveScene().buildIndex < SceneManager.sceneCountInBuildSettings)
+			{
+				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+			}
+		}
+		else{
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		}
 	}
 
 	void menu(){
