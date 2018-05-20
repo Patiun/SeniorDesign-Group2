@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
-
+using UnityEngine.UI;
 public class IconDropdown : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
 
     private GameObject container;
@@ -13,6 +13,11 @@ public class IconDropdown : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
         if (container == null)
             Debug.Log("Icon Dropdown Script: Cannot find Container object  in the child of the parent " + gameObject.name + "game object.");
+    }
+
+    void Start()
+    {
+        gameObject.GetComponent<Image>().color = new Color32(193,193,193,255);
     }
 
     void Update()

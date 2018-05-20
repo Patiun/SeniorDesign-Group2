@@ -63,7 +63,7 @@ public class HackManager : MonoBehaviour
 
     private PuzzleDifficultiesLevel currentLevel;
     private AbstractHackMenu CurrentObjectHack;
-    private bool InProgress;
+    public bool InProgress;
 
     private void Start()
     {
@@ -84,14 +84,17 @@ public class HackManager : MonoBehaviour
             case PuzzleDifficultiesLevel.Easy:
                 BruteForce.SetActive(true);
                 CameraManager.Instance.DisableCurrent();
+                InProgress = true;
                 break;
             case PuzzleDifficultiesLevel.Medium:
                 TypingSim.SetActive(true);
                 CameraManager.Instance.DisableCurrent();
+                InProgress = true;
                 break;
             case PuzzleDifficultiesLevel.Hard:
                 LinePizzle.SetActive(true);
                 CameraManager.Instance.DisableCurrent();
+                InProgress = true;
                 break;
         }
         
@@ -109,6 +112,7 @@ public class HackManager : MonoBehaviour
 
     public void ResetHack()
     {
+        
         switch (currentLevel)
         {
             case PuzzleDifficultiesLevel.Easy:
@@ -127,7 +131,7 @@ public class HackManager : MonoBehaviour
                 CameraManager.Instance.SwitchMainCamera();
                 break;
         }
-
+        InProgress = false;
         currentLevel = PuzzleDifficultiesLevel.None;
     }
 

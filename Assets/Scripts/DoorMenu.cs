@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.UI;
 public class DoorMenu : AbstractHackMenu
 {
     [SerializeField]
@@ -36,7 +36,9 @@ public class DoorMenu : AbstractHackMenu
 
     public void Hack()
     {
-        HackManager.Instance.InitializeHacking(this, level);
+        if(!HackManager.Instance.InProgress)
+            HackManager.Instance.InitializeHacking(this, level);
+        
     }
 
     public void DisplayFullMenuWithoutHack()
@@ -60,6 +62,9 @@ public class DoorMenu : AbstractHackMenu
 
         if (hack != null)
             hack.SetActive(false);
+
+        GameObject parent = transform.parent.gameObject;
+        parent.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
     }
 
     public override void NotifyHackStatus(bool status)

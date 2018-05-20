@@ -267,8 +267,46 @@ public class GridLevelManager : MonoBehaviour {
         CreateSpecialTile();
         CreateCircleNode();
         CanvasManager.Instance.EnableRayCastingBlocker();
+        CameraManager.Instance.SwitchMainCamera();
         gameObject.SetActive(false);
+        
     }
 
+    public bool CheckWinTile(Point point)
+    {
+        Point dir = DirectionExtensions.GetDirectionPoint(DirectionExtensions.GetOppositeDirection(_endNode.Direction));
+
+        int x = dir.X + _endNode.X;
+        int y = dir.Y + _endNode.Y;
+
+        if(point.X == x && point.Y == y)
+        {
+            return true;
+        }
+
+
+        return false;
+    }
+
+    public bool DirectionFacingGoal(Direction d, int x, int y)
+    {
+        Point dirFace = DirectionExtensions.GetDirectionPoint(d);
+
+        int xFace = dirFace.X + x;
+        int yFace = dirFace.Y + y;
+
+        if(xFace == _endNode.X && yFace == _endNode.Y)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    public void ExecuteWin()
+    {
+        HackManager.Instance.FinishHacking(true);
+        Reset();
+    }
 
 }

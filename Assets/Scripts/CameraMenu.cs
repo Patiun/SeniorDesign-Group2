@@ -162,6 +162,8 @@ public class CameraMenu : AbstractHackMenu
             hack.SetActive(false);
 
         ActivateFullMenu();
+        GameObject parent = transform.parent.gameObject;
+        parent.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
     }
 
     public override void NotifyHackStatus(bool status)

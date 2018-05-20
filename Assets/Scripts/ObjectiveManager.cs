@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ObjectiveManager : MonoBehaviour
 {
@@ -41,5 +42,27 @@ public class ObjectiveManager : MonoBehaviour
     }
     #endregion
 
-    
+    [SerializeField]
+    private GameObject parentHolder;
+
+    [SerializeField]
+    private GameObject textBox;
+
+
+
+    [SerializeField]
+    private string[] objectives;
+
+    private void Start()
+    {
+        foreach(string objective in objectives)
+        {
+            GameObject t = Instantiate(textBox);
+            Text text = t.transform.Find("txtObjectiveDetail").GetComponent<Text>();
+            text.text = objective;
+            
+            t.transform.SetParent(parentHolder.transform);
+            t.transform.localScale = Vector3.one;
+        }
+    }
 }

@@ -63,6 +63,7 @@ GameObject:
   - component: {fileID: 65866792605104888}
   - component: {fileID: 114155193596293664}
   - component: {fileID: 114626923545870976}
+  - component: {fileID: 114004981030289682}
   m_Layer: 2
   m_Name: VentCover
   m_TagString: VentCover
@@ -398,6 +399,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114004981030289682
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1538655106445406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfe7fe3f3b3d745efae8d76a7a821bc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectHealth: 8
 --- !u!114 &114119831219056020
 MonoBehaviour:
   m_ObjectHideFlags: 1
