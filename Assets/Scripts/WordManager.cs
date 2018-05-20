@@ -8,7 +8,7 @@ public class WordManager : MonoBehaviour {
                                     "blackhat", "trojan", "eric", "exploit", "man-in-the-middle", "rootkit",
                                     "salt", "scripts", "attack", "sniffling", "spoofing", "DNS", "VPN", "Worm",
                                     "DDoS", "internet", "offshore", "social-engineering", "error", "channels",
-                                    "deathray", "limewire", "priate", "torrent", "spy", "robots", "interference",
+                                    "deathray", "limewire", "pirate", "torrent", "spy", "robots", "interference",
                                     "panic", "reverse", "doom", "jail-time", "WINNER", "unethical", "firewall"};
 
     [SerializeField]
@@ -40,10 +40,14 @@ public class WordManager : MonoBehaviour {
 
     private void OnEnable()
     {
-        if(HackManager.Instance.InProgress)
+        if (HackManager.Instance.InProgress)
         {
             gameObject.SetActive(false);
         }
+        else
+            startTime = Time.time;
+
+
     }
 
     private void Update()
@@ -135,9 +139,10 @@ public class WordManager : MonoBehaviour {
         fail = 0;
         words.RemoveRange(0, words.Count);
         activeWord = null;
+        hasActiveWord = false;
         HackManager.Instance.InProgress = false;
         gameObject.SetActive(false);
-        nextWordTime = elapsedTime + timeDelay;
+        nextWordTime = 0;
         foreach (Transform child in wordSpawner.transform)
             Destroy(child.gameObject);
     }
