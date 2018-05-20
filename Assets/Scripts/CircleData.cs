@@ -157,6 +157,21 @@ public class CircleData : AbstractTileData
                 }
             }
         }
+
+        if(GridLevelManager.Instance.CheckWinTile(GetPoint()))
+        {
+            if(_lightUp)
+            {
+                foreach(Direction hole in _holeLocations)
+                {
+                    if(GridLevelManager.Instance.DirectionFacingGoal(hole, GetPoint().X, GetPoint().Y))
+                    {
+                        GridLevelManager.Instance.ExecuteWin();
+                    }
+                }
+            }
+        }
+
     }
 
 }
