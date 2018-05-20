@@ -130,12 +130,22 @@ public class GridLevelManager : MonoBehaviour {
     {
         _grid = new GameObject[_gridSize, _gridSize];
 
-        for (int y = 1; y < _gridSize; y++)
+        for (int y = 0; y < _gridSize; y++)
         {
-            for (int x = 1; x < _gridSize; x++)
+            for (int x = 0; x < _gridSize; x++)
             {
                 if (_grid[x, y] == null)
-                    PlaceTile(x, y, 0);
+                {
+                    if( (x == 0 || x == _gridSize -1) || (y == 0 || y == _gridSize -1))
+                    {
+                        PlaceTile(x, y, 1);
+                    }
+                    else
+                    {
+                        PlaceTile(x, y, 0);
+                    }
+                }
+                    
             }
         }
 
@@ -207,8 +217,12 @@ public class GridLevelManager : MonoBehaviour {
         newTile.transform.parent = _startGridPosition.transform;
         newTile.transform.position = new Vector3(_startGridPosition.transform.position.x + (TileSize() * x) * _tileOffset, _startGridPosition.transform.position.y - (TileSize() * y) * _tileOffset, 0f);
         newTile.name = string.Format("Tile {0}x{1}", x, y);
-        TileData tileData = newTile.GetComponent<TileData>();
-        tileData.SetPoint(x, y);
+        if(tileID != 1)
+        {
+            TileData tileData = newTile.GetComponent<TileData>();
+            tileData.SetPoint(x, y);
+        }
+
 
         _grid[x, y] = newTile;
     }

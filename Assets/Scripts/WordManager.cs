@@ -135,7 +135,7 @@ public class WordManager : MonoBehaviour {
         fail = 0;
         words.RemoveRange(0, words.Count);
         activeWord = null;
-        
+        HackManager.Instance.InProgress = false;
         gameObject.SetActive(false);
         nextWordTime = elapsedTime + timeDelay;
         foreach (Transform child in wordSpawner.transform)
@@ -153,7 +153,6 @@ public class WordManager : MonoBehaviour {
                 hasActiveWord = false;
             }
         }
-
         Destroy(obj);
         fail++;
     }
