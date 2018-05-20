@@ -75,7 +75,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1365521621771668
 GameObject:
   m_ObjectHideFlags: 1
@@ -93,7 +93,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1366497689705402
 GameObject:
   m_ObjectHideFlags: 1
@@ -161,6 +161,8 @@ GameObject:
   - component: {fileID: 4208647158288156}
   - component: {fileID: 114924211056270140}
   - component: {fileID: 114563107465024498}
+  - component: {fileID: 114863072412220866}
+  - component: {fileID: 135289420659562352}
   m_Layer: 11
   m_Name: SecurityCamera
   m_TagString: Untagged
@@ -222,9 +224,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1668571046952748}
-  m_LocalRotation: {x: 0.034039665, y: 0.9292192, z: -0.08856566, w: 0.35714024}
-  m_LocalPosition: {x: -11.027488, y: 1.5, z: -4.003708}
-  m_LocalScale: {x: 0.52585804, y: 0.525858, z: 0.5258582}
+  m_LocalRotation: {x: -0.0016903025, y: 0.9953306, z: -0.09486686, w: -0.017733978}
+  m_LocalPosition: {x: -53.339912, y: 1.5, z: -54.630493}
+  m_LocalScale: {x: 0.5258581, y: 0.5258581, z: 0.5258581}
   m_Children:
   - {fileID: 4133827312421412}
   - {fileID: 4365037522787524}
@@ -233,7 +235,7 @@ Transform:
   - {fileID: 4794897177989922}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 10.889001, y: 137.95201, z: 0}
+  m_LocalEulerAnglesHint: {x: 10.889001, y: 182.04099, z: 0}
 --- !u!4 &4244936803858888
 Transform:
   m_ObjectHideFlags: 1
@@ -796,6 +798,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasPlayer: 0
   playerLocation: {x: 0, y: 0, z: 0}
+--- !u!114 &114863072412220866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1668571046952748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1114c10f5b5cfe4e8135e033ee768a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thingsToToggle:
+  - {fileID: 1343220664782790}
+  - {fileID: 1585559559938092}
+  hasPlayer: 0
 --- !u!114 &114924211056270140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -848,4 +865,16 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.7
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &135289420659562352
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1668571046952748}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 30
   m_Center: {x: 0, y: 0, z: 0}
