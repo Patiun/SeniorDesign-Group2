@@ -108,8 +108,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1710102793600278}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -932, y: 35.626175, z: -26.05626}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1915.104, y: -275.211, z: -25.11876}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4695181919366148}
@@ -139,8 +139,8 @@ Camera:
   m_GameObject: {fileID: 1943907130754376}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.4, g: 0.19215687, b: 0.4745098, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -186,7 +186,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tile:
-  - {fileID: 1950247263720484, guid: b03b2d2b215632a4d9b6d66341055240, type: 2}
+  - {fileID: 1305179635732694, guid: 017c9e7836a10174cbfc80269c1b9621, type: 2}
+  - {fileID: 1598564874313612, guid: f983429b5d033b943bdc098a0a48ecb7, type: 2}
   _startGridPosition: {fileID: 1023967231486732}
   _gridSize: 4
   _startNode:
