@@ -62,7 +62,7 @@ public class MainMenuBehavior : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(moveToLevelSelect == true){
-			camera.transform.position = Vector3.Lerp(camera.transform.position, destination, Time.deltaTime * 2);
+			camera.transform.position = Vector3.Lerp(camera.transform.position, destination, Time.deltaTime * 1.5f);
 			leftDoor.transform.position = Vector3.Lerp(leftDoor.transform.position, leftDoorDestination, Time.deltaTime * 2);
 			rightDoor.transform.position = Vector3.Lerp(rightDoor.transform.position, rightDoorDestination, Time.deltaTime * 2);
 			elevatorLight.SetActive(true);

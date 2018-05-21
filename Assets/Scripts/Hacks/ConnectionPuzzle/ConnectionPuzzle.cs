@@ -7,10 +7,11 @@ using UnityEditor.UI;
 public class ConnectionPuzzle : MonoBehaviour, IPointerDownHandler {
 
 	public GameObject[] PathNodes;
-	public GameObject[] PathLegs;
+	public GameObject[] PathPipes;
 	public GameObject PuzzleWatcher;
 	public float MoveSpeed;
 
+	private float[] distances;
 	private float Timer;
 	private int currentNode;
 	private Vector3 currentPositionHolder;
@@ -21,6 +22,13 @@ public class ConnectionPuzzle : MonoBehaviour, IPointerDownHandler {
     
 	// Use this for initialization
 	void Start () {
+
+		distances = new float[PathPipes.Length];
+		for (int i = 0; i < distances.Length; i++)
+		{
+			distances[i] = Vector3.Distance(gameObject.transform.position, PathNodes[i].transform.position);
+		}
+
 		gameObject.GetComponent<UnityEngine.UI.Image>().color = Color.blue;
 		Timer = 0;
 		OriginalBoxPosition = gameObject.transform.position;
@@ -29,7 +37,8 @@ public class ConnectionPuzzle : MonoBehaviour, IPointerDownHandler {
 		isActive = false;
 
 		for (int i = 0; i < PathNodes.Length; i++){
-			PathLegs[i].gameObject.GetComponent<UnityEngine.UI.Image>().color = Color.red;
+			//PathLegs[i].gameObject.GetComponent<UnityEngine.UI.Image>().color = Color.red;
+			PathPipes[i].gameObject.GetComponent<UnityEngine.UI.Image>().fillAmount = 100;
 		}
 	}
 	
@@ -43,10 +52,11 @@ public class ConnectionPuzzle : MonoBehaviour, IPointerDownHandler {
 			if (gameObject.transform.position != currentPositionHolder)
 			{
 				gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, currentPositionHolder, Timer);
+				PathPipes[currentNode].gameObject.GetComponent<UnityEngine.UI.Image>().fillAmount = Vector3.Distance(gameObject.transform.position, currentPositionHolder)/distances[currentNode];
 			}
 			else
 			{
-				PathLegs[currentNode].gameObject.GetComponent<UnityEngine.UI.Image>().color = Color.green;
+				//PathLegs[currentNode].gameObject.GetComponent<UnityEngine.UI.Image>().color = Color.green;
 
 				if (currentNode < (PathNodes.Length - 1))
 				{
@@ -84,8 +94,9 @@ public class ConnectionPuzzle : MonoBehaviour, IPointerDownHandler {
 
 		for (int i = 0; i < PathNodes.Length; i++)
         {
-            PathLegs[i].gameObject.GetComponent<UnityEngine.UI.Image>().color = Color.red;
-        }
+			//PathLegs[i].gameObject.GetComponent<UnityEngine.UI.Image>().color = Color.red;
+            PathPipes[i].gameObject.GetComponent<UnityEngine.UI.Image>().fillAmount = 100;        
+		}
 	}
 
 
