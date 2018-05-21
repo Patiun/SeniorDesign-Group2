@@ -16,12 +16,14 @@ public class ConnectionPuzzle : MonoBehaviour, IPointerDownHandler {
 	private int currentNode;
 	private Vector3 currentPositionHolder;
 	private bool isActive;
+	private bool success;
     
 
 	private Vector3 OriginalBoxPosition;
     
 	// Use this for initialization
 	void Start () {
+		success = false;
 
 		distances = new float[PathPipes.Length];
 		for (int i = 0; i < distances.Length; i++)
@@ -67,11 +69,16 @@ public class ConnectionPuzzle : MonoBehaviour, IPointerDownHandler {
 			}
 		}
 
+		if(currentNode == PathNodes.Length-1 && isActive == true){
+			success = true;
+		}
+
 	}
 
 	public void OnPointerDown(PointerEventData eventData){
 		if (PuzzleWatcher.gameObject.GetComponent<PuzzleBheavior>().getHasCollided() == false)
 		{
+			PuzzleWatcher.gameObject.GetComponent<PuzzleBheavior>().incrementTurn();
 			isActive = true;
 		}
 	}
@@ -97,6 +104,10 @@ public class ConnectionPuzzle : MonoBehaviour, IPointerDownHandler {
 			//PathLegs[i].gameObject.GetComponent<UnityEngine.UI.Image>().color = Color.red;
             PathPipes[i].gameObject.GetComponent<UnityEngine.UI.Image>().fillAmount = 100;        
 		}
+	}
+
+	public bool isSuccessful(){
+		return success;
 	}
 
 
