@@ -28,4 +28,11 @@ public class WorldAIHandler : MonoBehaviour {
 			enemy.MajorActivity (AlertLocation);
 		}
 	}
+
+	public void DeactivateAllEnemies() {
+		foreach (EnemyAI enemy in enemies) {
+			enemy.gameObject.GetComponent<HackEnemies> ().downTime = 10;
+			enemy.gameObject.GetComponent<HackEnemies> ().isHacked = true;
+		}
+	}
 }

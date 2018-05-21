@@ -12,6 +12,7 @@ public class GameState : MonoBehaviour {
 	public Canvas operatorCanvas;
 	public GameObject scripts;
 	public Transform deathLocation;
+	public Transform winLocation;
 	public GameObject player;
 
 	// Use this for initialization
@@ -30,6 +31,9 @@ public class GameState : MonoBehaviour {
 		endTime = Time.time;
 		Debug.Log ("Level Successful!");
 		operatorCanvas.enabled = false;
+		GetComponent<WorldAIHandler> ().DeactivateAllEnemies ();
+		player.transform.position = winLocation.position;
+		player.transform.rotation = winLocation.rotation;
 		//winningCanvas.enabled = true;
 		winningCanvas.gameObject.SetActive (true);
 		//Time.timeScale = 0.0f;

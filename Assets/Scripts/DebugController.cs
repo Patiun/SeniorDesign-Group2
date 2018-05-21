@@ -9,9 +9,7 @@ public class DebugController : MonoBehaviour {
 	public WorldState worldState;
 	public GameState gameState;
 	public PlayerHealth playerHealth;
-
-	public GameObject targetEnemy;
-	public float rotationSpeed = 1f, angleIterationSpeed = 25f;
+	public WorldAIHandler worldAI;
 
 	private WorldState.State lastState;
 
@@ -46,6 +44,9 @@ public class DebugController : MonoBehaviour {
 			if (Input.GetKeyDown("x")) {
 				gameState.LoseLevel ();
 			}
+			if (Input.GetKeyDown ("e")) {
+				worldAI.DeactivateAllEnemies ();
+			}
 			if (Input.GetKeyDown ("d")) {
 				GameObject[] doors = GameObject.FindGameObjectsWithTag ("Door");
 				foreach (GameObject door in doors) {
@@ -73,20 +74,6 @@ public class DebugController : MonoBehaviour {
 			if (curState != lastState) {
 				Debug.Log ("[DEBUG]"+ curState);
 				lastState = curState;
-			}
-
-			if (targetEnemy != null) {
-				if (Input.GetKey (KeyCode.T)) {
-					Debug.Log ("[DEBUG] Rotating target enemy "+targetEnemy.transform.eulerAngles);
-					Vector3 angles = targetEnemy.transform.eulerAngles;
-					angles.y += angleIterationSpeed*Time.deltaTime;
-					Quaternion newRotation = Quaternion.Euler (angles);
-					targetEnemy.transform.rotation = Quaternion.Slerp (targetEnemy.transform.rotation, newRotation, rotationSpeed);
-				}
-				if (Input.GetKeyDown (KeyCode.Y)) {
-					Debug.Log ("[DEBUG] Flipped target enemy rotation direction");
-					angleIterationSpeed *= -1;
-				}
 			}
 		}
 	}
