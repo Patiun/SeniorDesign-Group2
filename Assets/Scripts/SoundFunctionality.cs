@@ -8,10 +8,14 @@ public class SoundFunctionality : MonoBehaviour {
 	private float count = 0;
 	private List<GameObject> enemies;
 	private GameObject closestEnemy;
+	public AudioSource soundEffect;
 	// Use this for initialization
 	void Start () {
 		enemies = new List<GameObject>();
 		closestEnemy = null;
+		soundEffect.maxDistance = GetComponent<SphereCollider> ().radius*3.0f/0.5f;
+		soundEffect.volume = 1.0f;
+		soundEffect.Play ();
 	}
 	
 	// Update is called once per frame

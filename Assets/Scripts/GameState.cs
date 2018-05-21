@@ -6,7 +6,7 @@ public class GameState : MonoBehaviour {
 
 	private float startTime;
 	private float endTime;
-	public AudioSource gameOverSound;
+	public AudioSource gameOverSound,gameWinSound;
 	public Canvas winningCanvas;
 	public Canvas losingCanvas;
 	public Canvas operatorCanvas;
@@ -32,6 +32,7 @@ public class GameState : MonoBehaviour {
 		Debug.Log ("Level Successful!");
 		operatorCanvas.enabled = false;
 		GetComponent<WorldAIHandler> ().DeactivateAllEnemies ();
+		gameWinSound.Play ();
 		player.transform.position = winLocation.position;
 		player.transform.rotation = winLocation.rotation;
 		//winningCanvas.enabled = true;

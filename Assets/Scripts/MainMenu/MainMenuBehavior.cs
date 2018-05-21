@@ -8,6 +8,7 @@ public class MainMenuBehavior : MonoBehaviour {
 
 	public Canvas mainSelection;
 	public Canvas levelSelection;
+	public GameObject cameraObject;
 	public Camera camera;
 	public Button btnLevelSelect;
 	public GameObject leftDoor;
@@ -41,6 +42,7 @@ public class MainMenuBehavior : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		cameraObject.SetActive (true);
 		mainSelection.enabled = false;
 		levelSelection.enabled = false;
 		closingDoors = false;

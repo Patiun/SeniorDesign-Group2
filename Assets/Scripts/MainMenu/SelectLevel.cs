@@ -24,6 +24,7 @@ public class SelectLevel : MonoBehaviour {
 	{
 		if (isEnabled == true)
 		{
+			GameObject.Find ("ElevatorDingSound").GetComponent<AudioSource> ().Play ();
 			Renderer ren = gameObject.GetComponent<Renderer>();
 			ren.material = downMaterial;
 			mainMenuBehavior.closeDoors(SceneIndex);

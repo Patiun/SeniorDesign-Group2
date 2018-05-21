@@ -5,6 +5,7 @@ using UnityEngine;
 public class LevelSelectButton : MonoBehaviour {
 
 	public MainMenuBehavior mainMenuBehavior;
+	public AudioSource uiSound;
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +18,7 @@ public class LevelSelectButton : MonoBehaviour {
 	}
 
 	void OnMouseDown(){
+		uiSound.Play ();
 		mainMenuBehavior.LevelSelectClicked();
 	}
 }

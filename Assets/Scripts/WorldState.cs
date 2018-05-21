@@ -24,6 +24,7 @@ public class WorldState : MonoBehaviour {
 	public float asleepDetectioNTime = 0.8f;
 
 	public int count = 0;
+	public AudioSource alarm;
 
 	// Use this for initialization
 	void Start () {
@@ -39,6 +40,10 @@ public class WorldState : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (isAlert) {
+			if (!alarm.isPlaying) {
+				alarm.volume = 0.8f;
+				alarm.Play ();
+			}
 			if (count >= TimeUntilCooling*1000) {
 				isAlert = false;
 				isCoolingDown = true;
@@ -50,6 +55,10 @@ public class WorldState : MonoBehaviour {
 			}
 		}
 		if (isCoolingDown) {
+			if (alarm.isPlaying) {
+				alarm.volume = 0.3f;
+				//alarm.Stop ();
+			}
 			if (count >= CoolingTime*1000) {
 				isCoolingDown = false;
 				isCautious = true;
@@ -58,6 +67,11 @@ public class WorldState : MonoBehaviour {
 				count = 0;
 			} else {
 				count += 1;
+			}
+		}
+		if (isCautious || isAsleep) {
+			if (alarm.isPlaying) {
+				alarm.Stop ();
 			}
 		}
 		if (isInvestigating) {

@@ -15,6 +15,7 @@ public class EnemyAttack : MonoBehaviour {
 
 	public GameObject bulletPrefab;
 	public float bulletVelocity;
+	public AudioSource shotSound,laserReady,laserWarmup,LaserCooldown;
 
 	// Use this for initialization
 	void Start () {
@@ -32,6 +33,9 @@ public class EnemyAttack : MonoBehaviour {
 
 	public void HasTarget(Vector3 targetLocation) {
 		if (warmedUp) {
+			if (!laserReady.isPlaying) {
+				laserReady.Play ();
+			}
 			for (int i = 0; i < barrels.Length; i++) {
 				barrels [i].transform.LookAt (targetLocation);
 			}
@@ -47,6 +51,9 @@ public class EnemyAttack : MonoBehaviour {
 			}
 		} else {
 			count += Time.deltaTime;
+			if (warmUpTime - count < 0.02 && !laserWarmup.isPlaying) {
+				laserWarmup.Play ();
+			}
 			if (count >= warmUpTime) {
 				warmedUp = true;
 				count = 0;
@@ -72,6 +79,7 @@ public class EnemyAttack : MonoBehaviour {
 	}*/
 
 	private void FireBullet(Transform muzzle) {
+		shotSound.Play ();
 		GameObject bullet = Instantiate (bulletPrefab);
 		bullet.transform.position = muzzle.position;
 		bullet.transform.rotation = muzzle.rotation;
@@ -82,5 +90,7 @@ public class EnemyAttack : MonoBehaviour {
 	public void Discard() {
 		count = 0;
 		warmedUp = false;
+		LaserCooldown.Play ();
+		laserReady.Stop ();
 	}
 }

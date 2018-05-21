@@ -6,12 +6,11 @@ public class SoundEffect : MonoBehaviour {
 
 	public GameObject noiseSphere;
 	public float noiseScale;
-	public float lockOutTime = 1.0f;
 	private bool canMakeNoise;
 
 	// Use this for initialization
 	void Start () {
-		StartCoroutine (WaitForFall (lockOutTime));
+		StartCoroutine (WaitForFall (2.0f));
 	}
 	
 	// Update is called once per frame
