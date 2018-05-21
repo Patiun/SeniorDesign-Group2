@@ -28,7 +28,13 @@ public class PuzzleBheavior : MonoBehaviour
 		connectionPuzzles = activePuzzle.GetComponentsInChildren<ConnectionPuzzle>();
 		Debug.Log(connectionPuzzles.Length);
 	}
-	
+
+	private void OnEnable()
+	{
+		timeLeft = timer;
+		Restart();
+	}
+
 	// Update is called once per frame
 	void Update () {
 		timeLeft -= Time.deltaTime;
