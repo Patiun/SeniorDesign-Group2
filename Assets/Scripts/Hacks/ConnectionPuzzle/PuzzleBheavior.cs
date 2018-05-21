@@ -19,20 +19,31 @@ public class PuzzleBheavior : MonoBehaviour
 
 	// Use this for initialization
 	void Start () {
-		turn = 0;
-		hasCollided = false;
-		timeLeft = timer;
-		timeLeftText.GetComponent<UnityEngine.UI.Text>().text = "Time Left: " + timeLeft;
-		activePuzzle = puzzles[Random.Range(0, puzzles.Length)];
-		activePuzzle.SetActive(true);
-		connectionPuzzles = activePuzzle.GetComponentsInChildren<ConnectionPuzzle>();
-		Debug.Log(connectionPuzzles.Length);
+		//turn = 0;
+		//hasCollided = false;
+		//timeLeft = timer;
+		//timeLeftText.GetComponent<UnityEngine.UI.Text>().text = "Time Left: " + timeLeft;
+		//activePuzzle = puzzles[Random.Range(0, puzzles.Length)];
+		//activePuzzle.SetActive(true);
+		//connectionPuzzles = activePuzzle.GetComponentsInChildren<ConnectionPuzzle>();
+		//Debug.Log(connectionPuzzles.Length);
 	}
 
 	private void OnEnable()
 	{
-		timeLeft = timer;
-		Restart();
+		turn = 0;
+        hasCollided = false;
+        timeLeft = timer;
+        timeLeftText.GetComponent<UnityEngine.UI.Text>().text = "Time Left: " + timeLeft;
+        activePuzzle = puzzles[Random.Range(0, puzzles.Length)];
+        activePuzzle.SetActive(true);
+        connectionPuzzles = activePuzzle.GetComponentsInChildren<ConnectionPuzzle>();
+        Debug.Log(connectionPuzzles.Length);
+	}
+
+	private void OnDisable()
+	{
+		activePuzzle.SetActive(false);
 	}
 
 	// Update is called once per frame
