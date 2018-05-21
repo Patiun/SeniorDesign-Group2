@@ -12,9 +12,11 @@ public class PuzzleBheavior : MonoBehaviour {
 	private GameObject activePuzzle;
 	private float timeLeft;
 	private bool hasCollided;
+	private int turn;
 
 	// Use this for initialization
 	void Start () {
+		turn = 0;
 		hasCollided = false;
 		timeLeft = timer;
 		timeLeftText.GetComponent<UnityEngine.UI.Text>().text = "Time Left: " + timeLeft;
@@ -43,5 +45,9 @@ public class PuzzleBheavior : MonoBehaviour {
 
 	public bool getHasCollided(){
 		return hasCollided;
+	}
+
+	public int getTurn(){
+		return turn;
 	}
 }
