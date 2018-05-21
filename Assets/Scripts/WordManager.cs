@@ -14,6 +14,7 @@ public class WordManager : MonoBehaviour {
     [SerializeField]
     private List<Word> words;
     [SerializeField]
+    private GameObject spawnerObject;
     public WordSpawner wordSpawner;
     [SerializeField]
     [Tooltip("How many needed to type to beat it")]
@@ -26,6 +27,8 @@ public class WordManager : MonoBehaviour {
 
     private float startTime;
     private float elapsedTime;
+    private bool timer;
+    private bool timerInprogress;
     private int count;
 
     private int fail;
@@ -36,6 +39,8 @@ public class WordManager : MonoBehaviour {
         nextWordTime = 0;
         words = new List<Word>();
         startTime = Time.time;
+        timer = false;
+        timerInprogress = false;
     }
 
     private void OnEnable()
@@ -46,8 +51,7 @@ public class WordManager : MonoBehaviour {
         }
         else
             startTime = Time.time;
-
-
+        timer = true;
     }
 
     private void Update()
@@ -60,11 +64,19 @@ public class WordManager : MonoBehaviour {
         }
             
 
-        if (elapsedTime >= nextWordTime)
+        if (timer)
         {
+            timer = false;
             AddWord();
             nextWordTime = Time.time + timeDelay;
-            timeDelay *= .99f;
+            timeDelay *= .95f;
+            
+        }
+        else if (!timerInprogress)
+        {
+            timerInprogress = true;
+            StartCoroutine(wait());
+            
         }
 
         if(words.Count != 0)
@@ -74,6 +86,15 @@ public class WordManager : MonoBehaviour {
                 TypeLetter(letter);
             }
         }
+
+    }
+
+    IEnumerator wait()
+    {
+        yield return new WaitForSecondsRealtime(timeDelay);
+        timer = true;
+        timerInprogress = false;
+
 
     }
     
@@ -119,7 +140,6 @@ public class WordManager : MonoBehaviour {
                     HackManager.Instance.FinishHacking(true);
                     Reset();
                 }
-                AddWord();
             }
         }
 
@@ -140,11 +160,15 @@ public class WordManager : MonoBehaviour {
         words.RemoveRange(0, words.Count);
         activeWord = null;
         hasActiveWord = false;
+        foreach (Transform child in wordSpawner.transform)
+            DestroyImmediate(child.gameObject);
+        timer = false;
+        timerInprogress = false;
+        nextWordTime = 0;
         HackManager.Instance.InProgress = false;
         gameObject.SetActive(false);
-        nextWordTime = 0;
-        foreach (Transform child in wordSpawner.transform)
-            Destroy(child.gameObject);
+
+
     }
 
     public void IncrementFailWord(GameObject obj)

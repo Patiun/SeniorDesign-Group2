@@ -9,29 +9,50 @@ public class DoorMenu : AbstractHackMenu
     [SerializeField]
     private PuzzleDifficultiesLevel level;
 
+
+    GameObject hack;
+    GameObject open;
+    GameObject close;
+    GameObject unlock;
+    GameObject lockb;
+
     private void Start()
     {
+
         door_scr = door.GetComponent<Door>();
+        lockb = transform.Find("LockButton").gameObject;
+        unlock = transform.Find("UnlockButton").gameObject;
+        close = transform.Find("CloseButton").gameObject;
+        open = transform.Find("OpenButton").gameObject;
+        hack = transform.Find("HackButton").gameObject;
     }
 
     public void CallOpen()
     {
         door_scr.Open();
+        open.SetActive(false);
+        close.SetActive(true);
     }
 
     public void CallClose()
     {
         door_scr.Close();
+        open.SetActive(true);
+        close.SetActive(false);
     }
 
     public void CallLock()
     {
         door_scr.Lock();
+        lockb.SetActive(false);
+        unlock.SetActive(true);
     }
 
     public void CallUnlock()
     {
         door_scr.Unlock();
+        lockb.SetActive(true);
+        unlock.SetActive(false);
     }
 
     public void Hack()
@@ -43,22 +64,16 @@ public class DoorMenu : AbstractHackMenu
 
     public void DisplayFullMenuWithoutHack()
     {
-        GameObject hack = transform.Find("HackButton").gameObject;
-        GameObject open = transform.Find("OpenButton").gameObject;
-        GameObject close = transform.Find("CloseButton").gameObject;
-        GameObject unlock = transform.Find("UnlockButton").gameObject;
-        GameObject lockb = transform.Find("LockButton").gameObject;
-
         if (open != null)
             open.SetActive(true);
         if (close != null)
-            close.SetActive(true);
+            close.SetActive(false);
 
         if (unlock != null)
             unlock.SetActive(true);
 
         if (lockb != null)
-            lockb.SetActive(true);
+            lockb.SetActive(false);
 
         if (hack != null)
             hack.SetActive(false);

@@ -20,8 +20,8 @@ public class WordSpawner : MonoBehaviour
 
         GameObject word = Instantiate(wordPrefab, rand, Quaternion.identity, gameObject.transform);
         word.transform.localPosition = rand;
+        
         WordDisplay wordDisplay = word.GetComponent<WordDisplay>();
-
         return wordDisplay;
     }
 }
