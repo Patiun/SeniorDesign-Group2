@@ -24,9 +24,11 @@ GameObject:
   - component: {fileID: 65630882526044066}
   - component: {fileID: 65259959434707946}
   - component: {fileID: 65056633748474922}
+  - component: {fileID: 114871245888406172}
+  - component: {fileID: 114650914274144764}
   m_Layer: 0
   m_Name: SO_CoffeeCup_01
-  m_TagString: Untagged
+  m_TagString: Interactible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,13 +39,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183878}
-  m_LocalRotation: {x: -0, y: 0.54112166, z: -0, w: 0.84094435}
-  m_LocalPosition: {x: -0.6032717, y: -0.4807185, z: -3.663}
-  m_LocalScale: {x: 0.5000001, y: 0.5, z: 0.5000001}
+  m_LocalRotation: {x: -0, y: -0.9357038, z: -0, w: -0.35278663}
+  m_LocalPosition: {x: -12.760284, y: -0.46829224, z: -43.563995}
+  m_LocalScale: {x: 0.50000024, y: 0.5, z: 0.50000024}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 76.809006, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 498.68402, z: 0}
 --- !u!23 &2301676
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -250,7 +252,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
     type: 2}
-  noiseScale: 1
+  noiseScale: 2
+  lockOutTime: 1
 --- !u!114 &114607150985604492
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -262,6 +265,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114650914274144764
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132b5f7bc74f24c089aa7a44acfdfd74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maximumSafeDistance: 10
+  needsInvestigation: 0
 --- !u!114 &114769266488373122
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -279,6 +295,18 @@ MonoBehaviour:
   throwVelocityWithAttachDistance: 0
   throwMultiplier: 1
   onGrabCollisionDelay: 0
+--- !u!114 &114871245888406172
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfe7fe3f3b3d745efae8d76a7a821bc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectHealth: 4
 --- !u!114 &114965316728341406
 MonoBehaviour:
   m_ObjectHideFlags: 1
