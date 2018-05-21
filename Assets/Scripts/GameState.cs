@@ -10,10 +10,15 @@ public class GameState : MonoBehaviour {
 	public Canvas winningCanvas;
 	public Canvas losingCanvas;
 	public Canvas operatorCanvas;
+	public GameObject scripts;
+	public Transform deathLocation;
+	public GameObject player;
 
 	// Use this for initialization
 	void Start () {
 		startTime = Time.time;
+		//Time.timeScale = 1.0f;
+		scripts.SetActive (true);
 	}
 	
 	// Update is called once per frame
@@ -25,14 +30,21 @@ public class GameState : MonoBehaviour {
 		endTime = Time.time;
 		Debug.Log ("Level Successful!");
 		operatorCanvas.enabled = false;
-		winningCanvas.enabled = true;
+		//winningCanvas.enabled = true;
+		winningCanvas.gameObject.SetActive (true);
+		//Time.timeScale = 0.0f;
+		scripts.SetActive (false);
 	}
 
 	public void LoseLevel() {
 		endTime = Time.time;
 		Debug.Log ("You lose!");
 		gameOverSound.Play ();
+		player.transform.position = deathLocation.position;
+		player.transform.rotation = deathLocation.rotation;
 		operatorCanvas.enabled = false;
-		losingCanvas.enabled = true;
+		losingCanvas.gameObject.SetActive (true);
+		//Time.timeScale = 0.0f;
+		scripts.SetActive (false);
 	}
 }

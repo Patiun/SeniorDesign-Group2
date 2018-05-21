@@ -7,6 +7,7 @@ public class DebugController : MonoBehaviour {
 
 	public bool isDebugging = false;
 	public WorldState worldState;
+	public GameState gameState;
 	public PlayerHealth playerHealth;
 
 	public GameObject targetEnemy;
@@ -38,6 +39,12 @@ public class DebugController : MonoBehaviour {
 			}
 			if (Input.GetKeyDown("r")) {
 				worldState.Reset();
+			}
+			if (Input.GetKeyDown("z")) {
+				gameState.WinLevel ();
+			}
+			if (Input.GetKeyDown("x")) {
+				gameState.LoseLevel ();
 			}
 			if (Input.GetKeyDown ("d")) {
 				GameObject[] doors = GameObject.FindGameObjectsWithTag ("Door");
