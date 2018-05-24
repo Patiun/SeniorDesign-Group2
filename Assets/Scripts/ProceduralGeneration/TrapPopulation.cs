@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class TrapPopulation : MonoBehaviour {
 
+	public int numTraps;
 	public TrapPoint[] trapPoints;
+
+	private List<TrapPoint> used, unused;
 
 	// Use this for initialization
 	void Start () {
@@ -17,8 +20,13 @@ public class TrapPopulation : MonoBehaviour {
 	}
 
 	public void GenerateTraps() {
-		for (int i = 0; i < trapPoints.Length; i++) {
-			trapPoints [i].Generate ();
+		unused = new List<TrapPoint> (trapPoints);
+		used = new List<TrapPoint> ();
+		for (int i = 0; i < numTraps; i++) {
+			int trapInd = Random.Range (0, unused.Count);
+			unused [i].Generate ();
+			used.Add (unused [i]);
+			unused.RemoveAt (i);
 		}
 	}
 }
