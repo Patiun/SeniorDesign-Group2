@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TrapPopulation : MonoBehaviour {
 
+	public TrapPoint[] trapPoints;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -12,5 +14,11 @@ public class TrapPopulation : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	public void GenerateTraps() {
+		for (int i = 0; i < trapPoints.Length; i++) {
+			trapPoints [i].Generate ();
+		}
 	}
 }

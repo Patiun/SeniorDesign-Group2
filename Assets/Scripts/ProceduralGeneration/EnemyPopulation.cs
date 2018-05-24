@@ -16,13 +16,16 @@ public class EnemyPopulation : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Random.InitState (GameObject.Find ("LevelGenerator").GetComponent<LevelGeneration> ().seed);
+		//unusedPoints = new List<GameObject> (allPoints);
+		//usedPoints = new List<GameObject> ();
+		//enemyContainer = new GameObject ("Enemies");
+		//GenerateEnemies ();
+	}
+
+	public void GenerateEnemies() {
 		unusedPoints = new List<GameObject> (allPoints);
 		usedPoints = new List<GameObject> ();
 		enemyContainer = new GameObject ("Enemies");
-		GenerateEnemies ();
-	}
-
-	private void GenerateEnemies() {
 		for (int i = 0; i < numEnemies; i++) {
 			int pointInd = Random.Range (0, unusedPoints.Count);
 			GameObject point = allPoints [pointInd];
