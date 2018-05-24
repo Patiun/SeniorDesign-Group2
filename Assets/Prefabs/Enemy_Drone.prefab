@@ -3390,13 +3390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPatrolling: 1
-  patrolPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  patrolPoints: []
   curTargetLocation: {x: -46.626926, y: 1.1673088, z: -51.8535}
   curPatrolTarget: 0
   closeEnough: 0.5
