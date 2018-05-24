@@ -9,6 +9,7 @@ public class Socket : MonoBehaviour {
 
 	public bool canBeRotated;
 	public GameObject room;
+	private GameObject projection;
 
 	// Use this for initialization
 	void Start () {
@@ -16,11 +17,16 @@ public class Socket : MonoBehaviour {
 		if (rotationOptions.Length <= 0) {
 			canBeRotated = false;
 		}
+
+		projection = transform.GetChild (0).gameObject;
 		//GenerateRoom ();
 	}
 
 	public void GenerateRoom() {
-		transform.GetChild (0).gameObject.SetActive (false);
+		if (projection == null) {
+			projection = transform.GetChild (0).gameObject;
+		}
+		projection.SetActive (false);
 		int roomInd = Random.Range (0, roomOptions.Length);
 		GameObject newRoom = Instantiate (roomOptions [roomInd]);
 		newRoom.transform.position = transform.position;
@@ -36,5 +42,10 @@ public class Socket : MonoBehaviour {
 			//newRoom.transform.localScale = new Vector3 (1, 1, 1);
 		}
 		room = newRoom;
+	}
+
+	public void Reset() {
+		room.SetActive (false);
+		projection.SetActive (true);
 	}
 }
