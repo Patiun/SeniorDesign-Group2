@@ -141,7 +141,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2c5b441f40c7c94787e2981eeda968c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomOptions: []
+  roomOptions:
+  - {fileID: 1499771205051516, guid: e0bbdbcfc55e29341bf1546a8fcac9b2, type: 2}
+  - {fileID: 1045339179387144, guid: 900d2f80c8f41f749a2e7231a0529631, type: 2}
+  - {fileID: 1858536794498262, guid: 46a12d3d373d1b54d9ec7322463e0c84, type: 2}
+  - {fileID: 1439665575438016, guid: 9297154b07ed3084daec877995579aa8, type: 2}
   rotationOptions: []
   canBeRotated: 0
   room: {fileID: 0}
