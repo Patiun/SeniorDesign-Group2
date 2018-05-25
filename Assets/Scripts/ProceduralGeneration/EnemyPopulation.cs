@@ -45,10 +45,12 @@ public class EnemyPopulation : MonoBehaviour {
 		path.Add (startingPoint);
 		GameObject mostRecentPoint = startingPoint;
 		for (int i = 0; i < patrolSize; i++) {
-			GameObject newPoint = mostRecentPoint.GetComponent<PatrolPoint> ().GetRandomNeighbor ();
+			//Disabled Neighbors
+			//GameObject newPoint = mostRecentPoint.GetComponent<PatrolPoint> ().GetRandomNeighbor ();
+			GameObject newPoint = allPoints[Random.Range(0,allPoints.Length)];
 			if (path.Count >= 2) {
 				int previousInd = path.Count - 2;
-				if (path [previousInd] == newPoint) {
+				if (path [previousInd] == newPoint || path[previousInd+1] == newPoint) {
 					i--;
 				} else {
 					path.Add (newPoint);
