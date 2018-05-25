@@ -4842,7 +4842,8 @@ MonoBehaviour:
   numEnemies: 3
   minPatrolSize: 5
   maxPatrolSize: 7
-  enemyPrefab: {fileID: 1790997225388674, guid: 305715a143bf1aa44bc7de11fafc734b,
+  minDistanceBetween: 0
+  enemyPrefab: {fileID: 1037641695663978, guid: 759b2ac7136ddca4bac40330a5a61a8d,
     type: 2}
   allPoints:
   - {fileID: 2112758219}
