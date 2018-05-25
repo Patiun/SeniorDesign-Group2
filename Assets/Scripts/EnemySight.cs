@@ -41,6 +41,10 @@ public class EnemySight : MonoBehaviour {
 				eai.SpottedPlayer (hit);
 				timeSeeingPlayer = 0;
 			}
+		} else {
+			if (eai.lostPlayerTime <= eai.lockOnTime) {
+				eai.lostPlayerTime += Time.deltaTime;
+			}
 		}
 	}
 
@@ -52,6 +56,7 @@ public class EnemySight : MonoBehaviour {
 			if (hit.collider.gameObject.tag == "Player") {
 				Debug.DrawRay (transform.position, (player - transform.position) * hit.distance, Color.green);
 				seesPlayer = true;
+				eai.lostPlayerTime = 0;
 				//eai.SpottedPlayer (hit);
 			} else {
 				seesPlayer = false;

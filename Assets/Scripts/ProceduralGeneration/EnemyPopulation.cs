@@ -6,6 +6,7 @@ public class EnemyPopulation : MonoBehaviour {
 
 	public int numEnemies;
 	public int minPatrolSize,maxPatrolSize;
+	public float minDistanceBetween;
 	public GameObject enemyPrefab;
 	public GameObject[] allPoints;
 
@@ -26,16 +27,22 @@ public class EnemyPopulation : MonoBehaviour {
 		unusedPoints = new List<GameObject> (allPoints);
 		usedPoints = new List<GameObject> ();
 		enemyContainer = new GameObject ("Enemies");
+		GameObject lastPoint = gameObject;
 		for (int i = 0; i < numEnemies; i++) {
 			int pointInd = Random.Range (0, unusedPoints.Count);
 			GameObject point = allPoints [pointInd];
-			unusedPoints.RemoveAt (pointInd);
-			usedPoints.Add (point);
-			GameObject newEnemy = Instantiate (enemyPrefab);
-			newEnemy.transform.position = point.transform.position;
-			newEnemy.transform.parent = enemyContainer.transform;
-			newEnemy.GetComponent<EnemyAI> ().worldState = GameObject.Find ("WorldController").GetComponent<WorldState> ();
-			newEnemy.GetComponent<EnemyMovment> ().patrolPoints = GeneratePath (point);
+			if (Vector3.Distance (lastPoint.transform.position, point.transform.position) >= minDistanceBetween || unusedPoints.Count <= 3) {
+				unusedPoints.RemoveAt (pointInd);
+				usedPoints.Add (point);
+				GameObject newEnemy = Instantiate (enemyPrefab);
+				newEnemy.transform.position = point.transform.position;
+				newEnemy.transform.parent = enemyContainer.transform;
+				newEnemy.GetComponent<EnemyAI> ().worldState = GameObject.Find ("WorldController").GetComponent<WorldState> ();
+				newEnemy.GetComponent<EnemyMovment> ().patrolPoints = GeneratePath (point);
+				lastPoint = point;
+			} else {
+				i--;
+			}
 		}
 	}
 

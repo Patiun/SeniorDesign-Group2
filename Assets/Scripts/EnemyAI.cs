@@ -15,6 +15,8 @@ public class EnemyAI : MonoBehaviour {
     public float InvestigatingTime = 1;
     public float MoveToTime = 10;
 	public float followRange = 10;
+	public float lockOnTime = 5f;
+	public float lostPlayerTime;
 
     public float count = 0;
 
@@ -75,23 +77,28 @@ public class EnemyAI : MonoBehaviour {
                 }
                 break;
 		case State.Attack:
-				//Debug.Log ("[DEBUG] Attacking " + target.gameObject.name);
-				if (!sight.LookAt (target)) {
-				//Debug.Log ("[DEBUG] Lost sight of player object: "+target.gameObject.name);
-					float angleBetween = Vector3.Angle(transform.forward,target.transform.position-transform.position);
-					if (angleBetween < 0) {
-						sight.direction = -1;
-					} else {
-						sight.direction = 1;
-					}
-					sight.seesPlayer = false;
-					ToInvestigate (target.transform.position);
+			//Debug.Log ("[DEBUG] Attacking " + target.gameObject.name);
+			if (!sight.LookAt (target)) {
+			//Debug.Log ("[DEBUG] Lost sight of player object: "+target.gameObject.name);
+				float angleBetween = Vector3.Angle(transform.forward,target.transform.position-transform.position);
+				if (angleBetween < 0) {
+					sight.direction = -1;
 				} else {
-					movement.MoveInRange (targetLocation, followRange);
-					nearby.ShareWithFriends (target);
-					weapon.HasTarget (targetLocation);
+					sight.direction = 1;
 				}
-				break;
+				sight.seesPlayer = false;
+				if (lostPlayerTime < lockOnTime) {
+					movement.MoveTo (target.transform.position);
+				} else {
+					ToInvestigate (target.transform.position);
+				}
+			} else {
+				lostPlayerTime = 0;
+				movement.MoveInRange (targetLocation, followRange);
+				nearby.ShareWithFriends (target);
+				weapon.HasTarget (targetLocation);
+			}
+			break;
             default:
                 break;
         }
@@ -176,7 +183,7 @@ public class EnemyAI : MonoBehaviour {
 
 		CallForBackup(player.transform.position);
 
-		targetLocation = hit.point;
+		targetLocation = player.transform.position; //hit.point;
 		ToAttack ();
     }
 
