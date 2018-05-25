@@ -973,7 +973,6 @@ GameObject:
   - component: {fileID: 114788961807254654}
   - component: {fileID: 54566062285784056}
   - component: {fileID: 114801404031846416}
-  - component: {fileID: 64318139745976170}
   - component: {fileID: 114938969602615730}
   m_Layer: 0
   m_Name: SO_RubbishBin_02 (1)
@@ -1553,7 +1552,6 @@ GameObject:
   - component: {fileID: 114431448132084188}
   - component: {fileID: 54642912490512620}
   - component: {fileID: 114789893394495058}
-  - component: {fileID: 64821547445116888}
   - component: {fileID: 114416870306539408}
   m_Layer: 0
   m_Name: SO_RubbishBin_02
@@ -37536,20 +37534,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 7c4cb0d757306b24cb467022eb315f0a, type: 3}
---- !u!64 &64318139745976170
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1101367917871704}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 9e8688303546ce54cbc25d904def4176, type: 3}
 --- !u!64 &64318457864788596
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -40084,20 +40068,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 9ce87aa33a0a84941a0d35f768940bd2, type: 3}
---- !u!64 &64821547445116888
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1167349100645668}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 9e8688303546ce54cbc25d904def4176, type: 3}
 --- !u!64 &64823367003546370
 MeshCollider:
   m_ObjectHideFlags: 1

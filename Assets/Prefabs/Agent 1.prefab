@@ -1611,6 +1611,7 @@ GameObject:
   - component: {fileID: 114158864769494528}
   - component: {fileID: 114870697836813690}
   - component: {fileID: 114123717582784174}
+  - component: {fileID: 114759879399973656}
   m_Layer: 0
   m_Name: PlayScripts
   m_TagString: Untagged
@@ -2879,15 +2880,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1738683159924202}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: -0.5, z: -0.74}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -23.87, y: 0, z: -23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4520834750256370}
   - {fileID: 4135212492247472}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4306386866552120
 Transform:
   m_ObjectHideFlags: 1
@@ -2895,7 +2896,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1161976110684908}
   m_LocalRotation: {x: 0.006900289, y: -0.70707315, z: 0.70707315, w: 0.006900289}
-  m_LocalPosition: {x: 2.6128068, y: 9.724999, z: 0.96873593}
+  m_LocalPosition: {x: 0, y: 9.724999, z: 0}
   m_LocalScale: {x: 2.9166694, y: 3.3333344, z: 0.8333337}
   m_Children: []
   m_Father: {fileID: 4463497749105472}
@@ -3197,7 +3198,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1034240282608892}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 100, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4166543827735766}
@@ -7239,7 +7240,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1879571082958624}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0701d26db1f2c44448bca2ca6a6e0ad1, type: 3}
   m_Name: 
@@ -7669,7 +7670,7 @@ MonoBehaviour:
   controlOptions: 0
   directionMethod: 4
   speedScale: 3
-  maxSpeed: 8
+  maxSpeed: 5
   deceleration: 0.1
   fallingDeceleration: 0.01
   smartDecoupleThreshold: 30
@@ -7932,6 +7933,21 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114759879399973656
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1686530168700110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27b6b8ea267174542b48a8aa99ea6988, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  head: {fileID: 1173255227289124}
+  radius: 0.22
+  heightOffset: 0.8
+  transformOffset: 0.75
 --- !u!114 &114775905398402640
 MonoBehaviour:
   m_ObjectHideFlags: 1
