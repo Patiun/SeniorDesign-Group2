@@ -47,7 +47,6 @@ public class Socket : MonoBehaviour {
 	public void GenerateDoors() {
 		for (int j = 0; j < room.transform.childCount; j++) {
 			GameObject child = room.transform.GetChild (j).gameObject;
-			Debug.Log (child.name);
 			if (child.name == "Doors") {
 				DoorSpawner[] spawners = child.GetComponentsInChildren<DoorSpawner> ();
 				for (int i = 0; i < spawners.Length; i++) {
