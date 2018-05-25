@@ -25,6 +25,9 @@ public class LevelGeneration : MonoBehaviour {
 		for (int i = 0; i < sockets.Length; i++) {
 			sockets [i].GenerateRoom ();
 		}
+		for (int i = 0; i < sockets.Length; i++) {
+			sockets [i].GenerateDoors ();
+		}
 		TrapPopulation trapPop = GetComponent<TrapPopulation> ();
 		if (trapPop != null && trapPop.isActiveAndEnabled) {
 			trapPop.GenerateTraps ();
