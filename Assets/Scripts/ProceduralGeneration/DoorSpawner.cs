@@ -24,9 +24,7 @@ public class DoorSpawner : MonoBehaviour {
 	}
 
 	public void SpawnDoor() {
-		
 		hasObject = true;
-		Destroy (GetComponent<SphereCollider> ());
 		GameObject door = Instantiate (doorPrefab);
 		door.transform.position = transform.position;
 		door.transform.rotation = transform.rotation;
@@ -35,8 +33,8 @@ public class DoorSpawner : MonoBehaviour {
 
 	public void OnDrawGizmos() {
 		Gizmos.color = Color.blue;
-		Gizmos.DrawWireCube (transform.position,new Vector3 (1f, 2.75f, 2f));
+		Gizmos.DrawWireCube (transform.position,Quaternion.AngleAxis(transform.rotation.eulerAngles.y,transform.up) * (new Vector3 (2f, 2.75f, 1f)));
 		Gizmos.color = Color.red;
-		Gizmos.DrawWireCube (transform.position,new Vector3 (1f, 2f, 1.5f));
+		Gizmos.DrawWireCube (transform.position,Quaternion.AngleAxis(transform.rotation.eulerAngles.y,transform.up) * (new Vector3 (1.1f, 2f, 1f)));
 	}
 }
