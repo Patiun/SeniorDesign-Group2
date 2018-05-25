@@ -63,9 +63,10 @@ GameObject:
   - component: {fileID: 114401389012805164}
   - component: {fileID: 54195343153281940}
   - component: {fileID: 114264561124645886}
+  - component: {fileID: 114589848093262402}
   m_Layer: 0
   m_Name: SO_RubixCube
-  m_TagString: Untagged
+  m_TagString: Interactible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,9 +124,10 @@ GameObject:
   - component: {fileID: 114102178034533256}
   - component: {fileID: 54077515552999836}
   - component: {fileID: 114942414829191372}
+  - component: {fileID: 114152644719379008}
   m_Layer: 0
   m_Name: SO_Papers_04
-  m_TagString: Untagged
+  m_TagString: Interactible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,9 +155,10 @@ GameObject:
   - component: {fileID: 114546460427856294}
   - component: {fileID: 54656726034696488}
   - component: {fileID: 114258070949312224}
+  - component: {fileID: 114950306464405126}
   m_Layer: 0
   m_Name: SO_CoffeeCup_01
-  m_TagString: Untagged
+  m_TagString: Interactible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -178,9 +181,10 @@ GameObject:
   - component: {fileID: 114483956100296326}
   - component: {fileID: 54122528133653198}
   - component: {fileID: 114668072266331028}
+  - component: {fileID: 114914969192806562}
   m_Layer: 0
   m_Name: SO_Papers_01
-  m_TagString: Untagged
+  m_TagString: Interactible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -203,9 +207,10 @@ GameObject:
   - component: {fileID: 114504089308448758}
   - component: {fileID: 54113480374292224}
   - component: {fileID: 114360945423780096}
+  - component: {fileID: 114970889930924756}
   m_Layer: 0
   m_Name: SO_Laptop
-  m_TagString: Untagged
+  m_TagString: Interactible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -269,7 +274,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1624463511920140}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.2737432, y: 41.653503, z: 45.389454}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4478746369235010}
@@ -915,6 +920,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectHealth: 5
+--- !u!114 &114152644719379008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1643979289575728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
+  noiseScale: 1
 --- !u!114 &114194769754495428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1240,6 +1259,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectHealth: 5
+--- !u!114 &114589848093262402
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1377143130620164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
+  noiseScale: 1
 --- !u!114 &114632837107187204
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1370,6 +1403,20 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   usingState: 0
+--- !u!114 &114914969192806562
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1854235444713086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
+  noiseScale: 1
 --- !u!114 &114921026570555052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1406,6 +1453,20 @@ MonoBehaviour:
   strengthOnUse: 0
   durationOnUse: 0
   intervalOnUse: 0.05
+--- !u!114 &114950306464405126
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1652903806572222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
+  noiseScale: 1
 --- !u!114 &114960525509417930
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1419,3 +1480,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumSafeDistance: 10
   needsInvestigation: 0
+--- !u!114 &114970889930924756
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1976632660456676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
+  noiseScale: 1
