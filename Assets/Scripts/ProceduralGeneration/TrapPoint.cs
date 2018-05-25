@@ -25,6 +25,10 @@ public class TrapPoint : MonoBehaviour {
 			newTrap.transform.position = new Vector3(transform.position.x,transform.position.y+1f,transform.position.z);
 		} else {
 			newTrap.transform.position = transform.position;
+			FanRotation fan = newTrap.GetComponent<FanRotation> ();
+			if (fan != null) {
+				fan.playerHealth = GameObject.Find ("WorldController").GetComponent<PlayerHealth> ();
+			}
 		}
 		newTrap.transform.rotation = transform.rotation;
 	}
