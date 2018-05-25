@@ -772,8 +772,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1749967465017566}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: -17.66, z: -0.21}
-  m_LocalScale: {x: 1, y: 9.288914, z: 1}
+  m_LocalPosition: {x: 0, y: -27.85, z: -0.21}
+  m_LocalScale: {x: 1, y: 13.023859, z: 1}
   m_Children: []
   m_Father: {fileID: 4717983062777548}
   m_RootOrder: 1
@@ -785,8 +785,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1866725904152298}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: -17.660002, z: -0.21000072}
-  m_LocalScale: {x: 1, y: 9.288914, z: 1}
+  m_LocalPosition: {x: 0, y: -27.850002, z: -0.21000089}
+  m_LocalScale: {x: 1, y: 13.023859, z: 1}
   m_Children: []
   m_Father: {fileID: 4318876654581020}
   m_RootOrder: 6
@@ -874,7 +874,7 @@ Transform:
   m_GameObject: {fileID: 1211535115212200}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0.8499981}
-  m_LocalScale: {x: 12.468903, y: 4, z: 8.052379}
+  m_LocalScale: {x: 22.217266, y: 10.123563, z: 10.557917}
   m_Children: []
   m_Father: {fileID: 4717983062777548}
   m_RootOrder: 0
@@ -979,7 +979,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1037641695663978}
   m_LocalRotation: {x: -0.00000003774895, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0243913, y: 0.01000005, z: -1.6553351}
+  m_LocalPosition: {x: -0.52163386, y: 2, z: -1.1019694}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 4255620756105504}
@@ -1004,7 +1004,7 @@ Transform:
   m_GameObject: {fileID: 1991319491003642}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0, z: 0.85}
-  m_LocalScale: {x: 12.468903, y: 4, z: 8.052379}
+  m_LocalScale: {x: 22.217266, y: 10.123563, z: 10.557917}
   m_Children: []
   m_Father: {fileID: 4318876654581020}
   m_RootOrder: 5
@@ -3420,6 +3420,8 @@ MonoBehaviour:
   InvestigatingTime: 12
   MoveToTime: 0.01
   followRange: 7.5
+  lockOnTime: 5
+  lostPlayerTime: 0
   count: 0
   target: {fileID: 0}
 --- !u!114 &114492820572194454
@@ -3550,7 +3552,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1037641695663978}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 2
+  m_Radius: 2.5
   m_Speed: 5.5
   m_Acceleration: 10
   avoidancePriority: 50
