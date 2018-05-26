@@ -11,9 +11,7 @@ GameObject:
   - component: {fileID: 3394742}
   - component: {fileID: 2317080}
   - component: {fileID: 64301219636282140}
-  - component: {fileID: 114254570820982322}
-  - component: {fileID: 114722593557334220}
-  - component: {fileID: 114963568563902146}
+  - component: {fileID: 114506176791421162}
   m_Layer: 0
   m_Name: SO_Plant_02
   m_TagString: Interactible
@@ -27,13 +25,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121108}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -8.385, y: 0, z: -0.028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!23 &2317080
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -100,7 +98,7 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: b6f996d4dc3610a44b0e67f6f800e383, type: 3}
---- !u!114 &114254570820982322
+--- !u!114 &114506176791421162
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -108,34 +106,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 121108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfe7fe3f3b3d745efae8d76a7a821bc0, type: 3}
+  m_Script: {fileID: 11500000, guid: 6e038bf700cfa444fb16c6ef963be9f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectHealth: 5
---- !u!114 &114722593557334220
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 121108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 132b5f7bc74f24c089aa7a44acfdfd74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maximumSafeDistance: 10
-  needsInvestigation: 0
---- !u!114 &114963568563902146
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 121108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
-    type: 2}
-  noiseScale: 1
