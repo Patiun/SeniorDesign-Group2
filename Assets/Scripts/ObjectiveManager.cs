@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class ObjectiveManager : MonoBehaviour
 {
@@ -53,16 +54,36 @@ public class ObjectiveManager : MonoBehaviour
     [SerializeField]
     private string[] objectives;
 
+    private List<GameObject> messages;
+
     private void Start()
     {
+        messages = new List<GameObject>();
         foreach(string objective in objectives)
         {
-            GameObject t = Instantiate(textBox);
-            Text text = t.transform.Find("txtObjectiveDetail").GetComponent<Text>();
-            text.text = objective;
-            
-            t.transform.SetParent(parentHolder.transform);
-            t.transform.localScale = Vector3.one;
+            AddObjective(objective);
         }
+    }
+
+    public int AddObjective(string msg)
+    {
+        GameObject t = Instantiate(textBox);
+        Text text = t.transform.Find("txtObjectiveDetail").GetComponent<Text>();
+        text.text = msg;
+
+        t.transform.SetParent(parentHolder.transform);
+        t.transform.localScale = Vector3.one;
+
+        messages.Add(t);
+        return messages.Count;
+    }
+
+    public void RemoveObjective(int id)
+    {
+        if(id <= messages.Count)
+        {
+            DestroyImmediate(messages[id]);
+        }
+        
     }
 }
