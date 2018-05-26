@@ -38,7 +38,7 @@ public class PuzzleBheavior : MonoBehaviour
         activePuzzle = puzzles[Random.Range(0, puzzles.Length)];
         activePuzzle.SetActive(true);
         connectionPuzzles = activePuzzle.GetComponentsInChildren<ConnectionPuzzle>();
-        Debug.Log(connectionPuzzles.Length);
+        //Debug.Log(connectionPuzzles.Length);
 	}
 
 	private void OnDisable()

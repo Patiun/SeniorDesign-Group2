@@ -14,9 +14,17 @@ public class ObjectMapToView : MonoBehaviour
         if(_prefabIcon != null)
         {
             icon = Instantiate(_prefabIcon);
-            AutoMapAdjusted.RegisterMapIcon(gameObject, icon);
+            if(icon.gameObject.name.Contains("Player"))
+            {
+                AutoMapAdjusted.RegisterRealTimeMapIcon(gameObject, icon);
+            }
+            else
+            {
+                AutoMapAdjusted.RegisterMapIcon(gameObject, icon);
 
-            AssignGameObjectToMenu();
+                AssignGameObjectToMenu();
+            }
+
         }
 
 
