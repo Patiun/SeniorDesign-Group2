@@ -80,7 +80,6 @@ GameObject:
   - component: {fileID: 4944090873955762}
   - component: {fileID: 33805177038624030}
   - component: {fileID: 23909655223431292}
-  - component: {fileID: 64372938091498332}
   m_Layer: 0
   m_Name: LeftWing
   m_TagString: Untagged
@@ -167,7 +166,6 @@ GameObject:
   - component: {fileID: 4820250085706976}
   - component: {fileID: 33610858294431246}
   - component: {fileID: 23109546507646394}
-  - component: {fileID: 64416831214148800}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -185,7 +183,6 @@ GameObject:
   - component: {fileID: 4357731137830496}
   - component: {fileID: 33264351919830938}
   - component: {fileID: 23226166858264776}
-  - component: {fileID: 64762699155676272}
   m_Layer: 0
   m_Name: RightWing
   m_TagString: Untagged
@@ -2000,34 +1997,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 121fbf1c2ba34dc44899ac999df64243, type: 3}
---- !u!64 &64372938091498332
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1076287381840400}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300016, guid: 052cc819ba0c7414c80fdfe5eb2a8578, type: 3}
---- !u!64 &64416831214148800
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1288878578472254}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300020, guid: 052cc819ba0c7414c80fdfe5eb2a8578, type: 3}
 --- !u!64 &64731194127627770
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -2042,20 +2011,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 121fbf1c2ba34dc44899ac999df64243, type: 3}
---- !u!64 &64762699155676272
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1328300297688034}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300014, guid: 052cc819ba0c7414c80fdfe5eb2a8578, type: 3}
 --- !u!82 &82133218970116966
 AudioSource:
   m_ObjectHideFlags: 1
