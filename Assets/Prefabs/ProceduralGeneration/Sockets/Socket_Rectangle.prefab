@@ -64,7 +64,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1288911489762106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: -1.33, z: 8.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4141471281777938}
@@ -126,6 +126,7 @@ MonoBehaviour:
   roomOptions:
   - {fileID: 1608978388917216, guid: 413a779db778443d3b9191cc5117aeb1, type: 2}
   - {fileID: 1106075918561434, guid: bb1c5316d2733471aadee0a04a6e78e8, type: 2}
+  - {fileID: 1714747952995606, guid: a963d12922dac4f2fabcbf274bcf6d8f, type: 2}
   rotationOptions:
   - 0
   - 180
