@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114181573500896490}
   - component: {fileID: 114043442685691560}
   - component: {fileID: 114138246957762724}
+  - component: {fileID: 114436806974192750}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -35,8 +36,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1114710189164066}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.220715, y: 3.6231785, z: -10.838882}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 794.2207, y: 300.12317, z: -10.838882}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,3 +83,22 @@ MonoBehaviour:
   _persistent: 0
   BruteForce: {fileID: 0}
   TypingSim: {fileID: 0}
+  LinePizzle: {fileID: 0}
+  InProgress: 0
+--- !u!114 &114436806974192750
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1114710189164066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85a046ff0c9c334e9d2ade0cb20e8b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentHolder: {fileID: 0}
+  textBox: {fileID: 1784264766304356, guid: 3ddd89fb6ccabf940a61c69528cc8ddb, type: 2}
+  objectives:
+  - Kill All Humans
+  - Steal the Soul
+  - Become Human

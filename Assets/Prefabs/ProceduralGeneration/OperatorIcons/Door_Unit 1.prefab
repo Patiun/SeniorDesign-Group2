@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 54904347855883492}
   - component: {fileID: 114557541962223776}
   - component: {fileID: 208859619625351856}
-  - component: {fileID: 114749673261384876}
+  - component: {fileID: 114993196979168368}
   m_Layer: 15
   m_Name: Door
   m_TagString: Door
@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 65396117121045278}
   - component: {fileID: 114656145530108394}
   m_Layer: 15
-  m_Name: Door_Unit
+  m_Name: Door_Unit 1
   m_TagString: CannotGrab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -541,7 +541,7 @@ MonoBehaviour:
   door: {fileID: 114557541962223776}
   accepted:
   - Enemy
---- !u!114 &114749673261384876
+--- !u!114 &114993196979168368
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
