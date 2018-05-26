@@ -8,6 +8,7 @@ public class EnemyPopulation : MonoBehaviour {
 	public int minPatrolSize,maxPatrolSize;
 	public float minDistanceBetween;
 	public GameObject enemyPrefab;
+	public GameObject patrolGroup;
 	public GameObject[] allPoints;
 
 	private List<GameObject> usedPoints;
@@ -23,7 +24,22 @@ public class EnemyPopulation : MonoBehaviour {
 		//GenerateEnemies ();
 	}
 
+	public void LoadPatrols() {
+		int childCount = patrolGroup.transform.childCount;
+		allPoints = new GameObject[childCount];
+		for (int i = 0; i < childCount; i++) {
+			GameObject child = patrolGroup.transform.GetChild (i).gameObject;
+			PatrolPoint point = child.GetComponent<PatrolPoint> ();
+			if (point != null) {
+				allPoints [i] = child;
+			}
+		}
+	}
+
 	public void GenerateEnemies() {
+		if (patrolGroup != null) {
+			LoadPatrols();
+		}
 		unusedPoints = new List<GameObject> (allPoints);
 		usedPoints = new List<GameObject> ();
 		enemyContainer = new GameObject ("Enemies");

@@ -6,6 +6,7 @@ public class LevelGeneration : MonoBehaviour {
 
 	public bool generateNewSeed;
 	public int seed;
+	public GameObject socketGroup;
 	public Socket[] sockets;
 
 	// Use this for initialization
@@ -13,12 +14,27 @@ public class LevelGeneration : MonoBehaviour {
 		if (generateNewSeed) {
 			seed = Random.Range (0, int.MaxValue);
 		}
+		if (socketGroup != null) {
+			LoadSockets ();
+		}
 		GenerateLevel ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	public void LoadSockets() {
+		int childCount = socketGroup.transform.childCount;
+		sockets = new Socket[childCount];
+		for (int i = 0; i < childCount; i++) {
+			GameObject child = socketGroup.transform.GetChild (i).gameObject;
+			Socket socket = child.GetComponent<Socket> ();
+			if (socket != null) {
+				sockets [i] = socket;
+			}
+		}
 	}
 
 	private void GenerateLevel() {
