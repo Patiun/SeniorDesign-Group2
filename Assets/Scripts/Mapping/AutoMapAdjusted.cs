@@ -14,14 +14,22 @@ public class AutoMapAdjusted : MonoBehaviour {
     public Camera BirdEyeCamera;
     //have to initialize here than awake or start since object map to view script will execute on awake
     //and awake are not in order so this might be executed last and cause errors
-    public static List<MapObjectData> mapObjects = new List<MapObjectData>();
+    public static List<MapObjectData> mapObjects;
     public static List<MapObjectData> mapRealTimeObjects = new List<MapObjectData>();
+
+    private void Awake()
+    {
+        mapObjects = new List<MapObjectData>();
+        mapRealTimeObjects = new List<MapObjectData>();
+    }
+
     private void Start()
     {
         DrawIconLocation();
     }
     void Update () {
         DrawRealTimeMap();
+        
     }
 
     public static void RegisterRealTimeMapIcon(GameObject owner, GameObject icon)

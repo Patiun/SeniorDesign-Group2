@@ -9,12 +9,12 @@ public class ObjectMapToView : MonoBehaviour
 
     private GameObject icon;
 
-    void Awake()
+    private void OnEnable()
     {
-        if(_prefabIcon != null)
+        if (_prefabIcon != null)
         {
             icon = Instantiate(_prefabIcon);
-            if(icon.gameObject.name.Contains("Player"))
+            if (icon.gameObject.name.Contains("Player"))
             {
                 AutoMapAdjusted.RegisterRealTimeMapIcon(gameObject, icon);
             }
@@ -26,10 +26,7 @@ public class ObjectMapToView : MonoBehaviour
             }
 
         }
-
-
     }
-
     private void AssignGameObjectToMenu()
     {
         if(icon.transform.Find("Container").GetComponent<LazerMenu>() != null)
