@@ -3,8 +3,8 @@ using System.Collections;
 using UnityEngine.UI;
 public class FanMenu : AbstractHackMenu
 {
-    [SerializeField]
-    private FanRotation fanRotation;
+
+    public FanRotation fanRotation;
     [SerializeField]
     private PuzzleDifficultiesLevel level;
 

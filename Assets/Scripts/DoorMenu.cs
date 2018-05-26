@@ -5,7 +5,7 @@ public class DoorMenu : AbstractHackMenu
 {
     [SerializeField]
     private GameObject door;
-    private Door door_scr;
+    public Door door_scr;
     [SerializeField]
     private PuzzleDifficultiesLevel level;
 
@@ -18,8 +18,8 @@ public class DoorMenu : AbstractHackMenu
 
     private void Start()
     {
-
-        door_scr = door.GetComponent<Door>();
+        if(door != null)
+            door_scr = door.GetComponent<Door>();
         lockb = transform.Find("LockButton").gameObject;
         unlock = transform.Find("UnlockButton").gameObject;
         close = transform.Find("CloseButton").gameObject;

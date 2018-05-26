@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class IconDropdown : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
 
     private GameObject container;
-    private bool isOpen;
+    public bool isOpen;
 
     void Awake()
     {

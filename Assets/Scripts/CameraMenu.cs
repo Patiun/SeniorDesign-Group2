@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 public class CameraMenu : AbstractHackMenu
 {
-    [SerializeField]
-    private GameObject _cameraObject;
+    
+    public GameObject _cameraObject;
     [SerializeField]
     private float _distruptTimer = 5;
     [SerializeField]
