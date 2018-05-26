@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UpdatePlayerTags : MonoBehaviour {
+public class AgentSetup : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		GameState gameState = GameObject.Find ("WorldController").GetComponent<GameState> ();
-		gameState.player = this.transform.gameObject;
+		//transform.parent = transform.parent.parent.parent.parent;
+		transform.parent = null;
 	}
 	
 	// Update is called once per frame

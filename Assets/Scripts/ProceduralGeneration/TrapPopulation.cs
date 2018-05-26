@@ -5,6 +5,7 @@ using UnityEngine;
 public class TrapPopulation : MonoBehaviour {
 
 	public int numTraps;
+	public GameObject trapGroup; 
 	public TrapPoint[] trapPoints;
 
 	private List<TrapPoint> used, unused;
@@ -19,7 +20,22 @@ public class TrapPopulation : MonoBehaviour {
 		
 	}
 
+	public void LoadTrapGroup() {
+		int childCount = trapGroup.transform.childCount;
+		trapPoints = new TrapPoint[childCount];
+		for (int i = 0; i < childCount; i++) {
+			GameObject child = trapGroup.transform.GetChild (i).gameObject;
+			TrapPoint trapPoint = child.GetComponent<TrapPoint> ();
+			if (trapPoint != null) {
+				trapPoints [i] = trapPoint;
+			}
+		}
+	}
+
 	public void GenerateTraps() {
+		if (trapGroup != null) {
+			LoadTrapGroup ();
+		}
 		unused = new List<TrapPoint> (trapPoints);
 		used = new List<TrapPoint> ();
 		for (int i = 0; i < numTraps; i++) {

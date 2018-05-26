@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Socket : MonoBehaviour {
 
+	public enum SocketType {SQUARE,RECTANGLE,ELBOW,ELEVATOR};
+
+	public SocketType socketType;
 	public GameObject[] roomOptions;
 	public float[] rotationOptions;
 

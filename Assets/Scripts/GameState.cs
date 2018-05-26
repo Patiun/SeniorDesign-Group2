@@ -19,7 +19,9 @@ public class GameState : MonoBehaviour {
 	void Start () {
 		startTime = Time.time;
 		//Time.timeScale = 1.0f;
+		scripts = GameObject.Find("VRTK Scripts");
 		scripts.SetActive (true);
+		player = GameObject.Find ("[CameraRig]"); //Does not support cross platform
 	}
 	
 	// Update is called once per frame
