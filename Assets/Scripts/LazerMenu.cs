@@ -3,8 +3,8 @@ using System.Collections;
 using UnityEngine.UI;
 public class LazerMenu : AbstractHackMenu
 {
-    [SerializeField]
-    private LazerGroupBehavior _lazerObject;
+    
+    public LazerGroupBehavior _lazerObject;
     [SerializeField]
     private PuzzleDifficultiesLevel level;
 
