@@ -12,13 +12,15 @@ public class EnemyVisionDetection : MonoBehaviour {
 			es.PlayerSweep (col.ClosestPoint(transform.position));
 		}
 		if (col.tag == "Interactible")
-        {
-            if (col.GetComponent<ObjectStrangeLocation>().needsInvestigation == true)
-            {
-				aI.MinorActivity(col.transform.position);
-				col.GetComponent<ObjectStrangeLocation>().needsInvestigation = false;
-            }
-        }
+		{
+			ObjectStrangeLocation strangeLocation = col.GetComponent<ObjectStrangeLocation> ();
+			if (strangeLocation != null) {
+				if (strangeLocation.needsInvestigation == true) {
+					aI.MinorActivity (col.transform.position);
+					strangeLocation.needsInvestigation = false;
+				}
+			}
+		}
 	}
 
 	void OnTriggerStay(Collider col) {
@@ -27,11 +29,13 @@ public class EnemyVisionDetection : MonoBehaviour {
 		}
 		if (col.tag == "Interactible")
         {
-            if (col.GetComponent<ObjectStrangeLocation>().needsInvestigation == true)
-            {
-				aI.MinorActivity(col.transform.position);
-                col.GetComponent<ObjectStrangeLocation>().needsInvestigation = false;
-            }
+			ObjectStrangeLocation strangeLocation = col.GetComponent<ObjectStrangeLocation> ();
+			if (strangeLocation != null) {
+				if (strangeLocation.needsInvestigation == true) {
+					aI.MinorActivity (col.transform.position);
+					strangeLocation.needsInvestigation = false;
+				}
+			}
         }
 	}
 }

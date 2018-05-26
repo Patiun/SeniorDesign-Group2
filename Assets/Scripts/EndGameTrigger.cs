@@ -8,7 +8,7 @@ public class EndGameTrigger : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		game = GameObject.Find ("WorldController").GetComponent<GameState> ();
 	}
 	
 	// Update is called once per frame
