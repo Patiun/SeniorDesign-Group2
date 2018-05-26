@@ -20,7 +20,7 @@ public class SoundEffect : MonoBehaviour {
 
 	public void OnCollisionEnter(Collision collision)
 	{
-		if (canMakeNoise) {
+		if (canMakeNoise && collision.gameObject.tag != "Enemy") {
 			canMakeNoise = false;
 			StartCoroutine(WaitForEcho(0.75f));
 			if (collision.gameObject.tag != "Player" && collision.gameObject.tag != "Enemy") {

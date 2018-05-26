@@ -62,7 +62,7 @@ public class EnemyPopulation : MonoBehaviour {
 		}
 	}
 
-	private List<GameObject> GeneratePath(GameObject startingPoint) {
+	public List<GameObject> GeneratePath(GameObject startingPoint) {
 		List<GameObject> path = new List<GameObject> ();
 		int patrolSize = Random.Range (minPatrolSize-1, maxPatrolSize-1);
 		path.Add (startingPoint);
