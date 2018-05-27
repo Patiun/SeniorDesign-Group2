@@ -6,7 +6,7 @@ public class EnemyPopulation : MonoBehaviour {
 
 	public int numEnemies;
 	public int minPatrolSize,maxPatrolSize;
-	public float minDistanceBetween;
+	public float minDistanceBetween,enemyHelpRadius = 35f;
 	public GameObject enemyPrefab;
 	public GameObject patrolGroup;
 	public GameObject[] allPoints;
@@ -46,6 +46,7 @@ public class EnemyPopulation : MonoBehaviour {
 			numEnemies = levelDifficulty.numEnemies;
 			minPatrolSize = levelDifficulty.minPatrolSize;
 			maxPatrolSize = levelDifficulty.maxPatrolSize;
+			enemyHelpRadius = levelDifficulty.enemyHelpRadius;
 		}
 
 		unusedPoints = new List<GameObject> (allPoints);
@@ -60,6 +61,7 @@ public class EnemyPopulation : MonoBehaviour {
 				usedPoints.Add (point);
 				GameObject newEnemy = Instantiate (enemyPrefab);
 				newEnemy.transform.position = point.transform.position;
+				newEnemy.GetComponent<SphereCollider> ().radius = enemyHelpRadius;
 				newEnemy.transform.parent = enemyContainer.transform;
 				newEnemy.GetComponent<EnemyAI> ().worldState = GameObject.Find ("WorldController").GetComponent<WorldState> ();
 				newEnemy.GetComponent<EnemyMovment> ().patrolPoints = GeneratePath (point);
