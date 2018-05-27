@@ -8,60 +8,24 @@ public class ElevatorKeycardAccess : MonoBehaviour {
 	public bool hacked = true; //Have use hacking or real version
 	public GameObject leftDoor,rightDoor;
 	public float openSpeed;
-	private float leftPosition,rightPosition,targetLeftPosition,targetRightPosition;
 	private float difference = 2.0f;
+	private Vector3 leftTarget, leftStart, rightTarget, rightStart;
 	// Use this for initialization
 	void Start () {
-		leftPosition = leftDoor.transform.position.x;
-		rightPosition = rightDoor.transform.position.x;
-		targetLeftPosition = leftPosition + difference;
-		targetRightPosition = rightPosition - difference;
+		leftTarget = leftDoor.transform.position + leftDoor.transform.right * -difference;
+		rightTarget = rightDoor.transform.position + rightDoor.transform.right*difference;
+		leftStart = leftDoor.transform.position;
+		rightStart = rightDoor.transform.position;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (engaged && hacked) {
-			//Left Door
-			if (leftDoor.transform.position.x < targetLeftPosition) {
-				Vector3 newPosition = leftDoor.transform.position;
-				newPosition.x += difference / openSpeed;
-				leftDoor.transform.position = newPosition;
-			} else if (leftDoor.transform.position.x > targetLeftPosition) {
-				Vector3 newPosition = leftDoor.transform.position;
-				newPosition.x = targetLeftPosition;
-				leftDoor.transform.position = newPosition;
-			}
-			//Right Door
-			if (rightDoor.transform.position.x > targetRightPosition) {
-				Vector3 newPosition = rightDoor.transform.position;
-				newPosition.x -= difference / openSpeed;
-				rightDoor.transform.position = newPosition;
-			} else if (rightDoor.transform.position.x < targetRightPosition) {
-				Vector3 newPosition = rightDoor.transform.position;
-				newPosition.x = targetRightPosition;
-				rightDoor.transform.position = newPosition;
-			}
+			leftDoor.transform.position = Vector3.Lerp (leftDoor.transform.position, leftTarget, Time.deltaTime * openSpeed);
+			rightDoor.transform.position = Vector3.Lerp (rightDoor.transform.position, rightTarget, Time.deltaTime * openSpeed);
 		} else {
-			//Left Door
-			if (leftDoor.transform.position.x > leftPosition) {
-				Vector3 newPosition = leftDoor.transform.position;
-				newPosition.x -= difference / openSpeed;
-				leftDoor.transform.position = newPosition;
-			} else if (leftDoor.transform.position.x < leftPosition) {
-				Vector3 newPosition = leftDoor.transform.position;
-				newPosition.x = leftPosition;
-				leftDoor.transform.position = newPosition;
-			}
-			//Right Door
-			if (rightDoor.transform.position.x < rightPosition) {
-				Vector3 newPosition = rightDoor.transform.position;
-				newPosition.x += difference / openSpeed;
-				rightDoor.transform.position = newPosition;
-			} else if (rightDoor.transform.position.x > rightPosition) {
-				Vector3 newPosition = rightDoor.transform.position;
-				newPosition.x = rightPosition;
-				rightDoor.transform.position = newPosition;
-			}
+			leftDoor.transform.position = Vector3.Lerp (leftDoor.transform.position, leftStart, Time.deltaTime * openSpeed);
+			rightDoor.transform.position = Vector3.Lerp (rightDoor.transform.position, rightStart, Time.deltaTime * openSpeed);
 		}
 	}
 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObjectDropZone : MonoBehaviour {
 
 	public GameObject objectiveObject;
-	public float areaScaleX, areaScaleZ, areaScaleY;
+	public float width = 0.1f, length = 0.1f, height = 0.1f;
 	
 	// Update is called once per frame
 	void Update () {
@@ -15,11 +15,11 @@ public class ObjectDropZone : MonoBehaviour {
 	}
 		
 	public void DropObject() {
-		float randX = Random.Range (-areaScaleX, areaScaleX);
-		float randY = Random.Range (-areaScaleY, areaScaleY);
-		float randZ = Random.Range (-areaScaleZ, areaScaleZ);
+		float randX = Random.Range (-width, width);
+		float randY = Random.Range (-height, height);
+		float randZ = Random.Range (-length, length);
 
-		Vector3 dropLocation = transform.position + new Vector3 (randX, randY, randZ);
+		Vector3 dropLocation = transform.position + Quaternion.AngleAxis(transform.rotation.y,transform.up) * (new Vector3 (randX, randY, randZ));
 
 		GameObject objective = Instantiate (objectiveObject);
 		objective.transform.position = dropLocation;
@@ -27,6 +27,6 @@ public class ObjectDropZone : MonoBehaviour {
 
 	void OnDrawGizmos() {
 		Gizmos.color = Color.green;
-		Gizmos.DrawWireCube (transform.position, new Vector3 (2*areaScaleX, 2*areaScaleY, 2*areaScaleZ));
+		Gizmos.DrawWireCube (transform.position, Quaternion.AngleAxis(transform.rotation.y,transform.up) * (new Vector3 (2*width, 2*height, 2*length)));
 	}
 }

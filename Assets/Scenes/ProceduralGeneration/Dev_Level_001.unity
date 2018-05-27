@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1802837, g: 0.22571404, b: 0.30692273, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -178,7 +178,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4175901528262356, guid: a059512a8b6f64346ab96e5d53324d40, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -12.8
+      value: -12.495
       objectReference: {fileID: 0}
     - target: {fileID: 4175901528262356, guid: a059512a8b6f64346ab96e5d53324d40, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1034,7 +1034,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4175901528262356, guid: a059512a8b6f64346ab96e5d53324d40, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -13.29
+      value: -14.23
       objectReference: {fileID: 0}
     - target: {fileID: 4175901528262356, guid: a059512a8b6f64346ab96e5d53324d40, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1264,7 +1264,7 @@ Prefab:
     - target: {fileID: 224337746436835812, guid: 87fd3ffb37afb5f48a8029066da66c51,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 51
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87fd3ffb37afb5f48a8029066da66c51, type: 2}
@@ -4185,7 +4185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   generateNewSeed: 1
-  seed: 1425288904
+  seed: 1475847738
   socketGroup: {fileID: 1304075120}
   elevatorSocketPrefab: {fileID: 1191667452114452, guid: 311f3d189714b6e4e87562b44d0957c2,
     type: 2}

@@ -4637,7 +4637,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1822274950582930}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 47.338135, y: 386.67578, z: -42.073807}
+  m_LocalPosition: {x: 11.7, y: 0, z: 12.2}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 4577046908454048}
@@ -7040,7 +7040,7 @@ Transform:
   m_GameObject: {fileID: 1217114733990776}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.28599998, z: 0}
-  m_LocalScale: {x: 17.139236, y: 22.71177, z: 17.139238}
+  m_LocalScale: {x: 17.139236, y: 37.89883, z: 17.139238}
   m_Children: []
   m_Father: {fileID: 4016677332945126}
   m_RootOrder: 4
@@ -19493,9 +19493,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114556713660720640}
   secondaryGrabActionScript: {fileID: 114494902736677460}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -19600,9 +19600,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114869713769222894}
   secondaryGrabActionScript: {fileID: 114554373392140430}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -19630,9 +19630,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114611174265002674}
   secondaryGrabActionScript: {fileID: 114630923179076074}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -19811,9 +19811,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114651187253980656}
   secondaryGrabActionScript: {fileID: 114906121836664406}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -19923,9 +19923,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114368313262304264}
   secondaryGrabActionScript: {fileID: 114208098411543088}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -20044,9 +20044,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114457072709788132}
   secondaryGrabActionScript: {fileID: 114925179961094152}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -20074,9 +20074,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114244485917890734}
   secondaryGrabActionScript: {fileID: 114364538630271418}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -20298,9 +20298,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114459111603014218}
   secondaryGrabActionScript: {fileID: 114436714740648280}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -20391,9 +20391,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114071483563208778}
   secondaryGrabActionScript: {fileID: 114636445307677618}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -20421,9 +20421,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114374230154699332}
   secondaryGrabActionScript: {fileID: 114918873654435342}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -20597,9 +20597,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114623871738650130}
   secondaryGrabActionScript: {fileID: 114836171787995972}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -20627,9 +20627,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114607569550070504}
   secondaryGrabActionScript: {fileID: 114587726373749880}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -20657,9 +20657,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114741656072737282}
   secondaryGrabActionScript: {fileID: 114203665516798238}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -20700,9 +20700,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114770328017938122}
   secondaryGrabActionScript: {fileID: 114472148744974418}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -20753,9 +20753,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114519842108787736}
   secondaryGrabActionScript: {fileID: 114547013565645900}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -20834,9 +20834,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114705289731909310}
   secondaryGrabActionScript: {fileID: 114921492290439252}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -20875,9 +20875,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114398094542239402}
   secondaryGrabActionScript: {fileID: 114915913284497356}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -21150,9 +21150,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114544782355231644}
   secondaryGrabActionScript: {fileID: 114863843530131756}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -21180,9 +21180,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114071868654188836}
   secondaryGrabActionScript: {fileID: 114246641025889484}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -21233,9 +21233,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114685404087959546}
   secondaryGrabActionScript: {fileID: 114571519336325014}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -21276,9 +21276,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114392031493524848}
   secondaryGrabActionScript: {fileID: 114181712151958890}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -21483,9 +21483,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114962668690321200}
   secondaryGrabActionScript: {fileID: 114221822626924240}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -21748,9 +21748,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114329363795873468}
   secondaryGrabActionScript: {fileID: 114265527816580320}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -21778,9 +21778,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114539089737926680}
   secondaryGrabActionScript: {fileID: 114256485698223100}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -21902,9 +21902,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114617563784290326}
   secondaryGrabActionScript: {fileID: 114572579305868722}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -21995,9 +21995,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114832160224171620}
   secondaryGrabActionScript: {fileID: 114397060581461672}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -22025,9 +22025,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114978136404258972}
   secondaryGrabActionScript: {fileID: 114529466806251878}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -22109,9 +22109,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114770699939638120}
   secondaryGrabActionScript: {fileID: 114028787178732048}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -22271,9 +22271,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114158826373212032}
   secondaryGrabActionScript: {fileID: 114413035004095220}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -22301,9 +22301,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114102669122444760}
   secondaryGrabActionScript: {fileID: 114201471628414700}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -22375,9 +22375,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114581245230842922}
   secondaryGrabActionScript: {fileID: 114561823233489560}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -22419,9 +22419,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114034619575488404}
   secondaryGrabActionScript: {fileID: 114603612549883084}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -22524,9 +22524,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114710572751140946}
   secondaryGrabActionScript: {fileID: 114642766987609328}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -22702,9 +22702,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114999970485023340}
   secondaryGrabActionScript: {fileID: 114269472429893762}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -22790,9 +22790,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114600337841368180}
   secondaryGrabActionScript: {fileID: 114664851582284210}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -23054,9 +23054,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114269025464074100}
   secondaryGrabActionScript: {fileID: 114575059395054398}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -23314,9 +23314,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114634166341341912}
   secondaryGrabActionScript: {fileID: 114631276301920740}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -23380,9 +23380,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114342885338620358}
   secondaryGrabActionScript: {fileID: 114815102525085908}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -23582,9 +23582,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114053141512578964}
   secondaryGrabActionScript: {fileID: 114899491311163272}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -23612,9 +23612,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114056232875934678}
   secondaryGrabActionScript: {fileID: 114452870618577288}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -23665,9 +23665,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114635810761988810}
   secondaryGrabActionScript: {fileID: 114520846506010928}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -23695,9 +23695,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114746855739458188}
   secondaryGrabActionScript: {fileID: 114245903316434616}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -23873,9 +23873,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114242168244197770}
   secondaryGrabActionScript: {fileID: 114388732268553938}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -23960,9 +23960,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114421644226551366}
   secondaryGrabActionScript: {fileID: 114503314961207326}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -24258,9 +24258,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114490448734490640}
   secondaryGrabActionScript: {fileID: 114541721858648142}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -24399,9 +24399,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114212689681746516}
   secondaryGrabActionScript: {fileID: 114554598462964862}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -24467,9 +24467,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114761812935270942}
   secondaryGrabActionScript: {fileID: 114973509155015372}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -24584,9 +24584,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114124312357571576}
   secondaryGrabActionScript: {fileID: 114099423801806530}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -24614,9 +24614,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114808072479558586}
   secondaryGrabActionScript: {fileID: 114011185109826564}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -24773,9 +24773,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114376025509894260}
   secondaryGrabActionScript: {fileID: 114101650038620452}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -24829,9 +24829,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114185106928775302}
   secondaryGrabActionScript: {fileID: 114105894519476420}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -24994,9 +24994,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114947377464780216}
   secondaryGrabActionScript: {fileID: 114546395063075452}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -25024,9 +25024,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114924358971654886}
   secondaryGrabActionScript: {fileID: 114455105412143282}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -25054,9 +25054,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114020198780553116}
   secondaryGrabActionScript: {fileID: 114944448712773546}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -25175,9 +25175,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114159339116990464}
   secondaryGrabActionScript: {fileID: 114321720616916084}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -25243,9 +25243,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114894776286490806}
   secondaryGrabActionScript: {fileID: 114120097239994432}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -25287,9 +25287,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114559406947274096}
   secondaryGrabActionScript: {fileID: 114813113917527582}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -25499,9 +25499,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114031785027955532}
   secondaryGrabActionScript: {fileID: 114647389359365390}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -25529,9 +25529,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114882550672655248}
   secondaryGrabActionScript: {fileID: 114292491737756650}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -25804,9 +25804,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114334390471075606}
   secondaryGrabActionScript: {fileID: 114195715009126404}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -26145,9 +26145,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114626697947902524}
   secondaryGrabActionScript: {fileID: 114733185856749334}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -26210,9 +26210,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114145249513958968}
   secondaryGrabActionScript: {fileID: 114308043981119838}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -26240,9 +26240,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114063563450988690}
   secondaryGrabActionScript: {fileID: 114982585072406370}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -26432,9 +26432,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114979383823093316}
   secondaryGrabActionScript: {fileID: 114777524680426028}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -26707,9 +26707,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114390705889076808}
   secondaryGrabActionScript: {fileID: 114401492932395838}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -27001,9 +27001,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114936504554395102}
   secondaryGrabActionScript: {fileID: 114409580604218602}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -27178,9 +27178,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114921716240993678}
   secondaryGrabActionScript: {fileID: 114630932928008406}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -27262,9 +27262,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114137524050435278}
   secondaryGrabActionScript: {fileID: 114148642904930494}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -27346,9 +27346,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114370133705876930}
   secondaryGrabActionScript: {fileID: 114067584857313442}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -27399,9 +27399,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114535760565451210}
   secondaryGrabActionScript: {fileID: 114934992493927892}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -27559,9 +27559,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114453112969887616}
   secondaryGrabActionScript: {fileID: 114373573669778974}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -27831,9 +27831,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114694841267809506}
   secondaryGrabActionScript: {fileID: 114384466570190892}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -28071,9 +28071,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114662421830929134}
   secondaryGrabActionScript: {fileID: 114205740070284004}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -28101,9 +28101,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114340804688511372}
   secondaryGrabActionScript: {fileID: 114039978247917248}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -28165,9 +28165,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114211619145812758}
   secondaryGrabActionScript: {fileID: 114336137483171950}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -28195,9 +28195,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114405419947430476}
   secondaryGrabActionScript: {fileID: 114001612597060872}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -28385,9 +28385,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114957830800711632}
   secondaryGrabActionScript: {fileID: 114227491746302814}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -28602,9 +28602,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114815864931115520}
   secondaryGrabActionScript: {fileID: 114002360404872708}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -28669,9 +28669,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114696377879519096}
   secondaryGrabActionScript: {fileID: 114378546897796192}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -28699,9 +28699,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114756709782155368}
   secondaryGrabActionScript: {fileID: 114105831217027510}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -28729,9 +28729,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114180756508645634}
   secondaryGrabActionScript: {fileID: 114418021019875634}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -28840,9 +28840,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114032860114145212}
   secondaryGrabActionScript: {fileID: 114808260665032262}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -28996,9 +28996,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114710310626250246}
   secondaryGrabActionScript: {fileID: 114745016348951396}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -29039,9 +29039,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114817055201603544}
   secondaryGrabActionScript: {fileID: 114342799840323892}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -29166,9 +29166,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114259255793523344}
   secondaryGrabActionScript: {fileID: 114974712631749656}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -29220,9 +29220,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114934832222876890}
   secondaryGrabActionScript: {fileID: 114690206008452762}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -29289,9 +29289,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114036942812604040}
   secondaryGrabActionScript: {fileID: 114731939122469752}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -29319,9 +29319,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114707116056186872}
   secondaryGrabActionScript: {fileID: 114307431473533456}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -29400,9 +29400,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114928563142924454}
   secondaryGrabActionScript: {fileID: 114047421562636512}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -29565,9 +29565,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114450896562015554}
   secondaryGrabActionScript: {fileID: 114445299679152646}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -29726,9 +29726,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114198594519996006}
   secondaryGrabActionScript: {fileID: 114760293150198798}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -29773,9 +29773,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114742907001924478}
   secondaryGrabActionScript: {fileID: 114028490586851876}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -30145,9 +30145,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114909527989482250}
   secondaryGrabActionScript: {fileID: 114796454398757128}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -30198,9 +30198,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114952563259632458}
   secondaryGrabActionScript: {fileID: 114776274779832494}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -30364,9 +30364,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114913188805886792}
   secondaryGrabActionScript: {fileID: 114070202080780440}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -30671,9 +30671,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114637323203897954}
   secondaryGrabActionScript: {fileID: 114880519268896120}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -30725,9 +30725,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114090114055388948}
   secondaryGrabActionScript: {fileID: 114343323054021360}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -30963,9 +30963,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114620960176914478}
   secondaryGrabActionScript: {fileID: 114534546116442856}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -31016,9 +31016,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114131246341771172}
   secondaryGrabActionScript: {fileID: 114196785180629784}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -31110,9 +31110,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114023665595446948}
   secondaryGrabActionScript: {fileID: 114022664314485504}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -31267,9 +31267,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114308807332858742}
   secondaryGrabActionScript: {fileID: 114432358867468286}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -31309,9 +31309,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114333962836332208}
   secondaryGrabActionScript: {fileID: 114061898623855002}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -31401,9 +31401,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114742418760804476}
   secondaryGrabActionScript: {fileID: 114093858431706758}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -31851,9 +31851,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114466519234945010}
   secondaryGrabActionScript: {fileID: 114365748388700562}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -31881,9 +31881,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114018439313288670}
   secondaryGrabActionScript: {fileID: 114358009522357490}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -32072,9 +32072,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114391492224188400}
   secondaryGrabActionScript: {fileID: 114813767386801988}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -32148,9 +32148,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114379832331398314}
   secondaryGrabActionScript: {fileID: 114007900403138106}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -32571,9 +32571,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114804372843391370}
   secondaryGrabActionScript: {fileID: 114101733082378864}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -32743,9 +32743,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114795777190640526}
   secondaryGrabActionScript: {fileID: 114604642111410696}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -32786,9 +32786,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114858089815576240}
   secondaryGrabActionScript: {fileID: 114442470050869394}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -32828,9 +32828,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114359764383273686}
   secondaryGrabActionScript: {fileID: 114336810422802712}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -33056,9 +33056,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114745747876928496}
   secondaryGrabActionScript: {fileID: 114150765550759622}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -33381,9 +33381,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114949798587742838}
   secondaryGrabActionScript: {fileID: 114707786213274176}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -33446,9 +33446,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114301148333059630}
   secondaryGrabActionScript: {fileID: 114965325350830472}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -33527,9 +33527,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114775719310899622}
   secondaryGrabActionScript: {fileID: 114049585567118120}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -33557,9 +33557,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114643099174618514}
   secondaryGrabActionScript: {fileID: 114111124007429806}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -33870,9 +33870,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114846868995221502}
   secondaryGrabActionScript: {fileID: 114041324496347098}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -33950,9 +33950,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114183064213836110}
   secondaryGrabActionScript: {fileID: 114838588873408674}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -34026,9 +34026,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114806283202204984}
   secondaryGrabActionScript: {fileID: 114687254093874994}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -34067,9 +34067,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114150036602603642}
   secondaryGrabActionScript: {fileID: 114861154851160886}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -34222,9 +34222,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114463959658600998}
   secondaryGrabActionScript: {fileID: 114681013463653022}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -34389,9 +34389,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114082062993359938}
   secondaryGrabActionScript: {fileID: 114164201325847044}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -34443,9 +34443,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114142044212904478}
   secondaryGrabActionScript: {fileID: 114447032217528040}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -34554,9 +34554,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114193626142101036}
   secondaryGrabActionScript: {fileID: 114028126526146124}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -34718,9 +34718,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114010666145930306}
   secondaryGrabActionScript: {fileID: 114117067513300508}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -34834,9 +34834,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114324501014891392}
   secondaryGrabActionScript: {fileID: 114438670628915594}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -35058,9 +35058,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114467059337927658}
   secondaryGrabActionScript: {fileID: 114263932459101656}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -35142,9 +35142,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114291142155674882}
   secondaryGrabActionScript: {fileID: 114461575236506684}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -35172,9 +35172,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114441372293623458}
   secondaryGrabActionScript: {fileID: 114202243410025562}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -35337,9 +35337,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114727290378906526}
   secondaryGrabActionScript: {fileID: 114326174986531496}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -35588,9 +35588,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114390823045100766}
   secondaryGrabActionScript: {fileID: 114839938083742488}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -35674,9 +35674,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114126610321380946}
   secondaryGrabActionScript: {fileID: 114486272230776574}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -35800,9 +35800,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114981938917931302}
   secondaryGrabActionScript: {fileID: 114786570566528590}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -35975,9 +35975,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114584910488996714}
   secondaryGrabActionScript: {fileID: 114078210901106488}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -36005,9 +36005,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114722327030287972}
   secondaryGrabActionScript: {fileID: 114843127314973262}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -36178,9 +36178,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114709331847540536}
   secondaryGrabActionScript: {fileID: 114316410588080074}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -36220,9 +36220,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114847947853686864}
   secondaryGrabActionScript: {fileID: 114565048284642694}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -36250,9 +36250,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114712078571948984}
   secondaryGrabActionScript: {fileID: 114077184488538740}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -36347,9 +36347,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114773157119757646}
   secondaryGrabActionScript: {fileID: 114402243302264088}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -36657,9 +36657,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114963795953587378}
   secondaryGrabActionScript: {fileID: 114512890669779580}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -36687,9 +36687,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114199259907965276}
   secondaryGrabActionScript: {fileID: 114162479793213270}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -36742,9 +36742,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114308126412442414}
   secondaryGrabActionScript: {fileID: 114365188160026860}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -36877,9 +36877,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114569806608016350}
   secondaryGrabActionScript: {fileID: 114793849326127962}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -36948,9 +36948,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114930749224802628}
   secondaryGrabActionScript: {fileID: 114441821407547604}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -37047,9 +37047,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114412168921146548}
   secondaryGrabActionScript: {fileID: 114776302480169026}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -37175,9 +37175,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114903989828325528}
   secondaryGrabActionScript: {fileID: 114832292780772232}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -37222,9 +37222,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114714077551282996}
   secondaryGrabActionScript: {fileID: 114309087121986912}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -37691,9 +37691,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114177874660069202}
   secondaryGrabActionScript: {fileID: 114093936926567384}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -37797,9 +37797,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114682155104981666}
   secondaryGrabActionScript: {fileID: 114917393438735870}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -37827,9 +37827,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114955109958535320}
   secondaryGrabActionScript: {fileID: 114530182547235880}
-  isUsable: 1
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0

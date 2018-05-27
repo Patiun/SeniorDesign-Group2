@@ -8409,7 +8409,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1849577347981638}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 11.6, y: 0, z: 24.3}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 4220903984068240}
@@ -22878,8 +22878,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114760856892510870}
   secondaryGrabActionScript: {fileID: 114700771807080764}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -23084,7 +23084,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -23092,8 +23092,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114179458048533886}
   secondaryGrabActionScript: {fileID: 114237616480426558}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -23301,7 +23301,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -23309,8 +23309,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114517510762229674}
   secondaryGrabActionScript: {fileID: 114113209162942834}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -23416,7 +23416,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -23424,8 +23424,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114987301437927640}
   secondaryGrabActionScript: {fileID: 114545046034055944}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -23750,7 +23750,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -23758,8 +23758,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114095354746999240}
   secondaryGrabActionScript: {fileID: 114124625002940900}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -23867,7 +23867,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -23875,8 +23875,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114739952682057172}
   secondaryGrabActionScript: {fileID: 114675238605821472}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -23922,7 +23922,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -23930,8 +23930,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114924857288777242}
   secondaryGrabActionScript: {fileID: 114165215328298690}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -23988,7 +23988,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -23996,8 +23996,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114172652237383726}
   secondaryGrabActionScript: {fileID: 114497241007507676}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -24081,7 +24081,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -24089,8 +24089,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114644556141786812}
   secondaryGrabActionScript: {fileID: 114160398712514542}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -24293,7 +24293,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -24301,8 +24301,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114925072815522270}
   secondaryGrabActionScript: {fileID: 114637636610632866}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -24348,7 +24348,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -24356,8 +24356,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114588031022313776}
   secondaryGrabActionScript: {fileID: 114298336463639058}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -24492,7 +24492,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -24500,8 +24500,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114605475725151556}
   secondaryGrabActionScript: {fileID: 114416884214640238}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -24534,7 +24534,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -24542,8 +24542,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114845821343809522}
   secondaryGrabActionScript: {fileID: 114416461860524952}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -25161,7 +25161,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -25169,8 +25169,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114390788553096628}
   secondaryGrabActionScript: {fileID: 114773947681019942}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -25510,7 +25510,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -25518,8 +25518,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114786098409179514}
   secondaryGrabActionScript: {fileID: 114404716395643324}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -25759,7 +25759,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -25767,8 +25767,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114676454881276794}
   secondaryGrabActionScript: {fileID: 114138251387636798}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -25813,7 +25813,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -25821,8 +25821,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114034863865088170}
   secondaryGrabActionScript: {fileID: 114506054263140744}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -25884,7 +25884,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -25892,8 +25892,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114472233332184418}
   secondaryGrabActionScript: {fileID: 114643089932304728}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -25962,7 +25962,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -25970,8 +25970,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114744852071832760}
   secondaryGrabActionScript: {fileID: 114358942309843472}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -26004,7 +26004,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -26012,8 +26012,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114669060990959286}
   secondaryGrabActionScript: {fileID: 114159300007534146}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -26103,8 +26103,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114988821834095888}
   secondaryGrabActionScript: {fileID: 114098678909166848}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -26226,7 +26226,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -26234,8 +26234,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114837902569775310}
   secondaryGrabActionScript: {fileID: 114179611372787550}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -26291,7 +26291,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -26299,8 +26299,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114017486252168586}
   secondaryGrabActionScript: {fileID: 114570672569509004}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -26334,7 +26334,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -26342,8 +26342,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114000738302254392}
   secondaryGrabActionScript: {fileID: 114752398435873022}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -26462,7 +26462,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -26470,8 +26470,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114203234792012976}
   secondaryGrabActionScript: {fileID: 114473829320749356}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -26791,7 +26791,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -26799,8 +26799,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114972447060244520}
   secondaryGrabActionScript: {fileID: 114629824256508910}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -26868,7 +26868,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -26876,8 +26876,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114311469733268214}
   secondaryGrabActionScript: {fileID: 114126761663393174}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -26898,7 +26898,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -26906,8 +26906,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114653283335642132}
   secondaryGrabActionScript: {fileID: 114532567512103524}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -27038,7 +27038,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -27046,8 +27046,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114775417387369246}
   secondaryGrabActionScript: {fileID: 114944758403666570}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -27115,7 +27115,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -27123,8 +27123,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114467676423835832}
   secondaryGrabActionScript: {fileID: 114202154085613094}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -27145,7 +27145,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -27153,8 +27153,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114564676999780066}
   secondaryGrabActionScript: {fileID: 114336449920707006}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -28123,7 +28123,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -28131,8 +28131,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114192333580244884}
   secondaryGrabActionScript: {fileID: 114741310120260396}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -28153,7 +28153,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -28161,8 +28161,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114050354702863164}
   secondaryGrabActionScript: {fileID: 114124940154438146}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -28243,7 +28243,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -28251,8 +28251,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114059032076298256}
   secondaryGrabActionScript: {fileID: 114529520500656084}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -28273,7 +28273,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -28281,8 +28281,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114334586959869956}
   secondaryGrabActionScript: {fileID: 114612423465701726}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -28507,8 +28507,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114239146957854802}
   secondaryGrabActionScript: {fileID: 114299264775479122}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -28656,7 +28656,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -28664,8 +28664,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114921126121543302}
   secondaryGrabActionScript: {fileID: 114398949503895210}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -28757,7 +28757,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -28765,8 +28765,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114374482456349468}
   secondaryGrabActionScript: {fileID: 114297259434972616}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -29149,7 +29149,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -29157,8 +29157,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114606399344731584}
   secondaryGrabActionScript: {fileID: 114356034500151250}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -29421,7 +29421,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -29429,8 +29429,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114144436624192842}
   secondaryGrabActionScript: {fileID: 114156758986033412}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -29474,7 +29474,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -29482,8 +29482,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114201095001984766}
   secondaryGrabActionScript: {fileID: 114169449832747242}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -29800,7 +29800,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -29808,8 +29808,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114001689484996572}
   secondaryGrabActionScript: {fileID: 114261231656986566}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -29940,7 +29940,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -29948,8 +29948,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114549948776858368}
   secondaryGrabActionScript: {fileID: 114125703319736160}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -29982,7 +29982,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -29990,8 +29990,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114926134460002278}
   secondaryGrabActionScript: {fileID: 114339554428263874}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -30206,7 +30206,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -30214,8 +30214,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114678693240556666}
   secondaryGrabActionScript: {fileID: 114809675111143656}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -30309,7 +30309,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -30317,8 +30317,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114726122126414604}
   secondaryGrabActionScript: {fileID: 114505583397177816}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -30416,7 +30416,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -30424,8 +30424,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114409578523620726}
   secondaryGrabActionScript: {fileID: 114240442501023730}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -30446,7 +30446,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -30454,8 +30454,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114760663471397692}
   secondaryGrabActionScript: {fileID: 114224524378424796}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -30575,7 +30575,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -30583,8 +30583,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114639294254834672}
   secondaryGrabActionScript: {fileID: 114128899066967540}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -30800,7 +30800,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -30808,8 +30808,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114255001838985888}
   secondaryGrabActionScript: {fileID: 114064822926741456}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -30909,7 +30909,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -30917,8 +30917,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114697976845831676}
   secondaryGrabActionScript: {fileID: 114394841377756634}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -31226,7 +31226,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -31234,8 +31234,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114926163178829944}
   secondaryGrabActionScript: {fileID: 114440909047947968}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -31356,7 +31356,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -31364,8 +31364,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114353176794667334}
   secondaryGrabActionScript: {fileID: 114322974511038034}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -31386,7 +31386,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -31394,8 +31394,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114666006075060164}
   secondaryGrabActionScript: {fileID: 114116147323438616}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -31428,7 +31428,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -31436,8 +31436,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114226782404468606}
   secondaryGrabActionScript: {fileID: 114305882317504854}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -31470,7 +31470,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -31478,8 +31478,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114318606321986636}
   secondaryGrabActionScript: {fileID: 114339813435408410}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -31500,7 +31500,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -31508,8 +31508,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114703237195956910}
   secondaryGrabActionScript: {fileID: 114493004396211298}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -31842,7 +31842,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -31850,8 +31850,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114222459795782906}
   secondaryGrabActionScript: {fileID: 114030564764668058}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -31872,7 +31872,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -31880,8 +31880,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114732990299438984}
   secondaryGrabActionScript: {fileID: 114871857054120646}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -31902,7 +31902,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -31910,8 +31910,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114127328884151884}
   secondaryGrabActionScript: {fileID: 114856855199143220}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -31932,7 +31932,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -31940,8 +31940,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114498915033178950}
   secondaryGrabActionScript: {fileID: 114710614086216424}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -31962,7 +31962,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -31970,8 +31970,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114803036744982028}
   secondaryGrabActionScript: {fileID: 114634875125044668}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -31992,7 +31992,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -32000,8 +32000,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114321046597551424}
   secondaryGrabActionScript: {fileID: 114478082801528144}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -32058,7 +32058,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -32066,8 +32066,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114566324267305674}
   secondaryGrabActionScript: {fileID: 114267048994723774}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -32168,7 +32168,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -32176,8 +32176,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114087694437258412}
   secondaryGrabActionScript: {fileID: 114975384235896504}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -32399,7 +32399,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -32407,8 +32407,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114703755215016616}
   secondaryGrabActionScript: {fileID: 114890308224707188}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -32566,7 +32566,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -32574,8 +32574,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114844179323861876}
   secondaryGrabActionScript: {fileID: 114871642690972462}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -32783,7 +32783,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -32791,8 +32791,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114622988976290724}
   secondaryGrabActionScript: {fileID: 114353251474301186}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -33072,7 +33072,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -33080,8 +33080,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114325556798254366}
   secondaryGrabActionScript: {fileID: 114087270156279076}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -33247,7 +33247,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -33255,8 +33255,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114828591981968314}
   secondaryGrabActionScript: {fileID: 114986317197389298}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -33396,7 +33396,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -33404,8 +33404,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114943275585021336}
   secondaryGrabActionScript: {fileID: 114679308614950106}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -33476,8 +33476,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114572522774154116}
   secondaryGrabActionScript: {fileID: 114955911130277902}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -33620,7 +33620,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -33628,8 +33628,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114655991580907840}
   secondaryGrabActionScript: {fileID: 114615321546684264}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -33963,7 +33963,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -33971,8 +33971,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114715619691879488}
   secondaryGrabActionScript: {fileID: 114034324947669482}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -34135,7 +34135,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -34143,8 +34143,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114225622670368428}
   secondaryGrabActionScript: {fileID: 114780070772405630}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -34187,8 +34187,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114382495019406122}
   secondaryGrabActionScript: {fileID: 114775995631048590}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -34209,7 +34209,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -34217,8 +34217,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114976497599232516}
   secondaryGrabActionScript: {fileID: 114641037105146978}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -34390,7 +34390,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -34398,8 +34398,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114359088944368182}
   secondaryGrabActionScript: {fileID: 114829440949645836}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -34516,7 +34516,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -34524,8 +34524,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114768377839265320}
   secondaryGrabActionScript: {fileID: 114710012400798106}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -34606,7 +34606,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -34614,8 +34614,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114383232840084328}
   secondaryGrabActionScript: {fileID: 114209652592660894}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -34636,7 +34636,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -34644,8 +34644,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114182356206937498}
   secondaryGrabActionScript: {fileID: 114315965140986922}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -34689,7 +34689,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -34697,8 +34697,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114336920528606160}
   secondaryGrabActionScript: {fileID: 114548569691927390}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -34719,7 +34719,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -34727,8 +34727,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114332620210422510}
   secondaryGrabActionScript: {fileID: 114299315369243368}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -34970,7 +34970,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -34978,8 +34978,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114846707259737264}
   secondaryGrabActionScript: {fileID: 114143455774926428}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -35225,7 +35225,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -35233,8 +35233,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114555255589865778}
   secondaryGrabActionScript: {fileID: 114608927759556580}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -35461,7 +35461,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -35469,8 +35469,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114422334581879828}
   secondaryGrabActionScript: {fileID: 114763387506194788}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -35913,7 +35913,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -35921,8 +35921,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114405689908095818}
   secondaryGrabActionScript: {fileID: 114336584445589750}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -35991,7 +35991,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -35999,8 +35999,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114399367275558822}
   secondaryGrabActionScript: {fileID: 114048573105882160}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -36056,7 +36056,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -36064,8 +36064,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114063140144981222}
   secondaryGrabActionScript: {fileID: 114924119342014180}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -36215,7 +36215,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -36223,8 +36223,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114091881241597466}
   secondaryGrabActionScript: {fileID: 114985958421133192}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -36268,7 +36268,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -36276,8 +36276,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114627798221015098}
   secondaryGrabActionScript: {fileID: 114099432039147590}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -36361,7 +36361,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -36369,8 +36369,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114835935070278622}
   secondaryGrabActionScript: {fileID: 114683782031689018}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -36482,7 +36482,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -36490,8 +36490,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114987589699934370}
   secondaryGrabActionScript: {fileID: 114757979109095482}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -36588,7 +36588,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -36596,8 +36596,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114681394723887372}
   secondaryGrabActionScript: {fileID: 114463475074370928}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -36852,7 +36852,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -36860,8 +36860,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114367416206243578}
   secondaryGrabActionScript: {fileID: 114348926056659800}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -37031,7 +37031,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -37039,8 +37039,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114708459163926906}
   secondaryGrabActionScript: {fileID: 114251314259932010}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -37069,8 +37069,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114457605694728636}
   secondaryGrabActionScript: {fileID: 114303347303100968}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -37189,7 +37189,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -37197,8 +37197,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114428786821619736}
   secondaryGrabActionScript: {fileID: 114215378121643720}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -37806,8 +37806,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114799562390845890}
   secondaryGrabActionScript: {fileID: 114796917357095820}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -38094,7 +38094,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -38102,8 +38102,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114474280713237930}
   secondaryGrabActionScript: {fileID: 114878082241644328}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -38369,7 +38369,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -38377,8 +38377,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114734108310719110}
   secondaryGrabActionScript: {fileID: 114883094716112266}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -38447,7 +38447,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -38455,8 +38455,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114237343561393532}
   secondaryGrabActionScript: {fileID: 114796585398485466}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -38539,7 +38539,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -38547,8 +38547,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114527842113768396}
   secondaryGrabActionScript: {fileID: 114549760284888826}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -39417,7 +39417,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -39425,8 +39425,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114563540362189210}
   secondaryGrabActionScript: {fileID: 114721497906623760}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -39498,7 +39498,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -39506,8 +39506,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114466023412825346}
   secondaryGrabActionScript: {fileID: 114481030731563276}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -39700,7 +39700,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -39708,8 +39708,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114836181830935914}
   secondaryGrabActionScript: {fileID: 114851086385776150}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -39918,7 +39918,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -39926,8 +39926,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114740822867087134}
   secondaryGrabActionScript: {fileID: 114772276706470956}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -40156,7 +40156,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -40164,8 +40164,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114708131942173526}
   secondaryGrabActionScript: {fileID: 114296640072563056}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -40399,7 +40399,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -40407,8 +40407,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114880328580470584}
   secondaryGrabActionScript: {fileID: 114230148622559264}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -40442,7 +40442,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -40450,8 +40450,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114070637095639182}
   secondaryGrabActionScript: {fileID: 114228900970417166}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -40499,7 +40499,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -40507,8 +40507,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114211544922785662}
   secondaryGrabActionScript: {fileID: 114999993650572812}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -40529,7 +40529,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -40537,8 +40537,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114177880565772870}
   secondaryGrabActionScript: {fileID: 114333678963818112}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -40625,7 +40625,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -40633,8 +40633,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114201191580885558}
   secondaryGrabActionScript: {fileID: 114893103711163492}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -40970,7 +40970,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -40978,8 +40978,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114871511001497666}
   secondaryGrabActionScript: {fileID: 114739114370458844}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -41139,7 +41139,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -41147,8 +41147,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114573760903020964}
   secondaryGrabActionScript: {fileID: 114399857831372516}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -41436,7 +41436,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -41444,8 +41444,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114793835715644682}
   secondaryGrabActionScript: {fileID: 114207386872195212}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -41524,7 +41524,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -41532,8 +41532,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114200892172944342}
   secondaryGrabActionScript: {fileID: 114781559950719880}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -41590,7 +41590,7 @@ MonoBehaviour:
   rightSnapHandle: {fileID: 0}
   leftSnapHandle: {fileID: 0}
   throwVelocityWithAttachDistance: 0
-  throwMultiplier: 4
+  throwMultiplier: 1
   onGrabCollisionDelay: 0
 --- !u!114 &114733577654956824
 MonoBehaviour:
@@ -41608,7 +41608,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -41616,8 +41616,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114107433256092296}
   secondaryGrabActionScript: {fileID: 114803839475573680}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -41736,7 +41736,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -41744,8 +41744,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114670531439952192}
   secondaryGrabActionScript: {fileID: 114598712940316164}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -41841,7 +41841,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -41849,8 +41849,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114664623840478804}
   secondaryGrabActionScript: {fileID: 114080956553046992}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -41909,7 +41909,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -41917,8 +41917,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114304244861660366}
   secondaryGrabActionScript: {fileID: 114489243494174314}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -41939,7 +41939,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -41947,8 +41947,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114110769294709630}
   secondaryGrabActionScript: {fileID: 114628328169044730}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -41995,7 +41995,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -42003,8 +42003,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114801145153791284}
   secondaryGrabActionScript: {fileID: 114075906051476952}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -42150,7 +42150,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -42158,8 +42158,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114394935153104146}
   secondaryGrabActionScript: {fileID: 114675152565193062}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -42204,7 +42204,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -42212,8 +42212,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114121711421369412}
   secondaryGrabActionScript: {fileID: 114336769374287600}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -42234,7 +42234,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -42242,8 +42242,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114938658842107948}
   secondaryGrabActionScript: {fileID: 114840001509447154}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -42363,7 +42363,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -42371,8 +42371,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114025272017976692}
   secondaryGrabActionScript: {fileID: 114988845305526240}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -42506,7 +42506,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -42514,8 +42514,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114176494196861952}
   secondaryGrabActionScript: {fileID: 114903189216032334}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -42588,7 +42588,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -42596,8 +42596,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114021808582286150}
   secondaryGrabActionScript: {fileID: 114078003305950138}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -42732,7 +42732,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -42740,8 +42740,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114582591079209792}
   secondaryGrabActionScript: {fileID: 114618468027969716}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -43122,7 +43122,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -43130,8 +43130,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114584402188979556}
   secondaryGrabActionScript: {fileID: 114560828039119870}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -43300,7 +43300,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -43308,8 +43308,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114109586729765230}
   secondaryGrabActionScript: {fileID: 114089301370235938}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -43451,7 +43451,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -43459,8 +43459,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114826137635496898}
   secondaryGrabActionScript: {fileID: 114334150286924738}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -43667,7 +43667,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -43675,8 +43675,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114257800159467844}
   secondaryGrabActionScript: {fileID: 114005110494545802}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -43811,7 +43811,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -43819,8 +43819,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114961478911971186}
   secondaryGrabActionScript: {fileID: 114828105895574516}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -43904,7 +43904,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -43912,8 +43912,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114088723129142160}
   secondaryGrabActionScript: {fileID: 114371138349101704}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -43947,7 +43947,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -43955,8 +43955,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114520581804355278}
   secondaryGrabActionScript: {fileID: 114797104491451446}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -44041,7 +44041,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -44049,8 +44049,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114201414495995824}
   secondaryGrabActionScript: {fileID: 114246448705143892}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -44071,7 +44071,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -44079,8 +44079,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114402729097387458}
   secondaryGrabActionScript: {fileID: 114253416589925006}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -44283,8 +44283,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114985326834810554}
   secondaryGrabActionScript: {fileID: 114026009211504402}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -44344,7 +44344,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -44352,8 +44352,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114682658284740368}
   secondaryGrabActionScript: {fileID: 114143923194317810}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -44487,7 +44487,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -44495,8 +44495,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114020696391768644}
   secondaryGrabActionScript: {fileID: 114448233709023726}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -44578,7 +44578,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -44586,8 +44586,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114855768727952848}
   secondaryGrabActionScript: {fileID: 114795277691310280}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -44621,7 +44621,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -44629,8 +44629,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114722943733606306}
   secondaryGrabActionScript: {fileID: 114159462271471832}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -44668,7 +44668,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -44676,8 +44676,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114709063905767966}
   secondaryGrabActionScript: {fileID: 114867456454392098}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -44808,7 +44808,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -44816,8 +44816,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114394206380833316}
   secondaryGrabActionScript: {fileID: 114047481312563260}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -44965,7 +44965,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -44973,8 +44973,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114277874113627112}
   secondaryGrabActionScript: {fileID: 114611857303729980}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -45082,7 +45082,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -45090,8 +45090,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114744782885927640}
   secondaryGrabActionScript: {fileID: 114648300389453972}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -45277,7 +45277,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -45285,8 +45285,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114716728919852410}
   secondaryGrabActionScript: {fileID: 114725864445051802}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -45412,7 +45412,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -45420,8 +45420,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114904795661941778}
   secondaryGrabActionScript: {fileID: 114983378877882850}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -45527,7 +45527,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -45535,8 +45535,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114425286542576894}
   secondaryGrabActionScript: {fileID: 114053557490227522}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -45604,7 +45604,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -45612,8 +45612,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114637979026333530}
   secondaryGrabActionScript: {fileID: 114276714077495740}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -45773,7 +45773,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -45781,8 +45781,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114498023808229696}
   secondaryGrabActionScript: {fileID: 114632730890328096}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -45803,7 +45803,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -45811,8 +45811,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114200513711223412}
   secondaryGrabActionScript: {fileID: 114565350891712616}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -45845,7 +45845,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -45853,8 +45853,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114251882493876504}
   secondaryGrabActionScript: {fileID: 114880340974561822}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -45924,7 +45924,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -45932,8 +45932,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114639202814137282}
   secondaryGrabActionScript: {fileID: 114214318225072368}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -45978,7 +45978,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -45986,8 +45986,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114592233488020170}
   secondaryGrabActionScript: {fileID: 114808159936066082}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -46042,7 +46042,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -46050,8 +46050,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114465425994934728}
   secondaryGrabActionScript: {fileID: 114807709552577366}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -46095,7 +46095,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -46103,8 +46103,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114129775815105470}
   secondaryGrabActionScript: {fileID: 114460119312167216}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -46313,7 +46313,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -46321,8 +46321,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114456857225781980}
   secondaryGrabActionScript: {fileID: 114115304483300126}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -46373,7 +46373,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -46381,8 +46381,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114935452936524042}
   secondaryGrabActionScript: {fileID: 114377006325244818}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -46463,7 +46463,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -46471,8 +46471,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114505851492764806}
   secondaryGrabActionScript: {fileID: 114467605665571200}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -46614,7 +46614,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -46622,8 +46622,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114443663932637376}
   secondaryGrabActionScript: {fileID: 114941729925298758}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -47032,7 +47032,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -47040,8 +47040,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114971466814318130}
   secondaryGrabActionScript: {fileID: 114706777634183760}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -47062,7 +47062,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -47070,8 +47070,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114533181442924360}
   secondaryGrabActionScript: {fileID: 114420485513185414}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -47397,7 +47397,7 @@ MonoBehaviour:
   rightSnapHandle: {fileID: 0}
   leftSnapHandle: {fileID: 0}
   throwVelocityWithAttachDistance: 0
-  throwMultiplier: 4
+  throwMultiplier: 1
   onGrabCollisionDelay: 0
 --- !u!114 &114944432063542198
 MonoBehaviour:
@@ -47439,7 +47439,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -47447,8 +47447,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114930295139094476}
   secondaryGrabActionScript: {fileID: 114580828889747862}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -47492,7 +47492,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -47500,8 +47500,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114333286630226398}
   secondaryGrabActionScript: {fileID: 114016068950830448}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -47693,7 +47693,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -47701,8 +47701,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114236225399177726}
   secondaryGrabActionScript: {fileID: 114601024655293362}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -47723,7 +47723,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -47731,8 +47731,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114400949064797368}
   secondaryGrabActionScript: {fileID: 114430265183457632}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -47870,7 +47870,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -47878,8 +47878,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114989124517633250}
   secondaryGrabActionScript: {fileID: 114618765453529856}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -47980,8 +47980,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114156074347788028}
   secondaryGrabActionScript: {fileID: 114700053379007820}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -48029,7 +48029,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -48037,8 +48037,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114760894842309740}
   secondaryGrabActionScript: {fileID: 114775883624539308}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -48230,7 +48230,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -48238,8 +48238,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114274455060214754}
   secondaryGrabActionScript: {fileID: 114147483853728900}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -48260,7 +48260,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -48268,8 +48268,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114555362763506408}
   secondaryGrabActionScript: {fileID: 114893031728055078}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -48302,7 +48302,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -48310,8 +48310,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114023432829202896}
   secondaryGrabActionScript: {fileID: 114795847071795170}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -48442,7 +48442,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -48450,8 +48450,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114462432052820898}
   secondaryGrabActionScript: {fileID: 114927483908120294}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -48502,7 +48502,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -48510,8 +48510,8 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114251621955468082}
   secondaryGrabActionScript: {fileID: 114778822268220282}
   isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -48638,7 +48638,7 @@ MonoBehaviour:
   rightSnapHandle: {fileID: 0}
   leftSnapHandle: {fileID: 0}
   throwVelocityWithAttachDistance: 0
-  throwMultiplier: 4
+  throwMultiplier: 1
   onGrabCollisionDelay: 0
 --- !u!114 &114990350891857094
 MonoBehaviour:

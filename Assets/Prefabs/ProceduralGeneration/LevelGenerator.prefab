@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114930535804905568}
   - component: {fileID: 114781580433995790}
   - component: {fileID: 114584206190646298}
+  - component: {fileID: 114598364319789616}
   m_Layer: 0
   m_Name: LevelGenerator
   m_TagString: Untagged
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1397212884123704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.34, z: 0}
+  m_LocalPosition: {x: -22.3, y: 5.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -49,20 +50,37 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1397212884123704}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26f5c0e41057fbd42a8342c956e3a43b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   numTraps: 0
+  trapGroup: {fileID: 0}
   trapPoints: []
---- !u!114 &114781580433995790
+--- !u!114 &114598364319789616
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1397212884123704}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 577696df73cf972449fc8fc6eef1e530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectiveTypes:
+  - KEYCARD_GATHER
+  objective: 
+  keycardPrefab: {fileID: 1094152478961952, guid: d79b8fb324379714ea00752661dcfbbd,
+    type: 2}
+--- !u!114 &114781580433995790
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1397212884123704}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7542b58bef4a16b4b8745ad601a4135b, type: 3}
   m_Name: 
@@ -73,6 +91,7 @@ MonoBehaviour:
   minDistanceBetween: 20
   enemyPrefab: {fileID: 1037641695663978, guid: 759b2ac7136ddca4bac40330a5a61a8d,
     type: 2}
+  patrolGroup: {fileID: 0}
   allPoints: []
 --- !u!114 &114859998113562872
 MonoBehaviour:
@@ -100,4 +119,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   generateNewSeed: 1
   seed: 0
-  sockets: []
+  socketGroup: {fileID: 0}
+  elevatorSocketPrefab: {fileID: 1191667452114452, guid: 311f3d189714b6e4e87562b44d0957c2,
+    type: 2}
+  elevatorSocket: {fileID: 0}
+  sockets:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

@@ -10,8 +10,8 @@ public class DropZoneEditor : Editor {
 
 		ObjectDropZone zone = (ObjectDropZone)target;
 
-		zone.areaScaleX = GUILayout.HorizontalSlider (zone.areaScaleX, 0.1f, 10f);
-		zone.areaScaleY = GUILayout.HorizontalSlider (zone.areaScaleY, 0.1f, 10f);
-		zone.areaScaleZ = GUILayout.HorizontalSlider (zone.areaScaleZ, 0.1f, 10f);
+		zone.width = GUILayout.HorizontalSlider (zone.width, 0.1f, 10f);
+		zone.height = GUILayout.HorizontalSlider (zone.height, 0.1f, 10f);
+		zone.length = GUILayout.HorizontalSlider (zone.length, 0.1f, 10f);
 	}
 }

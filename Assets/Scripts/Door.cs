@@ -79,10 +79,4 @@ public class Door : MonoBehaviour {
 	public void Unlock() {
 		isLocked = false;
 	}
-
-	void OnCollisionEnter(Collision col) {
-		if (isOpening) {
-			Debug.Log (col.gameObject.tag);
-		}
-	}
 }

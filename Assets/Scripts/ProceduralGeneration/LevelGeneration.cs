@@ -72,5 +72,6 @@ public class LevelGeneration : MonoBehaviour {
 		if (enemyPop != null && enemyPop.isActiveAndEnabled) {
 			enemyPop.GenerateEnemies ();
 		}
+		GetComponent<ObjectiveGeneration> ().ChooseObjective (seed);
 	}
 }
