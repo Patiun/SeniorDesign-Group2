@@ -10,6 +10,10 @@ using UnityEngine;
 public class DieOnCollision : MonoBehaviour {
 
 	void OnCollisionEnter(Collision collision) {
-		Destroy (this.gameObject);
+		if (gameObject.tag == "Bullet") {
+			gameObject.SetActive (false);
+		} else {
+			Destroy (this.gameObject);
+		}
 	}
 }

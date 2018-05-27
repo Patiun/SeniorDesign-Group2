@@ -283,7 +283,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1386136198327586}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.2579699, y: -8.329597, z: -35.223686}
+  m_LocalPosition: {x: 10.9163065, y: 5.6, z: -17.953606}
   m_LocalScale: {x: 2.6500008, y: 3.1799998, z: 0.5300002}
   m_Children:
   - {fileID: 4670179136093584}
@@ -492,8 +492,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2.8087978, z: 10.000005}
-  m_Center: {x: 0, y: -0.9043975, z: 0}
+  m_Size: {x: 1, y: 1.2993919, z: 4.191516}
+  m_Center: {x: 0, y: -0.14969434, z: -0.07964437}
 --- !u!65 &65910181679816090
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -517,7 +517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b6be3f9b0ff1f6409826319f8b438b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  open_speed: 5
+  open_speed: 8
   final_height_difference: 2.6
   isOpen: 0
   isClosed: 1
@@ -614,7 +614,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1305143997
+  randomSeed: 439205701
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -4020,7 +4020,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -285109708
+  randomSeed: -1324686138
   InitialModule:
     serializedVersion: 3
     enabled: 1

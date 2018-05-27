@@ -80,11 +80,16 @@ public class EnemyAttack : MonoBehaviour {
 
 	private void FireBullet(Transform muzzle) {
 		shotSound.Play ();
-		GameObject bullet = Instantiate (bulletPrefab);
-		bullet.transform.position = muzzle.position;
-		bullet.transform.rotation = muzzle.rotation;
-		bullet.GetComponent<Rigidbody> ().AddForce (muzzle.forward * bulletVelocity);
-		timeLastFired = Time.time;
+		//GameObject bullet = Instantiate (bulletPrefab);
+		GameObject bullet = ObjectPooler.SharedInstance.GetPooledObject();
+		if (bullet != null) {
+			bullet.transform.position = muzzle.position;
+			bullet.transform.rotation = muzzle.rotation;
+			bullet.GetComponent<Rigidbody> ().AddForce (muzzle.forward * bulletVelocity);
+			timeLastFired = Time.time;
+		} else {
+			Debug.LogError ("[ERROR] Not Enough Bullets");
+		}
 	}
 
 	public void Discard() {
