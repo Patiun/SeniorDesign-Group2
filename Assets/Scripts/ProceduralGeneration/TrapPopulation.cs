@@ -36,6 +36,12 @@ public class TrapPopulation : MonoBehaviour {
 		if (trapGroup != null) {
 			LoadTrapGroup ();
 		}
+
+		LevelDifficulty levelDifficulty = GetComponent<LevelDifficulty> ();
+		if (levelDifficulty != null) {
+			numTraps = levelDifficulty.numEnemies;
+		}
+
 		unused = new List<TrapPoint> (trapPoints);
 		used = new List<TrapPoint> ();
 		for (int i = 0; i < numTraps; i++) {

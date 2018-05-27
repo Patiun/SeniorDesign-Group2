@@ -40,6 +40,14 @@ public class EnemyPopulation : MonoBehaviour {
 		if (patrolGroup != null) {
 			LoadPatrols();
 		}
+
+		LevelDifficulty levelDifficulty = GetComponent<LevelDifficulty> ();
+		if (levelDifficulty != null) {
+			numEnemies = levelDifficulty.numEnemies;
+			minPatrolSize = levelDifficulty.minPatrolSize;
+			maxPatrolSize = levelDifficulty.maxPatrolSize;
+		}
+
 		unusedPoints = new List<GameObject> (allPoints);
 		usedPoints = new List<GameObject> ();
 		enemyContainer = new GameObject ("Enemies");

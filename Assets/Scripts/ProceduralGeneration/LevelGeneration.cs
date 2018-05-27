@@ -19,6 +19,7 @@ public class LevelGeneration : MonoBehaviour {
 		if (socketGroup != null) {
 			LoadSockets ();
 		}
+		GetComponent<LevelDifficulty> ().PopulateValues();
 		GenerateLevel ();
 	}
 	
