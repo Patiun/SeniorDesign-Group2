@@ -746,10 +746,8 @@ GameObject:
   - component: {fileID: 4139479511224336}
   - component: {fileID: 33384553710800374}
   - component: {fileID: 23700631259255658}
-  - component: {fileID: 65511767644680254}
   - component: {fileID: 64200960979405112}
   - component: {fileID: 208171732335027168}
-  - component: {fileID: 114904720476726300}
   m_Layer: 0
   m_Name: SO_Wall_Elevator (7)
   m_TagString: Untagged
@@ -3488,7 +3486,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1250860699296138}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.045, y: 0, z: -0.599}
+  m_LocalPosition: {x: -0.012, y: 0, z: -0.65}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 4853191471994494}
@@ -4472,7 +4470,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1955196201215422}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -4.3, y: 0, z: -13.8}
+  m_LocalPosition: {x: -29.504246, y: 5.090083, z: -25.320024}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 4377606812838270}
@@ -8234,18 +8232,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 08a434f3beed8424596b4af4f4c5d842, type: 3}
---- !u!65 &65511767644680254
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1228742798474502}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.2268314, y: 4.6851273, z: 2.6491737}
-  m_Center: {x: -2.739903, y: 2.0719001, z: -3.0609183}
 --- !u!65 &65695289774208060
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -10840,18 +10826,6 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114904720476726300
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1228742798474502}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aaf014d74a4dfd4384af4f37850bee5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  game: {fileID: 0}
 --- !u!114 &114905916102125694
 MonoBehaviour:
   m_ObjectHideFlags: 1

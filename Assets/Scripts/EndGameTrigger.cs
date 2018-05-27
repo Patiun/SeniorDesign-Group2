@@ -17,6 +17,9 @@ public class EndGameTrigger : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col) {
+		if (game == null) {
+			game = GameObject.Find ("WorldController").GetComponent<GameState> ();
+		}
 		if (col.tag == "Player") {
 			game.WinLevel ();
 		}

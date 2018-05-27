@@ -83,6 +83,7 @@ public class EnemyAttack : MonoBehaviour {
 		//GameObject bullet = Instantiate (bulletPrefab);
 		GameObject bullet = ObjectPooler.SharedInstance.GetPooledObject();
 		if (bullet != null) {
+			bullet.SetActive (true);
 			bullet.transform.position = muzzle.position;
 			bullet.transform.rotation = muzzle.rotation;
 			bullet.GetComponent<Rigidbody> ().AddForce (muzzle.forward * bulletVelocity);
