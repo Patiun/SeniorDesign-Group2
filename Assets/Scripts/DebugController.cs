@@ -32,6 +32,15 @@ public class DebugController : MonoBehaviour {
 			if (Input.GetKeyDown (KeyCode.Space)) {
 				GetComponent<ObjectiveGeneration> ().ChooseObjective (Random.Range(0,int.MaxValue));
 			}
+			if (Input.GetKeyDown ("0")) {
+				PlayerPrefs.SetInt("Difficulty",0);
+			}
+			if (Input.GetKeyDown ("1")) {
+				PlayerPrefs.SetInt("Difficulty",1);
+			}
+			if (Input.GetKeyDown ("2")) {
+				PlayerPrefs.SetInt("Difficulty",2);
+			}
 			if (Input.GetKeyDown("up")) {
 				worldState.MajorActivity();
 			}

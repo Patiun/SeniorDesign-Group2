@@ -31,7 +31,11 @@ public class LevelDifficulty : MonoBehaviour {
 	}
 
 	public void PopulateValues() {
-		//TODO Pull Difficulty from player settings
+
+		//Pull Difficulty from player settings
+		int dif = PlayerPrefs.GetInt ("Difficulty");
+		SetDifficulty (dif);
+
 		switch (difficulty) {
 		case Difficulty.EASY:
 			numEnemies = 1;

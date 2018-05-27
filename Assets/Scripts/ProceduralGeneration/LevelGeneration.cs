@@ -13,6 +13,10 @@ public class LevelGeneration : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		if (PlayerPrefs.GetInt ("Seed") != 0) {
+			generateNewSeed = false;
+			seed = PlayerPrefs.GetInt ("Seed");
+		}
 		if (generateNewSeed) {
 			seed = Random.Range (0, int.MaxValue);
 		}
@@ -26,6 +30,10 @@ public class LevelGeneration : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	public void SaveSeed() {
+		PlayerPrefs.SetInt ("Seed", seed);
 	}
 
 	public void LoadSockets() {
