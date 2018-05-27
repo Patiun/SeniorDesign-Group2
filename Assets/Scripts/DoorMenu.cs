@@ -70,10 +70,10 @@ public class DoorMenu : AbstractHackMenu
             close.SetActive(false);
 
         if (unlock != null)
-            unlock.SetActive(true);
+            unlock.SetActive(false);
 
         if (lockb != null)
-            lockb.SetActive(false);
+            lockb.SetActive(true);
 
         if (hack != null)
             hack.SetActive(false);
