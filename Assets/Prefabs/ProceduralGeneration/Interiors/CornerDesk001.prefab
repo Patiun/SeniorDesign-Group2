@@ -134,6 +134,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1168042281917000
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4571690668392276}
+  - component: {fileID: 114111203761135168}
+  m_Layer: 0
+  m_Name: ObjectiveSpawner
+  m_TagString: ItemSpawner
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1204453265618196
 GameObject:
   m_ObjectHideFlags: 1
@@ -477,6 +493,22 @@ GameObject:
   m_Layer: 0
   m_Name: SO_Book_01 (1)
   m_TagString: Interactible
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1700105845609186
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4272886335053894}
+  - component: {fileID: 114927176182699352}
+  m_Layer: 0
+  m_Name: ObjectiveSpawner (1)
+  m_TagString: ItemSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -835,6 +867,19 @@ Transform:
   m_Father: {fileID: 4730239801449572}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
+--- !u!4 &4272886335053894
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1700105845609186}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.19, y: 3.44, z: -1.16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4776896828371906}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4274883347371482
 Transform:
   m_ObjectHideFlags: 1
@@ -926,6 +971,19 @@ Transform:
   m_Father: {fileID: 4730239801449572}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 180}
+--- !u!4 &4571690668392276
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1168042281917000}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.14, y: 3.44, z: 1.14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4776896828371906}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4621135656427344
 Transform:
   m_ObjectHideFlags: 1
@@ -1078,7 +1136,9 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.5720088, y: 1.8165514, z: -0.310524}
   m_LocalScale: {x: 0.5, y: 0.59999996, z: 0.5}
-  m_Children: []
+  m_Children:
+  - {fileID: 4571690668392276}
+  - {fileID: 4272886335053894}
   m_Father: {fileID: 4962009558879816}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -1154,7 +1214,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1828894466046412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7694874, y: 53.20816, z: 61.60979}
+  m_LocalPosition: {x: 72.21052, y: 5.6691624e-16, z: -25.531637}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4776896828371906}
@@ -3690,6 +3750,21 @@ MonoBehaviour:
   strengthOnUse: 0
   durationOnUse: 0
   intervalOnUse: 0.05
+--- !u!114 &114111203761135168
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1168042281917000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e054f66fb568634c8fdd73aa7b2eb48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectiveObject: {fileID: 0}
+  width: 0.364
+  length: 0.36400002
+  height: 0.1
 --- !u!114 &114115255916198636
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6305,6 +6380,21 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   usingState: 0
+--- !u!114 &114927176182699352
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1700105845609186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e054f66fb568634c8fdd73aa7b2eb48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectiveObject: {fileID: 0}
+  width: 0.364
+  length: 0.36400002
+  height: 0.1
 --- !u!114 &114944925849292794
 MonoBehaviour:
   m_ObjectHideFlags: 1

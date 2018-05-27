@@ -29,6 +29,9 @@ public class DebugController : MonoBehaviour {
 		}
 
 		if (isDebugging) {
+			if (Input.GetKeyDown (KeyCode.Space)) {
+				GetComponent<ObjectiveGeneration> ().ChooseObjective (Random.Range(0,int.MaxValue));
+			}
 			if (Input.GetKeyDown("up")) {
 				worldState.MajorActivity();
 			}
