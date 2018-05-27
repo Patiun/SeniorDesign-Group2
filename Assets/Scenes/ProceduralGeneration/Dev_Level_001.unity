@@ -1259,12 +1259,25 @@ Prefab:
     - target: {fileID: 224337746436835812, guid: 87fd3ffb37afb5f48a8029066da66c51,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 189
+      value: 187.13081
       objectReference: {fileID: 0}
     - target: {fileID: 224337746436835812, guid: 87fd3ffb37afb5f48a8029066da66c51,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 51
+      value: 50.21097
+      objectReference: {fileID: 0}
+    - target: {fileID: 4883985187122736, guid: 87fd3ffb37afb5f48a8029066da66c51, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -9.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4883985187122736, guid: 87fd3ffb37afb5f48a8029066da66c51, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -6.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 20985281972485338, guid: 87fd3ffb37afb5f48a8029066da66c51,
+        type: 2}
+      propertyPath: orthographic size
+      value: 37.11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87fd3ffb37afb5f48a8029066da66c51, type: 2}
@@ -4208,6 +4221,7 @@ MonoBehaviour:
   minPatrolSize: 5
   maxPatrolSize: 7
   minDistanceBetween: 0
+  enemyHelpRadius: 35
   enemyPrefab: {fileID: 1037641695663978, guid: 759b2ac7136ddca4bac40330a5a61a8d,
     type: 2}
   patrolGroup: {fileID: 526000064}
