@@ -79,7 +79,7 @@ public class DoorMenu : AbstractHackMenu
             hack.SetActive(false);
 
         GameObject parent = transform.parent.gameObject;
-        parent.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+        parent.GetComponent<Image>().color = new Color32(49, 255, 59, 203);
     }
 
     public override void NotifyHackStatus(bool status)

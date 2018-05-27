@@ -17,7 +17,7 @@ public class IconDropdown : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
     void Start()
     {
-        gameObject.GetComponent<Image>().color = new Color32(193,193,193,255);
+        //gameObject.GetComponent<Image>().color = new Color32(193,193,193,255);
     }
 
     void Update()
@@ -33,6 +33,7 @@ public class IconDropdown : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     public void OnPointerEnter(PointerEventData eventData)
     {
         isOpen = true;
+        gameObject.transform.SetAsLastSibling();
     }
 
     public void OnPointerExit(PointerEventData eventData)
