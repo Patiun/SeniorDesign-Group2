@@ -7,7 +7,7 @@ public class DieAfterTime : MonoBehaviour {
 	public int deathTime;
 	public int count;
 
-	void Start () {
+	void OnEnable () {
 		count = 0;
 	}
 
@@ -15,7 +15,8 @@ public class DieAfterTime : MonoBehaviour {
 		if (deathTime > count) {
 			count++;
 		} else {
-			Destroy (this.gameObject);
+			count = 0;
+			gameObject.SetActive (false);
 		}
 	}
 }

@@ -19,7 +19,7 @@ public class BulletBehavior : MonoBehaviour {
 	void OnTriggerEnter(Collider col) {
 		if (col.gameObject.tag == "Player") {
 			GameObject.FindGameObjectWithTag ("GameController").GetComponent<PlayerHealth> ().DoDamage (damageValue);
-			Destroy (this.gameObject);
+			gameObject.SetActive (false);
 		}
 		else if(col.gameObject.tag == "Interactible"){
 			col.GetComponent<DestructableObject>().takeDamage(damageValue);
