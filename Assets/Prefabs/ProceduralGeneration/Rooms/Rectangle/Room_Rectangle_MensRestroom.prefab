@@ -369,6 +369,7 @@ GameObject:
   - component: {fileID: 23397631255222238}
   - component: {fileID: 64615954390926330}
   - component: {fileID: 114906587604651864}
+  - component: {fileID: 114914240071169870}
   m_Layer: 16
   m_Name: Room_Rectangle_MensRestroom
   m_TagString: Wall
@@ -554,7 +555,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1405185998127760}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.222, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4503713782533892}
@@ -575,7 +576,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1976745999808956}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.574, y: 0.002, z: -0.665}
+  m_LocalPosition: {x: -0.5715, y: 0.002, z: -0.665}
   m_LocalScale: {x: 0.14000005, y: 0.14, z: 0.14000005}
   m_Children: []
   m_Father: {fileID: 4176935213553070}
@@ -709,7 +710,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1225908364742818}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.824, y: 0.002, z: -0.665}
+  m_LocalPosition: {x: 0.804, y: 0.002, z: -0.665}
   m_LocalScale: {x: 0.14, y: 0.14, z: 0.14}
   m_Children: []
   m_Father: {fileID: 4176935213553070}
@@ -2165,6 +2166,17 @@ MonoBehaviour:
   length: 0.166
   height: 0.1
 --- !u!114 &114906587604651864
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1714747952995606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e038bf700cfa444fb16c6ef963be9f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114914240071169870
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
