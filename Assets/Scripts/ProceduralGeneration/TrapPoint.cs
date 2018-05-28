@@ -32,7 +32,6 @@ public class TrapPoint : MonoBehaviour {
 			}
 		}
 		newTrap.transform.rotation = transform.rotation;
-		}
 	}
 
 	void OnDrawGizmos(){
