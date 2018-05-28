@@ -15,7 +15,7 @@ public class FakeHackyManager : MonoBehaviour {
 
     private ContainerToType codeWords;
 
-	void Start () {
+	void OnEnable () {
         isInital = true;
         currentPosition = 0;
         texts = new List<Text>();
@@ -31,7 +31,7 @@ public class FakeHackyManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.anyKeyDown && !Input.GetMouseButtonDown(0) && !Input.GetMouseButtonDown(1))
+		if(Input.anyKeyDown && !Input.GetMouseButtonDown(0) && !Input.GetMouseButtonDown(1) && !Input.GetKeyDown(KeyCode.Escape))
         {
             if(isInital)
             {
@@ -94,7 +94,7 @@ public class FakeHackyManager : MonoBehaviour {
 
         if(data.finish)
         {
-            finishGame();
+            FinishGame();
             return false;
         }
 
@@ -110,8 +110,31 @@ public class FakeHackyManager : MonoBehaviour {
         return false;
     }
 
-    private void finishGame()
+    public void Reset()
     {
-        Debug.Log("You have completed hacking");
+        codeWords = new ContainerToType();
+        foreach (Text t in row)
+        {
+            t.transform.SetAsLastSibling();
+            t.text = "";
+        }
+
+        row[0].text = "Window PowerShell";
+        row[1].text = "Copyright (C) Microsoft Corporation. All rights reserved.";
+        row[2].text = "WARNING: LEVEL 6 Authorisation Needed.";
+        row[3].text = "Type to begin.";
+
+        row[0].transform.SetSiblingIndex(0);
+        row[1].transform.SetSiblingIndex(1);
+        row[2].transform.SetSiblingIndex(2);
+        row[3].transform.SetSiblingIndex(3);
+
+        gameObject.SetActive(false);
+    }
+
+    private void FinishGame()
+    {
+        Reset();
+        HackManager.Instance.FinishHacking(true);
     }
 }

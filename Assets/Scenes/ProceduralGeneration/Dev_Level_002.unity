@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2158,20 +2158,20 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 20480750146456666, guid: e837a1d5e0c56c44eaee89770f6a2049,
-        type: 2}
-      propertyPath: orthographic size
-      value: 33.46
-      objectReference: {fileID: 0}
     - target: {fileID: 224447916782893984, guid: e837a1d5e0c56c44eaee89770f6a2049,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 187.15698
+      value: 189
       objectReference: {fileID: 0}
     - target: {fileID: 224447916782893984, guid: e837a1d5e0c56c44eaee89770f6a2049,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 50.164658
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20480750146456666, guid: e837a1d5e0c56c44eaee89770f6a2049,
+        type: 2}
+      propertyPath: m_CullingMask.m_Bits
+      value: 606465
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e837a1d5e0c56c44eaee89770f6a2049, type: 2}
@@ -3066,6 +3066,22 @@ Transform:
   m_PrefabParentObject: {fileID: 4175901528262356, guid: a059512a8b6f64346ab96e5d53324d40,
     type: 2}
   m_PrefabInternal: {fileID: 1797091586}
+--- !u!1 &1422626457 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1630657141755888, guid: e837a1d5e0c56c44eaee89770f6a2049,
+    type: 2}
+  m_PrefabInternal: {fileID: 957815652}
+--- !u!114 &1422626463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1422626457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4d05ca31494fb64ea3dd5bb8a9b9d6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1435106661 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4175901528262356, guid: a059512a8b6f64346ab96e5d53324d40,
