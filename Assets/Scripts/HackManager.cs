@@ -116,7 +116,7 @@ public class HackManager : MonoBehaviour
         switch (currentLevel)
         {
             case PuzzleDifficultiesLevel.Easy:
-                BruteForcePuzzle bfp = BruteForce.GetComponent<BruteForcePuzzle>();
+                FakeHackyManager bfp = BruteForce.GetComponent<FakeHackyManager>();
                 bfp.Reset();
                 CameraManager.Instance.SwitchMainCamera();
                 break;
@@ -131,6 +131,7 @@ public class HackManager : MonoBehaviour
                 CameraManager.Instance.SwitchMainCamera();
                 break;
         }
+
         InProgress = false;
         currentLevel = PuzzleDifficultiesLevel.None;
     }
