@@ -32,6 +32,7 @@ public class ObjectInteractions : EditorWindow {
 				ObjectStrangeLocation objStrLoc = go.GetComponent<ObjectStrangeLocation> (); 
 				if (objStrLoc == null) {
 					go.AddComponent<ObjectStrangeLocation> ();
+					go.GetComponent<ObjectStrangeLocation> ().maximumSafeDistance = 10;
 				} else if (!objStrLoc.enabled && go.tag == "Interactible") {
 					objStrLoc.enabled = true;
 				}
@@ -39,11 +40,13 @@ public class ObjectInteractions : EditorWindow {
 				DestructableObject destObj = go.GetComponent<DestructableObject> (); 
 				if (destObj == null) {
 					go.AddComponent<DestructableObject> ();
+					go.GetComponent<DestructableObject> ().ObjectHealth = 5;
 				}
 				//Add SoundEffect
 				SoundEffect soundEffect = go.GetComponent<SoundEffect> (); 
 				if (soundEffect == null) {
 					go.AddComponent<SoundEffect> ();
+					go.GetComponent<SoundEffect> ().noiseScale = 1;
 				}
 				MeshCollider mesh = go.GetComponent<MeshCollider> ();
 				if (mesh == null) {
