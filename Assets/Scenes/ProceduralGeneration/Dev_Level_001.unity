@@ -3586,6 +3586,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1635159528835730, guid: f5bcaa271cfa90d448a864cf19019b28, type: 2}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1823736347706686, guid: f5bcaa271cfa90d448a864cf19019b28, type: 2}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f5bcaa271cfa90d448a864cf19019b28, type: 2}
   m_IsPrefabParent: 0
@@ -4282,7 +4290,7 @@ MonoBehaviour:
   maxPatrolSize: 7
   minDistanceBetween: 0
   enemyHelpRadius: 35
-  enemyPrefab: {fileID: 1037641695663978, guid: 759b2ac7136ddca4bac40330a5a61a8d,
+  enemyPrefab: {fileID: 1037641695663978, guid: 0d64c0c9244254e478a94f5c7d241ae2,
     type: 2}
   patrolGroup: {fileID: 526000064}
   allPoints: []

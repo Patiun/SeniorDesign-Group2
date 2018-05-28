@@ -3187,6 +3187,7 @@ MonoBehaviour:
   timeToSpotPlayer: 0.8
   timeSeeingPlayer: 0
   seesPlayer: 0
+  hasPlayer: 0
   direction: -1
   degreesPerSecond: 80
 --- !u!114 &114294396153948180
@@ -3275,6 +3276,7 @@ MonoBehaviour:
   lockOnTime: 5
   lostPlayerTime: 0
   count: 0
+  isReady: 0
   target: {fileID: 0}
 --- !u!114 &114492820572194454
 MonoBehaviour:
@@ -3320,7 +3322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e305699e01dbad743a532d489dbb3ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  viewRadius: 11.59
+  viewRadius: 24
   viewAngle: 63
   targetMask:
     serializedVersion: 2
