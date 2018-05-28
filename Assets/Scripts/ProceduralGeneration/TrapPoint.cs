@@ -22,6 +22,7 @@ public class TrapPoint : MonoBehaviour {
 		GameObject newTrap = Instantiate(potentialTraps [trapInd]);
 		newTrap.transform.parent = transform;
 		if (newTrap.GetComponent<LazerGroupBehavior> () != null) {
+			newTrap.GetComponent<LazerGroupBehavior> ().downTime = 10;
 			newTrap.transform.position = new Vector3(transform.position.x,transform.position.y+1f,transform.position.z);
 		} else {
 			newTrap.transform.position = transform.position;
@@ -31,6 +32,7 @@ public class TrapPoint : MonoBehaviour {
 			}
 		}
 		newTrap.transform.rotation = transform.rotation;
+		}
 	}
 
 	void OnDrawGizmos(){
