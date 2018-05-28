@@ -3,6 +3,18 @@ using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
+public class TextInfo
+{
+    public GameObject TextObj;
+    public int Id;
+
+    public TextInfo(int id, GameObject text)
+    {
+        Id = id;
+        TextObj = text;
+    }
+}
+
 public class ObjectiveManager : MonoBehaviour
 {
 
@@ -49,16 +61,17 @@ public class ObjectiveManager : MonoBehaviour
     [SerializeField]
     private GameObject textBox;
 
-
+    private List<TextInfo> inactive;
 
     [SerializeField]
     private string[] objectives;
 
-    private List<GameObject> messages;
+    private List<TextInfo> messages;
 
     private void Awake()
     {
-        messages = new List<GameObject>();
+        messages = new List<TextInfo>();
+        inactive = new List<TextInfo>();
     }
     private void Start()
     {
@@ -77,15 +90,31 @@ public class ObjectiveManager : MonoBehaviour
         t.transform.SetParent(parentHolder.transform);
         t.transform.localScale = Vector3.one;
 
-        messages.Add(t);
-        return messages.Count;
+        int id;
+
+        if(inactive.Count == 0)
+        {
+            id = messages.Count + inactive.Count;
+            TextInfo info = new TextInfo(id, t);
+            messages.Add(info);
+            ChangeObjectiveWord(id, msg);
+        }
+        else
+        {
+            TextInfo info = inactive[0];
+            id = info.Id;
+            ChangeObjectiveWord(id, msg);
+            
+        }
+        return id;
     }
 
     public void RemoveObjective(int id)
     {
         if(id <= messages.Count)
         {
-            messages[id].SetActive(false);
+            messages[id].TextObj.SetActive(false);
+            inactive.Add(messages[id]);
             //DestroyImmediate(messages[id]);
         }
         
@@ -95,7 +124,7 @@ public class ObjectiveManager : MonoBehaviour
     {
         if(id <= messages.Count)
         {
-            Text text = messages[id].transform.Find("txtObjectiveDetail").GetComponent<Text>();
+            Text text = messages[id].TextObj.transform.Find("txtObjectiveDetail").GetComponent<Text>();
             text.text = msg;
         }
     }
