@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Socket : MonoBehaviour {
-
+	public static bool timeTrial;
 	public enum SocketType {SQUARE,RECTANGLE,ELBOW,ELEVATOR};
 
 	public SocketType socketType;
@@ -25,7 +25,7 @@ public class Socket : MonoBehaviour {
 		//GenerateRoom ();
 	}
 
-	public void GenerateRoom() {
+	public bool GenerateRoom() {
 		if (room == null) {
 			if (projection == null) {
 				projection = transform.GetChild (0).gameObject;
@@ -33,6 +33,11 @@ public class Socket : MonoBehaviour {
 			projection.SetActive (false);
 			int roomInd = Random.Range (0, roomOptions.Length);
 			GameObject newRoom = Instantiate (roomOptions [roomInd]);
+			if (timeTrial && newRoom.tag == "TimeTrial") {
+				return GenerateRoom();
+			} else if (newRoom.tag == "TimeTrial") {
+				timeTrial = true;
+			}
 			newRoom.transform.position = transform.position;
 			newRoom.transform.parent = transform;
 			if (canBeRotated) {
@@ -46,7 +51,9 @@ public class Socket : MonoBehaviour {
 				//newRoom.transform.localScale = new Vector3 (1, 1, 1);
 			}
 			room = newRoom;
+			return true;
 		}
+		return false;
 	}
 
 	public void GenerateDoors() {

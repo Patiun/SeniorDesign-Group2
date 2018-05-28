@@ -3594,6 +3594,10 @@ Prefab:
       propertyPath: m_Layer
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 1823736347706686, guid: f5bcaa271cfa90d448a864cf19019b28, type: 2}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f5bcaa271cfa90d448a864cf19019b28, type: 2}
   m_IsPrefabParent: 0
@@ -4319,7 +4323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 577696df73cf972449fc8fc6eef1e530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectiveTypes:
+  randomObjectiveTypes:
   - KEYCARD_GATHER
   objective: 
   keycardPrefab: {fileID: 1094152478961952, guid: d79b8fb324379714ea00752661dcfbbd,

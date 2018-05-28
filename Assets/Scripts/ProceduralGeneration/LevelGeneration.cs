@@ -15,6 +15,7 @@ public class LevelGeneration : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Socket.timeTrial = false;
 		SharedInstance = this;
 		if (PlayerPrefs.GetInt ("Seed") != 0) {
 			generateNewSeed = false;

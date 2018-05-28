@@ -83,7 +83,7 @@ public class EnemyPopulation : MonoBehaviour {
 			GameObject newPoint = allPoints[Random.Range(0,allPoints.Length)];
 			if (path.Count >= 2) {
 				int previousInd = path.Count - 2;
-				if (path [previousInd] == newPoint || path[previousInd+1] == newPoint) {
+				if (path [previousInd] == newPoint || path[previousInd+1] == newPoint || Vector3.Distance(path[previousInd].transform.position,newPoint.transform.position) > 50) {
 					i--;
 				} else {
 					path.Add (newPoint);
@@ -93,6 +93,9 @@ public class EnemyPopulation : MonoBehaviour {
 				path.Add (newPoint);
 				mostRecentPoint = newPoint;
 			}
+		}
+		if (Vector3.Distance (path [0].transform.position, path [path.Count - 1].transform.position) > 50) {
+			path.Add (path [path.Count/2]);
 		}
 		return path;
 	}
