@@ -56,9 +56,12 @@ public class ObjectiveManager : MonoBehaviour
 
     private List<GameObject> messages;
 
-    private void Start()
+    private void Awake()
     {
         messages = new List<GameObject>();
+    }
+    private void Start()
+    {
         foreach(string objective in objectives)
         {
             AddObjective(objective);
@@ -82,8 +85,18 @@ public class ObjectiveManager : MonoBehaviour
     {
         if(id <= messages.Count)
         {
-            DestroyImmediate(messages[id]);
+            messages[id].SetActive(false);
+            //DestroyImmediate(messages[id]);
         }
         
+    }
+
+    public void ChangeObjectiveWord(int id, string msg)
+    {
+        if(id <= messages.Count)
+        {
+            Text text = messages[id].transform.Find("txtObjectiveDetail").GetComponent<Text>();
+            text.text = msg;
+        }
     }
 }
