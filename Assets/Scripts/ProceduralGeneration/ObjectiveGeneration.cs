@@ -36,17 +36,15 @@ public class ObjectiveGeneration : MonoBehaviour {
 	public void GenerateKeycard() {
 		if (objectiveKeycard == -1) {
 			objectiveKeycard = ObjectiveManager.Instance.AddObjective ("Find Keycard");
-		} else {
-			//THis will hopefully replace the keycard on destroy
-			ObjectiveManager.Instance.RemoveObjective (objectiveKeycard);
-			objectiveKeycard = ObjectiveManager.Instance.AddObjective ("Find new Keycard");
-		}
+		} 
 		GameObject[] spawnZones = GameObject.FindGameObjectsWithTag ("ItemSpawner");
 		if (spawnZones != null && spawnZones.Length > 0) {
 			int spawnerInd = Random.Range (0, spawnZones.Length);
 			ObjectDropZone zone = spawnZones [spawnerInd].GetComponent<ObjectDropZone> ();
 			zone.objectiveObject = keycardPrefab;
 			zone.DropObject ();
+		} else {
+			Debug.LogError ("[ERROR] NO KEYCARD");
 		}
 	}
 }
