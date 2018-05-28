@@ -3782,6 +3782,8 @@ GameObject:
   - component: {fileID: 33071792751830266}
   - component: {fileID: 23506386131535708}
   - component: {fileID: 95341499638730180}
+  - component: {fileID: 114792717230120900}
+  - component: {fileID: 64368245409153830}
   m_Layer: 0
   m_Name: ElbowSlope_001
   m_TagString: Untagged
@@ -6170,8 +6172,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1965831892629668}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 105.96, y: 0, z: -97.3}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 47.76, y: 0, z: -43.600002}
   m_LocalScale: {x: 165, y: 165, z: 165}
   m_Children:
   - {fileID: 4285850456592992}
@@ -14396,6 +14398,20 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: bd583406e90c4044993888c457abef5a, type: 3}
+--- !u!64 &64368245409153830
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1965831892629668}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 96965c8435cf9488d99c467b11c0c654, type: 3}
 --- !u!64 &64384482811015612
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -19218,6 +19234,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectHealth: 5
+--- !u!114 &114792717230120900
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1965831892629668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e038bf700cfa444fb16c6ef963be9f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114797994614352816
 MonoBehaviour:
   m_ObjectHideFlags: 1
