@@ -23,7 +23,6 @@ public class CameraSpawnPoint : MonoBehaviour {
 		Vector3 right = rightSide.transform.position;
 		right.y = transform.position.y;
 		float angle = Vector3.Angle (left-transform.position, right-transform.position);
-		Debug.Log (angle);
 		GameObject camera = Instantiate (cameraPrefab);
 		camera.transform.parent = transform;
 		camera.transform.position = transform.position;
