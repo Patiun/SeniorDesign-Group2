@@ -48,7 +48,7 @@ public class LevelDifficulty : MonoBehaviour {
 		case Difficulty.MEDIUM:
 			numEnemies = 3;
 			numTraps = 3;
-			numCameras = 3;
+			numCameras = 1;
 			minPatrolSize = 5;
 			maxPatrolSize = 6;
 			enemyHelpRadius = 35f;

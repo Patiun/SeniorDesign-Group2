@@ -85,6 +85,10 @@ public class LevelGeneration : MonoBehaviour {
 		if (enemyPop != null && enemyPop.isActiveAndEnabled) {
 			enemyPop.GenerateEnemies ();
 		}
+		CameraPopulation camPop = GetComponent<CameraPopulation> ();
+		if (camPop != null && camPop.isActiveAndEnabled) {
+			camPop.GenerateCameras ();
+		}
 		GetComponent<ObjectiveGeneration> ().ChooseObjective (seed);
 	}
 

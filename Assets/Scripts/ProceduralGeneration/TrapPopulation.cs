@@ -39,7 +39,7 @@ public class TrapPopulation : MonoBehaviour {
 
 		LevelDifficulty levelDifficulty = GetComponent<LevelDifficulty> ();
 		if (levelDifficulty != null) {
-			numTraps = levelDifficulty.numEnemies;
+			numTraps = levelDifficulty.numTraps;
 		}
 
 		unused = new List<TrapPoint> (trapPoints);

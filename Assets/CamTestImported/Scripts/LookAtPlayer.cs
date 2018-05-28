@@ -16,10 +16,10 @@ public class LookAtPlayer : MonoBehaviour {
 	private float originalLookTime;
 	public LayerMask _mask;
 	public float _DetectionDistance = 6f;
-	public float _SleepRotationAngle = 30f;
+	public float sleepRotationAngle;
 
 	private Quaternion start_rotation;
-	private float targetRotationY;
+	public float targetRotationY;
 	private Camera_state state = Camera_state.ASLEEP;
 	private WorldAIHandler worldAIHandler;
 	public WorldState worldState;
@@ -33,10 +33,10 @@ public class LookAtPlayer : MonoBehaviour {
 		originalLookTime = worldState.GetDetectionTime();
 	}
 
-	void OnEnable() {
+	public void SetupCamera() {
 		start_rotation = transform.rotation;
 		//Debug.Log(transform.rotation.eulerAngles);
-		targetRotationY = _SleepRotationAngle;
+		targetRotationY = sleepRotationAngle;
 	}
 
 	// Update is called once per frame
