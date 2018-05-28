@@ -13,7 +13,7 @@ public class TrapPoint : MonoBehaviour {
 		
 	}
 	
-	public void Generate() {
+	public bool Generate() {
 		//Random.InitState (GameObject.Find ("LevelGenerator").GetComponent<LevelGeneration> ().seed);
 		if (fanEnabled && !potentialTraps.Contains(fanTrap)) {
 			potentialTraps.Add (fanTrap);
@@ -22,6 +22,8 @@ public class TrapPoint : MonoBehaviour {
 		GameObject newTrap = Instantiate(potentialTraps [trapInd]);
 		newTrap.transform.parent = transform;
 		if (newTrap.GetComponent<LazerGroupBehavior> () != null) {
+			if (!CheckSides ())
+				return false;
 			newTrap.GetComponent<LazerGroupBehavior> ().downTime = 10;
 			newTrap.transform.position = new Vector3(transform.position.x,transform.position.y+1f,transform.position.z);
 		} else {
@@ -32,6 +34,20 @@ public class TrapPoint : MonoBehaviour {
 			}
 		}
 		newTrap.transform.rotation = transform.rotation;
+		return true;
+	}
+
+	private bool CheckSides() {
+		if (Physics.CheckSphere(transform.position + transform.right * 2.5f + transform.up*1f,0.1f)) {
+			if (Physics.CheckSphere(transform.position + transform.right*2.5f + transform.up*1f,0.1f)){
+				return true;
+			}
+		}
+				return false;
+	}
+
+	private bool CheckFloor() {
+		return true; //Not implemented yet
 	}
 
 	void OnDrawGizmos(){

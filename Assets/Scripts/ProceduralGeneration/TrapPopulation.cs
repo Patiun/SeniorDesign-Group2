@@ -46,7 +46,8 @@ public class TrapPopulation : MonoBehaviour {
 		used = new List<TrapPoint> ();
 		for (int i = 0; i < numTraps; i++) {
 			int trapInd = Random.Range (0, unused.Count);
-			unused [trapInd].Generate ();
+			if (!unused [trapInd].Generate ())
+				i--;
 			used.Add (unused [trapInd]);
 			unused.RemoveAt (trapInd);
 		}
