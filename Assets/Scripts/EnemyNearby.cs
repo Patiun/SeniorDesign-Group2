@@ -25,6 +25,12 @@ public class EnemyNearby : MonoBehaviour {
 		}
 	}
 
+	public void CallFirst(Vector3 target) {
+		if (nearbyAllies.Count > 0) {
+			nearbyAllies [0].GetComponent<EnemyAI>().CalledForBackup (target);
+		}
+	}
+
 	public void OnTriggerEnter(Collider col) {
 		if (col.tag == "Enemy") {
 			nearbyAllies.Add(col.gameObject);

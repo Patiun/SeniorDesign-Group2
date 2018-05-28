@@ -161,6 +161,11 @@ public class EnemyAI : MonoBehaviour {
 		//Debug.Log ("HELP!");
     }
 
+
+	public void CallSingleForBackup(Vector3 target) {
+		nearby.CallFirst (target);
+	}
+
     public void NearDoor(){
         switch(cState){
             case State.MoveTo:

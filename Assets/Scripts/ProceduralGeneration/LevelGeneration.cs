@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LevelGeneration : MonoBehaviour {
 
+	public static LevelGeneration SharedInstance;
+
 	public bool generateNewSeed;
 	public int seed;
 	public GameObject socketGroup;
@@ -13,6 +15,7 @@ public class LevelGeneration : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		SharedInstance = this;
 		if (PlayerPrefs.GetInt ("Seed") != 0) {
 			generateNewSeed = false;
 			seed = PlayerPrefs.GetInt ("Seed");
@@ -82,5 +85,9 @@ public class LevelGeneration : MonoBehaviour {
 			enemyPop.GenerateEnemies ();
 		}
 		GetComponent<ObjectiveGeneration> ().ChooseObjective (seed);
+	}
+
+	public void RespawnKeycard() {
+		GetComponent<ObjectiveGeneration> ().GenerateKeycard();
 	}
 }

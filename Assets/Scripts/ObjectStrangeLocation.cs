@@ -9,12 +9,14 @@ public class ObjectStrangeLocation : MonoBehaviour {
 
 	private Vector3 currentPosition;
 	private Vector3 lastPosition;
+	private Vector3 startingPosition;
 
 	// Use this for initialization
 	void Start () {
 		needsInvestigation = false;
 		currentPosition = transform.position;
 		lastPosition = currentPosition;
+		startingPosition = transform.position;
 	}
 	
 	// Update is called once per frame
@@ -28,6 +30,10 @@ public class ObjectStrangeLocation : MonoBehaviour {
 			needsInvestigation = true;
 			lastPosition = currentPosition;
 		}
+	}
+
+	public Vector3 GetStartingPosition() {
+		return startingPosition;
 	}
 
 }

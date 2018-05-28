@@ -19,6 +19,8 @@ public class DestructableObject : MonoBehaviour {
 	public void takeDamage(int dmg){
 		ObjectHealth = ObjectHealth - dmg;
 		if(ObjectHealth <= 0){
+			if (gameObject.tag == "Keycard")
+				LevelGeneration.SharedInstance.RespawnKeycard ();
 			Destroy(gameObject);
 		}
 	}

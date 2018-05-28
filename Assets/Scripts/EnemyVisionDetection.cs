@@ -34,6 +34,7 @@ public class EnemyVisionDetection : MonoBehaviour {
 				if (strangeLocation.needsInvestigation == true) {
 					aI.MinorActivity (col.transform.position);
 					strangeLocation.needsInvestigation = false;
+					aI.CallSingleForBackup (strangeLocation.GetStartingPosition ());
 				}
 			}
         }
