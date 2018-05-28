@@ -13,6 +13,7 @@ public class Door : MonoBehaviour {
 	public bool isOpening;
 	public bool isClosing;
 	public ParticleSystem[] closingPoofParticles;
+	public AudioSource openSound,closeSound;
 
 	private Rigidbody rb;
 	private Vector3 starting_pos;
@@ -42,6 +43,9 @@ public class Door : MonoBehaviour {
 				foreach (ParticleSystem p in closingPoofParticles) {
 					p.Emit (100);
 				}
+				if (!closeSound.isPlaying) {
+					closeSound.Play ();
+				}
 			}
 		}
 	}
@@ -50,6 +54,9 @@ public class Door : MonoBehaviour {
 		if (!isOpen) {
 			if (isClosed || isClosing) {
 				if (!isLocked) {
+					if (!openSound.isPlaying) {
+						openSound.Play ();
+					}
 					isOpening = true;
 					isClosed = false;
 					isClosing = false;
