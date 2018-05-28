@@ -163,6 +163,7 @@ GameObject:
   - component: {fileID: 114563107465024498}
   - component: {fileID: 114863072412220866}
   - component: {fileID: 135289420659562352}
+  - component: {fileID: 114896115917014184}
   m_Layer: 11
   m_Name: SecurityCamera
   m_TagString: Untagged
@@ -225,7 +226,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1668571046952748}
   m_LocalRotation: {x: -0.0016903025, y: 0.9953306, z: -0.09486686, w: -0.017733978}
-  m_LocalPosition: {x: -53.339912, y: 1.5, z: -54.630493}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5258581, y: 0.5258581, z: 0.5258581}
   m_Children:
   - {fileID: 4133827312421412}
@@ -813,6 +814,19 @@ MonoBehaviour:
   - {fileID: 1343220664782790}
   - {fileID: 1585559559938092}
   hasPlayer: 0
+--- !u!114 &114896115917014184
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1668571046952748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a65f13e1f8d3ca2408ee78da09948110, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prefabIcon: {fileID: 1870385830998348, guid: c5169157b72a2464b97b6e9f2353c7d4,
+    type: 2}
 --- !u!114 &114924211056270140
 MonoBehaviour:
   m_ObjectHideFlags: 1
