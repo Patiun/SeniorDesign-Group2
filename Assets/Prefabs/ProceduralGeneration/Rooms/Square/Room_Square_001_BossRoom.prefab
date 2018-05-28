@@ -58,6 +58,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1012805884905210
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4815140419894188}
+  m_Layer: 0
+  m_Name: rightSide
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1017940338051106
 GameObject:
   m_ObjectHideFlags: 1
@@ -1370,6 +1385,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1455339788153958
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4767915446895050}
+  m_Layer: 0
+  m_Name: leftSide
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1461243388865286
 GameObject:
   m_ObjectHideFlags: 1
@@ -2143,6 +2173,22 @@ GameObject:
   m_Layer: 2
   m_Name: SO_Keyboard_01 (36)
   m_TagString: Interactible
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1711104311136128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4850549600816508}
+  - component: {fileID: 114065832597372188}
+  m_Layer: 0
+  m_Name: CameraSpawn
+  m_TagString: CameraSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3771,6 +3817,7 @@ Transform:
   - {fileID: 4780672361444132}
   - {fileID: 4915567970419568}
   - {fileID: 4203436376426636}
+  - {fileID: 4850549600816508}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4089,6 +4136,19 @@ Transform:
   m_Father: {fileID: 4577090606732906}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0.30100003, z: 0}
+--- !u!4 &4767915446895050
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1455339788153958}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.68, y: 0, z: -0.005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4850549600816508}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4780672361444132
 Transform:
   m_ObjectHideFlags: 1
@@ -4183,6 +4243,19 @@ Transform:
   m_Father: {fileID: 4577090606732906}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -89.699005, z: 180}
+--- !u!4 &4815140419894188
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1012805884905210}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 1.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4850549600816508}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4820573155831112
 Transform:
   m_ObjectHideFlags: 1
@@ -4209,6 +4282,21 @@ Transform:
   m_Father: {fileID: 4577090606732906}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 5.366, y: -77.427, z: 5.833}
+--- !u!4 &4850549600816508
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1711104311136128}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.708, y: 0.6, z: 0.724}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4767915446895050}
+  - {fileID: 4815140419894188}
+  m_Father: {fileID: 4556930891048626}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!4 &4872655226714890
 Transform:
   m_ObjectHideFlags: 1
@@ -11876,6 +11964,22 @@ MonoBehaviour:
   noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
     type: 2}
   noiseScale: 1
+--- !u!114 &114065832597372188
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1711104311136128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1f301b67421c914f99fbbd1081f6fcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraPrefab: {fileID: 1668571046952748, guid: a6640494854034a16bd77b50b0e73f8e,
+    type: 2}
+  leftSide: {fileID: 1455339788153958}
+  rightSide: {fileID: 1012805884905210}
+  angleDown: 15
 --- !u!114 &114070193156288356
 MonoBehaviour:
   m_ObjectHideFlags: 1
