@@ -33,8 +33,14 @@ public class CameraPopulation : MonoBehaviour {
 	}
 
 	public void GenerateCameras() {
+		/*Depricated
 		if (cameraGroup != null) {
 			LoadCameraGroup ();
+		}*/
+		GameObject[] points = GameObject.FindGameObjectsWithTag ("CameraSpawner");
+		cameraPoints = new CameraSpawnPoint[points.Length];
+		for (int i = 0; i < points.Length; i++) {
+			cameraPoints [i] = points [i].GetComponent<CameraSpawnPoint> ();
 		}
 
 		LevelDifficulty levelDifficulty = GetComponent<LevelDifficulty> ();
