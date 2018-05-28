@@ -19,6 +19,7 @@ public class EnemyAI : MonoBehaviour {
 	public float lostPlayerTime;
 
     public float count = 0;
+	public bool isReady;
 
 	public GameObject target;
 	private Vector3 targetLocation;
@@ -35,8 +36,14 @@ public class EnemyAI : MonoBehaviour {
 		weapon = GetComponent<EnemyAttack> ();
 		nearby = GetComponent<EnemyNearby> ();
         cState = State.Default;
-		movement.ReturnToPatrol (); //Start Patroling
+		StartCoroutine (WaitToPatrol());
         prevState = cState;
+	}
+
+	IEnumerator WaitToPatrol() {
+		yield return new WaitForSeconds (5);
+		movement.ReturnToPatrol ();
+		isReady = true;
 	}
 
 	void Update(){

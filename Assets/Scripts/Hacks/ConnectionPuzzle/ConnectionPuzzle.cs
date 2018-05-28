@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEditor.UI;
+using UnityEngine.UI;
 
 public class ConnectionPuzzle : MonoBehaviour, IPointerDownHandler {
 

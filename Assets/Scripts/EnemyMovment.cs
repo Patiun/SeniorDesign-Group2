@@ -22,7 +22,7 @@ public class EnemyMovment : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (hackEnemies.isHacked == false)
+		if (GetComponent<EnemyAI>().isReady && !hackEnemies.isHacked)
 		{
 			remaining = nav.remainingDistance;
 			if (remaining <= closeEnough)

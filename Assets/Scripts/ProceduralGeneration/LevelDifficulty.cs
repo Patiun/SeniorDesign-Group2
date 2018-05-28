@@ -51,7 +51,7 @@ public class LevelDifficulty : MonoBehaviour {
 			numCameras = 3;
 			minPatrolSize = 5;
 			maxPatrolSize = 6;
-			enemyHelpRadius = 70f;
+			enemyHelpRadius = 35f;
 			break;
 		case Difficulty.HARD:
 			numEnemies = 6;
@@ -59,7 +59,7 @@ public class LevelDifficulty : MonoBehaviour {
 			numCameras = 4;
 			minPatrolSize = 5;
 			maxPatrolSize = 7;
-			enemyHelpRadius = 140f;
+			enemyHelpRadius = 35f;
 			break;
 		default:
 			break;

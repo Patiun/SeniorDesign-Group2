@@ -34,9 +34,7 @@ public class ObjectiveGeneration : MonoBehaviour {
 	}
 
 	public void GenerateKeycard() {
-		if (objectiveKeycard == -1) {
-			objectiveKeycard = ObjectiveManager.Instance.AddObjective ("Find Keycard");
-		} 
+		//ObjectiveManager.Instance.AddObjective ("Find Keycard");
 		GameObject[] spawnZones = GameObject.FindGameObjectsWithTag ("ItemSpawner");
 		if (spawnZones != null && spawnZones.Length > 0) {
 			int spawnerInd = Random.Range (0, spawnZones.Length);

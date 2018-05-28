@@ -8,15 +8,33 @@ public class EnemyNearby : MonoBehaviour {
 	public int aloneThreshold = 5;
 	public bool isAlone;
 	public float friendShareDistance = 3;
+	private float waitTime;
+	private float count;
 
 	// Use this for initialization
 	void Start () {
 		nearbyAllies = new List<GameObject> ();
+		waitTime = Random.Range (3f, 6f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		isAlone = nearbyAllies.Count >= aloneThreshold;
+	}
+
+	void FixedUpdate() {
+		if (count >= waitTime) {
+			GetComponent<SphereCollider> ().enabled = true;
+			StartCoroutine (KillCollider (0.05f));
+		} else {
+			count += Time.fixedDeltaTime;
+		}
+	}
+
+	private IEnumerator KillCollider(float time) {
+		yield return new WaitForSeconds (time);
+		GetComponent<SphereCollider> ().enabled = false;
+		count = 0;
 	}
 
 	public void Call(Vector3 target) {
@@ -33,7 +51,9 @@ public class EnemyNearby : MonoBehaviour {
 
 	public void OnTriggerEnter(Collider col) {
 		if (col.tag == "Enemy") {
-			nearbyAllies.Add(col.gameObject);
+			if (!nearbyAllies.Contains (col.gameObject) && col.gameObject != this.gameObject) {
+				nearbyAllies.Add (col.gameObject);
+			}
 		}
 	}
 

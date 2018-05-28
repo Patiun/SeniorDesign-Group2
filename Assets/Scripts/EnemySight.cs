@@ -13,6 +13,8 @@ public class EnemySight : MonoBehaviour {
 	private float originalTimeToSpotPlayer;
 	public float timeSeeingPlayer = 0.0f;
 	public bool seesPlayer = false;
+	public bool hasPlayer = false;
+	private GameObject player;
 
 	public int direction = -1;
 	public float degreesPerSecond = 30;
@@ -42,19 +44,22 @@ public class EnemySight : MonoBehaviour {
 				timeSeeingPlayer = 0;
 			}
 		} else {
+			if (hasPlayer) {
+				PlayerSweep (player.transform.position);
+			}
 			if (eai.lostPlayerTime <= eai.lockOnTime) {
 				eai.lostPlayerTime += Time.deltaTime;
 			}
 		}
 	}
 
-	public void PlayerSweep(Vector3 player) {
+	public void PlayerSweep(Vector3 playerPos) {
 		//RaycastHit hit;
 		//Debug.DrawRay(transform.position,transform.forward*sightRange,Color.white);
-		if (Physics.SphereCast(transform.position,sightRadius * timeToSpotPlayer/originalTimeToSpotPlayer,player-transform.position,out hit,Mathf.Infinity,layerMask.value)){
-			Debug.DrawRay(transform.position,(player-transform.position)*hit.distance,Color.yellow);
+		if (Physics.SphereCast(transform.position,sightRadius * timeToSpotPlayer/originalTimeToSpotPlayer,playerPos-transform.position,out hit,Mathf.Infinity,layerMask.value)){
+			Debug.DrawRay(transform.position,(playerPos-transform.position)*hit.distance,Color.yellow);
 			if (hit.collider.gameObject.tag == "Player") {
-				Debug.DrawRay (transform.position, (player - transform.position) * hit.distance, Color.green);
+				Debug.DrawRay (transform.position, (playerPos - transform.position) * hit.distance, Color.green);
 				seesPlayer = true;
 				eai.lostPlayerTime = 0;
 				//eai.SpottedPlayer (hit);
@@ -63,6 +68,15 @@ public class EnemySight : MonoBehaviour {
 				timeSeeingPlayer = 0;
 			}
 		}
+	}
+
+	public void GetPlayer(GameObject p) {
+		player = p;
+		hasPlayer = true;
+	}
+
+	public void LosePlayer(GameObject p) {
+		hasPlayer = false;
 	}
 
 	public bool LookAt(GameObject target) {

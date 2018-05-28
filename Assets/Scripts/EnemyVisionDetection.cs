@@ -9,7 +9,7 @@ public class EnemyVisionDetection : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col) {
 		if (col.tag == "Player" && !es.seesPlayer) {
-			es.PlayerSweep (col.ClosestPoint(transform.position));
+			es.GetPlayer (col.gameObject);
 		}
 		if (col.tag == "Interactible")
 		{
@@ -23,20 +23,9 @@ public class EnemyVisionDetection : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerStay(Collider col) {
+	void OnTriggerExit(Collider col) {
 		if (col.tag == "Player"  && !es.seesPlayer) {
-			es.PlayerSweep (col.ClosestPoint(transform.position));
+			es.LosePlayer (col.gameObject);
 		}
-		if (col.tag == "Interactible")
-        {
-			ObjectStrangeLocation strangeLocation = col.GetComponent<ObjectStrangeLocation> ();
-			if (strangeLocation != null) {
-				if (strangeLocation.needsInvestigation == true) {
-					aI.MinorActivity (col.transform.position);
-					strangeLocation.needsInvestigation = false;
-					aI.CallSingleForBackup (strangeLocation.GetStartingPosition ());
-				}
-			}
-        }
 	}
 }
