@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -4560,8 +4560,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   randomObjectiveTypes:
   - KEYCARD_GATHER
+  - CONFIDENTIAL_FILE
   objective: 
   keycardPrefab: {fileID: 1094152478961952, guid: d79b8fb324379714ea00752661dcfbbd,
+    type: 2}
+  confidentialFilePrefab: {fileID: 1044668846540706, guid: f5743e2e3d41c7d4fa6e7bef6b72d316,
     type: 2}
 --- !u!114 &2102743398
 MonoBehaviour:

@@ -20,8 +20,16 @@ public class EndGameTrigger : MonoBehaviour {
 		if (game == null) {
 			game = GameObject.Find ("WorldController").GetComponent<GameState> ();
 		}
-		if (col.tag == "Player") {
-			game.WinLevel ();
+		if (ObjectiveGeneration.SharedInstance.objective == "KEYCARD_GATHER" || ObjectiveGeneration.SharedInstance.objective == "TIME_TRIAL") {
+			if (col.tag == "Player") {
+				game.WinLevel ();
+			}
+		} else {
+			if (ObjectiveGeneration.SharedInstance.objective == "CONFIDENTIAL_FILE") {
+				if (col.tag == "ObjectiveItem") {
+					game.WinLevel ();
+				}
+			}
 		}
 	}
 }

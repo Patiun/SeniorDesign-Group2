@@ -21,6 +21,8 @@ public class DestructableObject : MonoBehaviour {
 		if(ObjectHealth <= 0){
 			if (gameObject.tag == "Keycard")
 				LevelGeneration.SharedInstance.RespawnKeycard ();
+			if (gameObject.tag == "ObjectiveItem")
+				LevelGeneration.SharedInstance.RespawnKeycard ();
 			Destroy(gameObject);
 		}
 	}

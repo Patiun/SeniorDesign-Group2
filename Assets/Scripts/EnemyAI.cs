@@ -54,7 +54,9 @@ public class EnemyAI : MonoBehaviour {
 		if (cState.Equals (State.Investigate) && SmokeParticles != null) {
 			SmokeParticles.Stop ();
 		} else {
-			SmokeParticles.Play ();
+			if (SmokeParticles != null) {
+				SmokeParticles.Play ();
+			}
 		}
         switch (cState){
 			case State.Investigate:

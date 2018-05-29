@@ -34,6 +34,7 @@ public class GameState : MonoBehaviour {
 		Debug.Log ("Level Successful!");
 		operatorCanvas.enabled = false;
 		GetComponent<WorldAIHandler> ().DeactivateAllEnemies ();
+		GetComponent<WorldState> ().Reset ();
 		gameWinSound.Play ();
 		player.transform.position = winLocation.position;
 		player.transform.rotation = winLocation.rotation;
@@ -46,6 +47,8 @@ public class GameState : MonoBehaviour {
 	public void LoseLevel() {
 		endTime = Time.time;
 		Debug.Log ("You lose!");
+		GetComponent<WorldState> ().alarm.Stop ();
+		GetComponent<WorldState> ().Reset ();
 		gameOverSound.Play ();
 		player.transform.position = deathLocation.position;
 		player.transform.rotation = deathLocation.rotation;

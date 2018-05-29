@@ -32,7 +32,8 @@ public class TrapPopulation : MonoBehaviour {
 		}
 	}
 
-	public void GenerateTraps() {
+	public void GenerateTraps(int seed) {
+		Random.InitState (seed);
 		if (trapGroup != null) {
 			LoadTrapGroup ();
 		}

@@ -52,6 +52,10 @@ public class LevelGeneration : MonoBehaviour {
 		}
 	}
 
+	public int GetRandomRoomInd(Socket socket){
+		return Random.Range (0, socket.roomOptions.Length);
+	}
+
 	private void GenerateLevel() {
 		if (elevatorSocket == null) {
 			//GENERATE ELEVATOR
@@ -70,29 +74,36 @@ public class LevelGeneration : MonoBehaviour {
 			sockets.Add (elevator.GetComponent<Socket> ());
 			Destroy (targetSocket);
 		}
-		
+		int[] roomInd = new int[sockets.Count];
 		for (int i = 0; i < sockets.Count; i++) {
-			sockets [i].GenerateRoom ();
+			roomInd [i] = Random.Range(0,sockets[i].roomOptions.Length);
+		}
+		for (int i = 0; i < sockets.Count; i++) {
+			sockets [i].GenerateRoom (roomInd[i]);
 		}
 		for (int i = 0; i < sockets.Count; i++) {
 			sockets [i].GenerateDoors ();
 		}
 		TrapPopulation trapPop = GetComponent<TrapPopulation> ();
 		if (trapPop != null && trapPop.isActiveAndEnabled) {
-			trapPop.GenerateTraps ();
+			trapPop.GenerateTraps (seed);
 		}
 		EnemyPopulation enemyPop = GetComponent<EnemyPopulation> ();
 		if (enemyPop != null && enemyPop.isActiveAndEnabled) {
-			enemyPop.GenerateEnemies ();
+			enemyPop.GenerateEnemies (seed);
 		}
 		CameraPopulation camPop = GetComponent<CameraPopulation> ();
 		if (camPop != null && camPop.isActiveAndEnabled) {
-			camPop.GenerateCameras ();
+			camPop.GenerateCameras (seed);
 		}
 		GetComponent<ObjectiveGeneration> ().ChooseObjective (seed);
 	}
 
 	public void RespawnKeycard() {
 		GetComponent<ObjectiveGeneration> ().GenerateKeycard();
+	}
+
+	public void RespawnObjectiveItem() {
+		GetComponent<ObjectiveGeneration> ().GenerateObjectiveItem();
 	}
 }

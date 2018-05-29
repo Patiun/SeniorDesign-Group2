@@ -127,6 +127,7 @@ public class WorldState : MonoBehaviour {
 		isInvestigating = false;
 		state = State.Asleep;
 		lastState = state;
+		alarm.Stop ();
 		count = 0;
 	}
 

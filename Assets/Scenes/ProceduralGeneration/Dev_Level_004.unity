@@ -5531,8 +5531,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   randomObjectiveTypes:
   - KEYCARD_GATHER
+  - CONFIDENTIAL_FILE
   objective: 
   keycardPrefab: {fileID: 1094152478961952, guid: d79b8fb324379714ea00752661dcfbbd,
+    type: 2}
+  confidentialFilePrefab: {fileID: 1044668846540706, guid: f5743e2e3d41c7d4fa6e7bef6b72d316,
     type: 2}
 --- !u!114 &2102743398
 MonoBehaviour:

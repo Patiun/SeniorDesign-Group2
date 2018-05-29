@@ -160,7 +160,7 @@ Prefab:
     - target: {fileID: 224447916782893984, guid: e837a1d5e0c56c44eaee89770f6a2049,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 50.164658
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e837a1d5e0c56c44eaee89770f6a2049, type: 2}
@@ -8252,8 +8252,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   randomObjectiveTypes:
   - KEYCARD_GATHER
+  - CONFIDENTIAL_FILE
   objective: 
   keycardPrefab: {fileID: 1094152478961952, guid: d79b8fb324379714ea00752661dcfbbd,
+    type: 2}
+  confidentialFilePrefab: {fileID: 1044668846540706, guid: f5743e2e3d41c7d4fa6e7bef6b72d316,
     type: 2}
 --- !u!114 &2102743398
 MonoBehaviour:

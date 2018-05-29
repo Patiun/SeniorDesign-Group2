@@ -36,7 +36,8 @@ public class EnemyPopulation : MonoBehaviour {
 		}
 	}
 
-	public void GenerateEnemies() {
+	public void GenerateEnemies(int seed) {
+		Random.InitState (seed);
 		if (patrolGroup != null) {
 			LoadPatrols();
 		}

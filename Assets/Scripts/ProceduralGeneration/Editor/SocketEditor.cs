@@ -12,7 +12,7 @@ public class SocketEditor : Editor {
 
 		GUILayout.BeginHorizontal ();
 		if (GUILayout.Button ("Generate")) {
-			socket.GenerateRoom ();
+			socket.GenerateRoom (Random.Range(0,socket.roomOptions.Length));
 		}
 		if (GUILayout.Button ("Reset")) {
 			socket.Reset ();

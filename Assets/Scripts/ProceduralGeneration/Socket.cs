@@ -25,16 +25,15 @@ public class Socket : MonoBehaviour {
 		//GenerateRoom ();
 	}
 
-	public bool GenerateRoom() {
+	public bool GenerateRoom(int roomInd) {
 		if (room == null) {
 			if (projection == null) {
 				projection = transform.GetChild (0).gameObject;
 			}
 			projection.SetActive (false);
-			int roomInd = Random.Range (0, roomOptions.Length);
 			GameObject newRoom = Instantiate (roomOptions [roomInd]);
 			if (timeTrial && newRoom.tag == "TimeTrial") {
-				return GenerateRoom();
+				return GenerateRoom(LevelGeneration.SharedInstance.GetRandomRoomInd(this));
 			} else if (newRoom.tag == "TimeTrial") {
 				timeTrial = true;
 			}
