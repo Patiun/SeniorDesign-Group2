@@ -514,6 +514,7 @@ GameObject:
   - component: {fileID: 114831390250233330}
   - component: {fileID: 114470350763657072}
   - component: {fileID: 114878701756501502}
+  - component: {fileID: 114042722359483436}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -1146,7 +1147,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 606465
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: eea4e6df90005e7488e7893c8c41d799, type: 2}
   m_TargetDisplay: 6
@@ -1496,6 +1497,17 @@ MonoBehaviour:
   mapCam: {fileID: 0}
   x: -1.542
   y: 0
+--- !u!114 &114042722359483436
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1630657141755888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4d05ca31494fb64ea3dd5bb8a9b9d6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114093494709435550
 MonoBehaviour:
   m_ObjectHideFlags: 1
