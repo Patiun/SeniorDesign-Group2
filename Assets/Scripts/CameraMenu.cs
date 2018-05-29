@@ -54,12 +54,14 @@ public class CameraMenu : AbstractHackMenu
     {
         _cameraObject.GetComponent<LookAtPlayer>().enabled = false;
         _cameraObject.transform.Find("CameraFace").Find("Spotlight").gameObject.SetActive(false);
+        _cameraObject.transform.Find("OperatorView").gameObject.SetActive(false);
     }
 
     public void EnableFunctionality()
     {
         _cameraObject.GetComponent<LookAtPlayer>().enabled = true;
         _cameraObject.transform.Find("CameraFace").Find("Spotlight").gameObject.SetActive(true);
+        _cameraObject.transform.Find("OperatorView").gameObject.SetActive(true);
     }
 
     public void TemporaryDisrupt()
@@ -96,19 +98,19 @@ public class CameraMenu : AbstractHackMenu
     private void DeactivateFullMenu()
     {
         GameObject view = transform.Find("ViewButton").gameObject;
-        GameObject enableDisable = transform.Find("EnableDisableButton").gameObject;
+        //GameObject enableDisable = transform.Find("EnableDisableButton").gameObject;
         GameObject takeControl = transform.Find("TakeControlButton").gameObject;
         GameObject distrupt = transform.Find("DistruptButton").gameObject;
 
         if (view != null)
             view.SetActive(false);
 
-        if (enableDisable != null)
-        {
-            Text enable = enableDisable.transform.Find("Text").GetComponent<Text>();
-            enable.text = "Enable";
-            _enable = true;
-        }
+        //if (enableDisable != null)
+        //{
+        //    Text enable = enableDisable.transform.Find("Text").GetComponent<Text>();
+        //    enable.text = "Enable";
+        //    _enable = true;
+        //}
 
         if (takeControl != null)
             takeControl.SetActive(false);
@@ -123,22 +125,22 @@ public class CameraMenu : AbstractHackMenu
     private void ActivateFullMenu()
     {
         GameObject view = transform.Find("ViewButton").gameObject;
-        GameObject enableDisable = transform.Find("EnableDisableButton").gameObject;
+        //GameObject enableDisable = transform.Find("EnableDisableButton").gameObject;
         GameObject takeControl = transform.Find("TakeControlButton").gameObject;
         GameObject distrupt = transform.Find("DistruptButton").gameObject;
 
         if (view != null)
             view.SetActive(true);
 
-        if (enableDisable != null)
-        {
-            enableDisable.SetActive(true);
+        //if (enableDisable != null)
+        //{
+        //    enableDisable.SetActive(true);
 
-            Text enable = enableDisable.transform.Find("Text").GetComponent<Text>();
-            enable.text = "Disable";
-            _enable = false;
+        //    Text enable = enableDisable.transform.Find("Text").GetComponent<Text>();
+        //    enable.text = "Disable";
+        //    _enable = false;
 
-        }
+        //}
         if (takeControl != null)
             takeControl.SetActive(true);
 
