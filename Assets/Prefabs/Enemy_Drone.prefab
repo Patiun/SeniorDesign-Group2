@@ -3307,6 +3307,7 @@ MonoBehaviour:
   timeToSpotPlayer: 0.8
   timeSeeingPlayer: 0
   seesPlayer: 0
+  hasPlayer: 0
   direction: -1
   degreesPerSecond: 80
 --- !u!114 &114266148175531200
@@ -3390,7 +3391,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPatrolling: 1
-  patrolPoints: []
+  patrolPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   curTargetLocation: {x: -46.626926, y: 1.1673088, z: -51.8535}
   curPatrolTarget: 0
   closeEnough: 0.5
@@ -3428,7 +3435,7 @@ MonoBehaviour:
   warmUpTime: 3.5
   warmedUp: 0
   timeLastFired: 1540.476
-  forcedCoolDownTime: 1
+  forcedCoolDownTime: 4
   count: 0
   bulletPrefab: {fileID: 1512051314456328, guid: 54f92aedd6bbd4dee9436d141cac58c5,
     type: 2}
@@ -3472,8 +3479,12 @@ MonoBehaviour:
   InvestigatingTime: 12
   MoveToTime: 0.01
   followRange: 7.5
+  lockOnTime: 5
+  lostPlayerTime: 0
   count: 0
+  isReady: 0
   target: {fileID: 0}
+  SmokeParticles: {fileID: 198772411157580746}
 --- !u!114 &114892110693857258
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23813,7 +23824,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -27807441
+  randomSeed: 1377051197
   InitialModule:
     serializedVersion: 3
     enabled: 1

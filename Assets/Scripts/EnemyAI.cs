@@ -22,6 +22,8 @@ public class EnemyAI : MonoBehaviour {
 	public bool isReady;
 
 	public GameObject target;
+	public ParticleSystem SmokeParticles;
+
 	private Vector3 targetLocation;
 	private Vector3 preInvestigateTarget;
 	private State statePreInvestigate;
@@ -30,6 +32,7 @@ public class EnemyAI : MonoBehaviour {
 	private EnemyAttack weapon;
 	private EnemyNearby nearby;
     
+
 	void Start(){
 		movement = GetComponent<EnemyMovment> ();
 		sight = GetComponent<EnemySight> ();
@@ -48,6 +51,11 @@ public class EnemyAI : MonoBehaviour {
 
 	void Update(){
 		isAlone = nearby.isAlone;
+		if (cState.Equals (State.Investigate) && SmokeParticles != null) {
+			SmokeParticles.Stop ();
+		} else {
+			SmokeParticles.Play ();
+		}
         switch (cState){
 			case State.Investigate:
 				if (movement.isStopped) { //DO THE INVESTIGATING
