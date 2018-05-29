@@ -5530,6 +5530,7 @@ GameObject:
   - component: {fileID: 65778350735697344}
   - component: {fileID: 65131507439903310}
   - component: {fileID: 114939128628679574}
+  - component: {fileID: 64876399660081776}
   m_Layer: 0
   m_Name: SO_Monitor_02 (1)
   m_TagString: Interactible
@@ -21611,6 +21612,20 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 9ce87aa33a0a84941a0d35f768940bd2, type: 3}
+--- !u!64 &64876399660081776
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1938211239603636}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: f1625c90320f8a54a972ff6c07e03be6, type: 3}
 --- !u!64 &64876725733733212
 MeshCollider:
   m_ObjectHideFlags: 1

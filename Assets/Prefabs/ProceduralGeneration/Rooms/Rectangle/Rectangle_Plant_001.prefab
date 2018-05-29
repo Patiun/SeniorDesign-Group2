@@ -478,6 +478,7 @@ GameObject:
   - component: {fileID: 54735872031962256}
   - component: {fileID: 114722574978699900}
   - component: {fileID: 114004338403228916}
+  - component: {fileID: 64448496174030956}
   m_Layer: 0
   m_Name: SO_CoffeeCup_01
   m_TagString: Interactible
@@ -2956,6 +2957,7 @@ GameObject:
   - component: {fileID: 54106190233783678}
   - component: {fileID: 114848185722823172}
   - component: {fileID: 114288415241415802}
+  - component: {fileID: 64963327546600010}
   m_Layer: 0
   m_Name: SO_CoffeeCup_01 (1)
   m_TagString: Interactible
@@ -15779,6 +15781,20 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: b6f996d4dc3610a44b0e67f6f800e383, type: 3}
+--- !u!64 &64448496174030956
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1136683172757670}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 607ff38f1033e8f41b997fbf3e1b2b09, type: 3}
 --- !u!64 &64450836768000796
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -16549,6 +16565,20 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 1b7151dca53b27f4eac15803211fc7c4, type: 3}
+--- !u!64 &64963327546600010
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1759265277403870}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 607ff38f1033e8f41b997fbf3e1b2b09, type: 3}
 --- !u!64 &64964352000321512
 MeshCollider:
   m_ObjectHideFlags: 1
