@@ -22,6 +22,10 @@ public class Socket : MonoBehaviour {
 		}
 
 		projection = transform.GetChild (0).gameObject;
+		if (projection == null) {
+			projection = transform.GetChild (0).gameObject;
+		}
+		projection.SetActive (false);
 		//GenerateRoom ();
 	}
 

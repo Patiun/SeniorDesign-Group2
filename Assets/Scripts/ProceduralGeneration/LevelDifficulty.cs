@@ -38,7 +38,7 @@ public class LevelDifficulty : MonoBehaviour {
 
 		switch (difficulty) {
 		case Difficulty.EASY:
-			numEnemies = 1;
+			numEnemies = 2;
 			numTraps = 2;
 			numCameras = 2;
 			minPatrolSize = 5;
