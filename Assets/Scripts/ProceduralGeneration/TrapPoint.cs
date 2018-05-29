@@ -22,8 +22,11 @@ public class TrapPoint : MonoBehaviour {
 		GameObject newTrap = Instantiate(potentialTraps [trapInd]);
 		newTrap.transform.parent = transform;
 		if (newTrap.GetComponent<LazerGroupBehavior> () != null) {
-			if (!CheckSides ())
+			if (!CheckSides ()) {
+				Destroy (newTrap);
+				Debug.Log ("Laser Denied at "+gameObject.name);
 				return false;
+			}
 			newTrap.GetComponent<LazerGroupBehavior> ().downTime = 10;
 			newTrap.transform.position = new Vector3(transform.position.x,transform.position.y+1f,transform.position.z);
 		} else {
