@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.1802837, g: 0.22571404, b: 0.30692273, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2378,6 +2378,7 @@ MonoBehaviour:
   originalMaterial: {fileID: 2100000, guid: 9d7246cbc9d9b42bb8c7e50bc6d34bf3, type: 2}
   buttonOne: {fileID: 798803487}
   buttonTwo: {fileID: 633738852}
+  difficulty: 2
 --- !u!4 &266047926 stripped
 Transform:
   m_PrefabParentObject: {fileID: 480686, guid: 1ed5db5b4eda33142be8f7bcee697b95, type: 2}
@@ -3815,6 +3816,7 @@ MonoBehaviour:
   timeToSpotPlayer: 0.8
   timeSeeingPlayer: 0
   seesPlayer: 0
+  hasPlayer: 0
   direction: -1
   degreesPerSecond: 80
 --- !u!114 &409295842
@@ -3917,7 +3919,10 @@ MonoBehaviour:
   InvestigatingTime: 12
   MoveToTime: 0.01
   followRange: 7.5
+  lockOnTime: 5
+  lostPlayerTime: 0
   count: 0
+  isReady: 0
   target: {fileID: 0}
 --- !u!195 &409295846
 NavMeshAgent:
@@ -13094,6 +13099,10 @@ Prefab:
       propertyPath: m_Name
       value: SO_Wall (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 401290, guid: 48904ac029cf0f8478666c43b7e018b3, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.0009
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 48904ac029cf0f8478666c43b7e018b3, type: 2}
   m_IsPrefabParent: 0
@@ -13771,6 +13780,7 @@ MonoBehaviour:
   originalMaterial: {fileID: 2100000, guid: a6f8be3f806984843a6938fa7266e2a2, type: 2}
   buttonOne: {fileID: 798803487}
   buttonTwo: {fileID: 264356831}
+  difficulty: 1
 --- !u!1 &638673879
 GameObject:
   m_ObjectHideFlags: 0
@@ -22240,6 +22250,7 @@ MonoBehaviour:
   originalMaterial: {fileID: 2100000, guid: de0da4e19289346f8ba8423aebed1fe4, type: 2}
   buttonOne: {fileID: 633738852}
   buttonTwo: {fileID: 264356831}
+  difficulty: 0
 --- !u!1 &803256746
 GameObject:
   m_ObjectHideFlags: 0
@@ -22439,10 +22450,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0701d26db1f2c44448bca2ca6a6e0ad1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coliders: []
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 512
 --- !u!108 &814427877
 Light:
   m_ObjectHideFlags: 0
@@ -24104,6 +24111,10 @@ Prefab:
     - target: {fileID: 401290, guid: 48904ac029cf0f8478666c43b7e018b3, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.037
+      objectReference: {fileID: 0}
+    - target: {fileID: 401290, guid: 48904ac029cf0f8478666c43b7e018b3, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.0009
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 48904ac029cf0f8478666c43b7e018b3, type: 2}
@@ -28683,6 +28694,10 @@ Prefab:
     - target: {fileID: 193654, guid: 48904ac029cf0f8478666c43b7e018b3, type: 2}
       propertyPath: m_Name
       value: SO_Wall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 401290, guid: 48904ac029cf0f8478666c43b7e018b3, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.0009
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 48904ac029cf0f8478666c43b7e018b3, type: 2}
@@ -40680,7 +40695,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenuBehavior: {fileID: 575827873}
   SceneIndex: 4
-  isEnabled: 0
+  isEnabled: 1
   downMaterial: {fileID: 2100000, guid: 91dbb59c2407e49a1827ec3120de76ca, type: 2}
 --- !u!1 &1558915186
 GameObject:
@@ -41827,6 +41842,10 @@ Prefab:
       propertyPath: m_Name
       value: SO_Wall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 401290, guid: 48904ac029cf0f8478666c43b7e018b3, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.0009
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 48904ac029cf0f8478666c43b7e018b3, type: 2}
   m_IsPrefabParent: 0
@@ -42183,6 +42202,10 @@ Prefab:
       propertyPath: m_Name
       value: SO_Wall (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 401290, guid: 48904ac029cf0f8478666c43b7e018b3, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.0009
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 48904ac029cf0f8478666c43b7e018b3, type: 2}
   m_IsPrefabParent: 0
@@ -42396,6 +42419,10 @@ Prefab:
     - target: {fileID: 193654, guid: 48904ac029cf0f8478666c43b7e018b3, type: 2}
       propertyPath: m_Name
       value: SO_Wall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 401290, guid: 48904ac029cf0f8478666c43b7e018b3, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.0009
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 48904ac029cf0f8478666c43b7e018b3, type: 2}
