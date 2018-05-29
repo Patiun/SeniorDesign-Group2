@@ -33,6 +33,7 @@ public class MainMenuBehavior : MonoBehaviour {
 	private Vector3 rightDoorStarting;
 	private Vector3 leftDoorDestination;
 	private Vector3 rightDoorDestination;
+	private bool newGame;
 
 	private int sceneIndex = 0;
 
@@ -42,6 +43,7 @@ public class MainMenuBehavior : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		newGame = false;
 		cameraObject.SetActive (true);
 		mainSelection.enabled = false;
 		levelSelection.enabled = false;
@@ -70,8 +72,15 @@ public class MainMenuBehavior : MonoBehaviour {
 			elevatorLight.SetActive(true);
 			if (Mathf.Abs(camera.transform.position.z - cameraDestination) <= .1)
             {
-                moveToLevelSelect = false;
-                rotateToLevelSelect = true;
+				if (newGame == true)
+				{
+					SceneManager.LoadScene(sceneIndex);
+				}
+				else
+				{
+					moveToLevelSelect = false;
+					rotateToLevelSelect = true;
+				}
             }
 		}
 		else if(rotateToLevelSelect == true){
@@ -94,7 +103,10 @@ public class MainMenuBehavior : MonoBehaviour {
 	}
 
 	public void NewGameClicked(){
-		sceneIndex = 1;
+		PlayerPrefs.SetInt("Difficulty", 0);
+		sceneIndex = Random.Range(0,4);
+		newGame = true;
+		moveToLevelSelect = true;
 		//SceneManager.LoadScene(1);
 	}
 
@@ -112,6 +124,10 @@ public class MainMenuBehavior : MonoBehaviour {
 		sceneIndex = 3;
         //SceneManager.LoadScene(3);
     }
+
+	public void LevelFourClicked(){
+		sceneIndex = 4;
+	}
    
 	public void LevelSelectClicked(){
 		moveToLevelSelect = true;

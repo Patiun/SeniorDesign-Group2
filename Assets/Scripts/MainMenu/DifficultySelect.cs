@@ -8,6 +8,8 @@ public class DifficultySelect : MonoBehaviour {
 	public GameObject buttonOne;
 	public GameObject buttonTwo;
 
+	public int difficulty;
+
 	private bool flash;
 
 	// Use this for initialization
@@ -21,6 +23,7 @@ public class DifficultySelect : MonoBehaviour {
 	}
 
 	private void OnMouseDown(){
+		PlayerPrefs.SetInt("Difficulty", difficulty);
 		buttonOne.GetComponent<DifficultySelect>().flash = false;
 		buttonTwo.GetComponent<DifficultySelect>().flash = false;
 		gameObject.GetComponent<Renderer>().material = originalMaterial;
