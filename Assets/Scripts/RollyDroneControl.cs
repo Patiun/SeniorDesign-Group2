@@ -16,11 +16,13 @@ public class RollyDroneControl : MonoBehaviour {
 	public float DroneYOffset;
 	public float BodyXOffset;
 	public bool activateTargeting = false;
+	Vector3 prevPosition;
 
 	float prevYRotation = 0;
 	void Update() {
 		if (NavAgentToFollow != null) {
 			DroneRotation = NavAgentToFollow.localRotation.eulerAngles.y;
+			transform.position = NavAgentToFollow.position;
 		}
 		DroneRotation = DroneRotation % 360f;
 		WheelRotation_Left = WheelRotation_Left % 360f;
@@ -29,12 +31,20 @@ public class RollyDroneControl : MonoBehaviour {
 		WheelRotation_Left += (DroneRotation - prevYRotation) * 2f;
 		WheelRotation_Right -= (DroneRotation - prevYRotation) * 2f;
 
+		float DistanceRoll = Vector3.Distance(prevPosition, transform.position) * 360f;
+		if (Vector3.Dot (transform.forward, transform.position - prevPosition) < 0) {
+			DistanceRoll *= -1;
+		}
+		WheelRotation_Left += DistanceRoll;
+		WheelRotation_Right += DistanceRoll;
+
 		WheelLeft.localRotation = Quaternion.AngleAxis (WheelRotation_Left, Vector3.right);
 		WheelRight.localRotation = Quaternion.AngleAxis (WheelRotation_Right, Vector3.right);
 //		BlasterBase.localRotation = Quaternion.AngleAxis (BlasterBaseRotation, BlasterBaseAngleCorrectionTransform.up);
 		Body.localRotation = Quaternion.AngleAxis(BodyRotation, Vector3.right);
 
 		prevYRotation = DroneRotation;
+		prevPosition = transform.position;
 		if (target != null && activateTargeting) {
 			LookAtPoint (target.position);
 		}

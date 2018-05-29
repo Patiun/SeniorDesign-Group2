@@ -389,8 +389,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1975636797628034}
-  m_LocalRotation: {x: -0, y: -0.74457055, z: -0, w: -0.66754377}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+  m_LocalPosition: {x: 0.00000023841858, y: 0, z: -0.0000001937151}
   m_LocalScale: {x: 0.48423523, y: 0.48423523, z: 0.48423523}
   m_Children:
   - {fileID: 4179130248352184}
@@ -498,7 +498,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1841303791663184}
-  m_LocalRotation: {x: -0.9337285, y: -0, z: -0, w: 0.35798198}
+  m_LocalRotation: {x: 0.9435982, y: 0, z: 0, w: -0.33109275}
   m_LocalPosition: {x: 0.99999994, y: 2.3257614e-16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -540,7 +540,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1292700394685008}
-  m_LocalRotation: {x: 0.9337285, y: 0, z: 0, w: 0.35798198}
+  m_LocalRotation: {x: -0.9435982, y: -0, z: -0, w: -0.33109275}
   m_LocalPosition: {x: -0.99999994, y: -2.2452646e-16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -556,13 +556,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1018938338483654}
-  m_LocalRotation: {x: -0, y: -0.6675439, z: -0, w: 0.74457055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4862149699912380}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -83.756004, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4678333744753700
 Transform:
   m_ObjectHideFlags: 1
@@ -626,15 +626,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1513033605269292}
-  m_LocalRotation: {x: -0, y: -0.045351565, z: -0, w: 0.9989711}
-  m_LocalPosition: {x: 4.973, y: -0.95, z: -62.4}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.55, y: -9.643, z: 0.233}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4663398122969006}
   - {fileID: 4060788940541712}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -5.1990004, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4875655457612688
 Transform:
   m_ObjectHideFlags: 1
@@ -1272,12 +1272,12 @@ MonoBehaviour:
   BlasterBaseAngleCorrectionTransform: {fileID: 4165142562924356}
   NavAgentToFollow: {fileID: 4663398122969006}
   target: {fileID: 0}
-  gunPoint: {fileID: 0}
-  WheelRotation_Left: 138.04736
-  WheelRotation_Right: -138.04736
+  gunPoint: {fileID: 4321319825273798}
+  WheelRotation_Left: -218.67023
+  WheelRotation_Right: 218.67023
   BlasterBaseRotation: 0
   BodyRotation: -356.34314
-  DroneRotation: 276.24445
+  DroneRotation: 0
   DroneYOffset: 180
   BodyXOffset: -30
   activateTargeting: 0
