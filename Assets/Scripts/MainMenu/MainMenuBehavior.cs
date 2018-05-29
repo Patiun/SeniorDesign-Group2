@@ -104,7 +104,7 @@ public class MainMenuBehavior : MonoBehaviour {
 
 	public void NewGameClicked(){
 		PlayerPrefs.SetInt("Difficulty", 0);
-		sceneIndex = Random.Range(0,4);
+		sceneIndex = Random.Range(0,5);
 		newGame = true;
 		moveToLevelSelect = true;
 		//SceneManager.LoadScene(1);
