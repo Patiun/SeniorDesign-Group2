@@ -194,6 +194,7 @@ GameObject:
   - component: {fileID: 54183351629676854}
   - component: {fileID: 114372726110528248}
   - component: {fileID: 114473515740802970}
+  - component: {fileID: 64911260746325742}
   m_Layer: 0
   m_Name: SO_CoffeeCup_01
   m_TagString: Interactible
@@ -770,6 +771,7 @@ GameObject:
   - component: {fileID: 54485573790194968}
   - component: {fileID: 114630390512405892}
   - component: {fileID: 114640425919742042}
+  - component: {fileID: 64589571557300736}
   m_Layer: 0
   m_Name: SO_CoffeeCup_01 (1)
   m_TagString: Interactible
@@ -4046,6 +4048,20 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: e060c94585d69ec428fa132f5cafa3bb, type: 3}
+--- !u!64 &64589571557300736
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1701241204697082}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 607ff38f1033e8f41b997fbf3e1b2b09, type: 3}
 --- !u!64 &64608083387464038
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -4144,6 +4160,20 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: e060c94585d69ec428fa132f5cafa3bb, type: 3}
+--- !u!64 &64911260746325742
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1206663317004064}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 607ff38f1033e8f41b997fbf3e1b2b09, type: 3}
 --- !u!64 &64922558402962274
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -4515,7 +4545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 132b5f7bc74f24c089aa7a44acfdfd74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumSafeDistance: 0
+  maximumSafeDistance: 10
   needsInvestigation: 0
 --- !u!114 &114141036282383492
 MonoBehaviour:
@@ -4678,8 +4708,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
-  noiseScale: 0
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
+  noiseScale: 1
 --- !u!114 &114223804957504082
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4776,7 +4807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 132b5f7bc74f24c089aa7a44acfdfd74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumSafeDistance: 0
+  maximumSafeDistance: 10
   needsInvestigation: 0
 --- !u!114 &114321368593348120
 MonoBehaviour:
@@ -5161,7 +5192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe7fe3f3b3d745efae8d76a7a821bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectHealth: 0
+  ObjectHealth: 5
 --- !u!114 &114640425919742042
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5281,8 +5312,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
-  noiseScale: 0
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
+  noiseScale: 1
 --- !u!114 &114717856994692938
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5326,8 +5358,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
-  noiseScale: 0
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
+  noiseScale: 1
 --- !u!114 &114735018295335078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5356,7 +5389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe7fe3f3b3d745efae8d76a7a821bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectHealth: 0
+  ObjectHealth: 5
 --- !u!114 &114750695474329400
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5488,7 +5521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe7fe3f3b3d745efae8d76a7a821bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectHealth: 0
+  ObjectHealth: 5
 --- !u!114 &114918281333827198
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5500,7 +5533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 132b5f7bc74f24c089aa7a44acfdfd74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumSafeDistance: 0
+  maximumSafeDistance: 10
   needsInvestigation: 0
 --- !u!114 &114930979536894954
 MonoBehaviour:

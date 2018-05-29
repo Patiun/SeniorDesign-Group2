@@ -17,6 +17,9 @@ public class ObjectMapToView : MonoBehaviour
             if (icon.gameObject.name.Contains("Player"))
             {
                 AutoMapAdjusted.RegisterRealTimeMapIcon(gameObject, icon);
+                //PlayerIconRotation pir = icon.GetComponent<PlayerIconRotation>();
+                //Camera agent = transform.Find("Camera (head)").GetComponent<Camera>();
+                //pir.agent = agent;
             }
             else
             {

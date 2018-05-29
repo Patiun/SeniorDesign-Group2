@@ -32,7 +32,8 @@ public class CameraPopulation : MonoBehaviour {
 		}
 	}
 
-	public void GenerateCameras() {
+	public void GenerateCameras(int seed) {
+		Random.InitState (seed);
 		/*Depricated
 		if (cameraGroup != null) {
 			LoadCameraGroup ();

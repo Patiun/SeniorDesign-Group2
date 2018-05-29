@@ -44,7 +44,7 @@ public class EnemyAI : MonoBehaviour {
 	}
 
 	IEnumerator WaitToPatrol() {
-		yield return new WaitForSeconds (5);
+		yield return new WaitForSeconds (3);
 		movement.ReturnToPatrol ();
 		isReady = true;
 	}
@@ -54,7 +54,9 @@ public class EnemyAI : MonoBehaviour {
 		if (cState.Equals (State.Investigate) && SmokeParticles != null) {
 			SmokeParticles.Stop ();
 		} else {
-			SmokeParticles.Play ();
+			if (SmokeParticles != null) {
+				SmokeParticles.Play ();
+			}
 		}
         switch (cState){
 			case State.Investigate:

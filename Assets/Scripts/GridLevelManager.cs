@@ -118,6 +118,8 @@ public class GridLevelManager : MonoBehaviour {
         //invisible padding for the start and end
         _gridSize++;
         _circleNode = new GameObject[_gridSize+1, _gridSize+1];
+        _startNode.Y = UnityEngine.Random.Range(1, _gridSize - 2);
+        _endNode.Y = UnityEngine.Random.Range(1, _gridSize - 2);
 
         CreateInteractableTile();
         CreateSpecialTile();

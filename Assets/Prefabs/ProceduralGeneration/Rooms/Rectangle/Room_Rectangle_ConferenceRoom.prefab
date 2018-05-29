@@ -10344,7 +10344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 132b5f7bc74f24c089aa7a44acfdfd74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumSafeDistance: 0
+  maximumSafeDistance: 10
   needsInvestigation: 0
 --- !u!114 &114025686174224962
 MonoBehaviour:
@@ -10558,7 +10558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe7fe3f3b3d745efae8d76a7a821bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectHealth: 0
+  ObjectHealth: 5
 --- !u!114 &114064381584523862
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10753,7 +10753,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
   noiseScale: 1
 --- !u!114 &114095667838039096
 MonoBehaviour:
@@ -10819,8 +10820,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
-  noiseScale: 0
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
+  noiseScale: 1
 --- !u!114 &114109971176830722
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11000,7 +11002,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
   noiseScale: 1
 --- !u!114 &114134459741876364
 MonoBehaviour:
@@ -11225,7 +11228,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
   noiseScale: 1
 --- !u!114 &114164781093623722
 MonoBehaviour:
@@ -11376,7 +11380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 132b5f7bc74f24c089aa7a44acfdfd74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumSafeDistance: 0
+  maximumSafeDistance: 10
   needsInvestigation: 0
 --- !u!114 &114182501924438936
 MonoBehaviour:
@@ -11617,7 +11621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe7fe3f3b3d745efae8d76a7a821bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectHealth: 0
+  ObjectHealth: 5
 --- !u!114 &114237252323859262
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11629,7 +11633,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
   noiseScale: 1
 --- !u!114 &114241952352890318
 MonoBehaviour:
@@ -11761,7 +11766,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
   noiseScale: 1
 --- !u!114 &114248410548322746
 MonoBehaviour:
@@ -11812,8 +11818,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
-  noiseScale: 0
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
+  noiseScale: 1
 --- !u!114 &114250768528571064
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12014,7 +12021,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
   noiseScale: 1
 --- !u!114 &114276048747403320
 MonoBehaviour:
@@ -12057,7 +12065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 132b5f7bc74f24c089aa7a44acfdfd74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumSafeDistance: 0
+  maximumSafeDistance: 10
   needsInvestigation: 0
 --- !u!114 &114288035797327774
 MonoBehaviour:
@@ -12083,7 +12091,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
   noiseScale: 1
 --- !u!114 &114290472998368728
 MonoBehaviour:
@@ -12298,7 +12307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe7fe3f3b3d745efae8d76a7a821bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectHealth: 0
+  ObjectHealth: 5
 --- !u!114 &114330086911454940
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12544,7 +12553,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
   noiseScale: 1
 --- !u!114 &114365846682605416
 MonoBehaviour:
@@ -12595,7 +12605,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
   noiseScale: 1
 --- !u!114 &114380129496457004
 MonoBehaviour:
@@ -12978,8 +12989,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
-  noiseScale: 0
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
+  noiseScale: 1
 --- !u!114 &114454700378314460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13286,7 +13298,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
   noiseScale: 1
 --- !u!114 &114499367637068770
 MonoBehaviour:
@@ -13701,8 +13714,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
-  noiseScale: 0
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
+  noiseScale: 1
 --- !u!114 &114557024678840200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13765,7 +13779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 132b5f7bc74f24c089aa7a44acfdfd74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumSafeDistance: 0
+  maximumSafeDistance: 10
   needsInvestigation: 0
 --- !u!114 &114571922346161936
 MonoBehaviour:
@@ -14162,8 +14176,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
-  noiseScale: 0
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
+  noiseScale: 1
 --- !u!114 &114632510799163186
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14254,7 +14269,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
   noiseScale: 1
 --- !u!114 &114643050920780354
 MonoBehaviour:
@@ -14322,7 +14338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 132b5f7bc74f24c089aa7a44acfdfd74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumSafeDistance: 0
+  maximumSafeDistance: 10
   needsInvestigation: 0
 --- !u!114 &114647903345930232
 MonoBehaviour:
@@ -14381,7 +14397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 132b5f7bc74f24c089aa7a44acfdfd74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumSafeDistance: 0
+  maximumSafeDistance: 10
   needsInvestigation: 0
 --- !u!114 &114658179935262070
 MonoBehaviour:
@@ -14774,7 +14790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 132b5f7bc74f24c089aa7a44acfdfd74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumSafeDistance: 0
+  maximumSafeDistance: 10
   needsInvestigation: 0
 --- !u!114 &114700148104363120
 MonoBehaviour:
@@ -14810,7 +14826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe7fe3f3b3d745efae8d76a7a821bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectHealth: 0
+  ObjectHealth: 5
 --- !u!114 &114712451110019170
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14822,8 +14838,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
-  noiseScale: 0
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
+  noiseScale: 1
 --- !u!114 &114712567940276636
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14835,7 +14852,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
   noiseScale: 1
 --- !u!114 &114716552168120640
 MonoBehaviour:
@@ -15151,7 +15169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe7fe3f3b3d745efae8d76a7a821bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectHealth: 0
+  ObjectHealth: 5
 --- !u!114 &114774884350687664
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15287,7 +15305,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
   noiseScale: 1
 --- !u!114 &114791440926754872
 MonoBehaviour:
@@ -15464,7 +15483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe7fe3f3b3d745efae8d76a7a821bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectHealth: 0
+  ObjectHealth: 5
 --- !u!114 &114822932274092424
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15582,7 +15601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 132b5f7bc74f24c089aa7a44acfdfd74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumSafeDistance: 0
+  maximumSafeDistance: 10
   needsInvestigation: 0
 --- !u!114 &114845450673403204
 MonoBehaviour:
@@ -15773,8 +15792,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
-  noiseScale: 0
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
+  noiseScale: 1
 --- !u!114 &114874450246910630
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15911,8 +15931,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
-  noiseScale: 0
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
+  noiseScale: 1
 --- !u!114 &114884344869629526
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16172,7 +16193,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c78e908e81164ae5b1158025dfcb93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseSphere: {fileID: 0}
+  noiseSphere: {fileID: 1411254187076496, guid: ba0c5ed9a3544464383fed32bee5a297,
+    type: 2}
   noiseScale: 1
 --- !u!114 &114913578275341068
 MonoBehaviour:
@@ -16263,7 +16285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe7fe3f3b3d745efae8d76a7a821bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectHealth: 0
+  ObjectHealth: 5
 --- !u!114 &114938490244844112
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16725,7 +16747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe7fe3f3b3d745efae8d76a7a821bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectHealth: 0
+  ObjectHealth: 5
 --- !u!114 &114994975472718508
 MonoBehaviour:
   m_ObjectHideFlags: 1

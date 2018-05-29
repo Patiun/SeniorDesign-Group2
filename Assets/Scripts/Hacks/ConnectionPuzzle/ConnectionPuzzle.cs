@@ -22,7 +22,7 @@ public class ConnectionPuzzle : MonoBehaviour, IPointerDownHandler {
 	private Vector3 OriginalBoxPosition;
     
 	// Use this for initialization
-	void Start () {
+	void OnEnable () {
 		success = false;
 
 		distances = new float[PathPipes.Length];
