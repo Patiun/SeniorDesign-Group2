@@ -135,6 +135,7 @@ public class HackManager : MonoBehaviour
 
         InProgress = false;
         currentLevel = PuzzleDifficultiesLevel.None;
+        CurrentObjectHack.Reset();
     }
 
 }

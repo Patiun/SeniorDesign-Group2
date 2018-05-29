@@ -172,4 +172,9 @@ public class CameraMenu : AbstractHackMenu
             DisplayFullWtihoutHackMenu();
         }
     }
+
+    public override void Reset()
+    {
+        _cameraObject.GetComponent<LookAtPlayer>().enabled = true;
+    }
 }
