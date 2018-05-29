@@ -88,6 +88,7 @@ public class HackManager : MonoBehaviour
                 break;
             case PuzzleDifficultiesLevel.Medium:
                 TypingSim.SetActive(true);
+                TypingSim.transform.Find("PuzzleBehavior").gameObject.SetActive(true);
                 CameraManager.Instance.DisableCurrent();
                 InProgress = true;
                 break;
@@ -121,7 +122,7 @@ public class HackManager : MonoBehaviour
                 CameraManager.Instance.SwitchMainCamera();
                 break;
             case PuzzleDifficultiesLevel.Medium:
-                WordManager w = TypingSim.GetComponent<WordManager>();
+                PuzzleBheavior w = TypingSim.transform.Find("PuzzleBehavior").GetComponent<PuzzleBheavior>();
                 w.Reset();
                 CameraManager.Instance.SwitchMainCamera();
                 break;
