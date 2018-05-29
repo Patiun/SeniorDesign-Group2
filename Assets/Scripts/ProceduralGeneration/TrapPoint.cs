@@ -19,25 +19,27 @@ public class TrapPoint : MonoBehaviour {
 			potentialTraps.Add (fanTrap);
 		}
 		int trapInd = Random.Range (0, potentialTraps.Count);
-		GameObject newTrap = Instantiate(potentialTraps [trapInd]);
-		newTrap.transform.parent = transform;
-		if (newTrap.GetComponent<LazerGroupBehavior> () != null) {
-			if (!CheckSides ()) {
-				Destroy (newTrap);
-				Debug.Log ("Laser Denied at "+gameObject.name);
-				return false;
+		if (potentialTraps [trapInd].GetComponent<LazerGroupBehavior> () != null && CheckSides ()) {
+			GameObject newTrap = Instantiate (potentialTraps [trapInd]);
+			newTrap.transform.parent = transform;
+			if (newTrap.GetComponent<LazerGroupBehavior> () != null) {
+				newTrap.GetComponent<LazerGroupBehavior> ().downTime = 10;
+				newTrap.transform.position = new Vector3 (transform.position.x, transform.position.y + 1f, transform.position.z);
 			}
-			newTrap.GetComponent<LazerGroupBehavior> ().downTime = 10;
-			newTrap.transform.position = new Vector3(transform.position.x,transform.position.y+1f,transform.position.z);
-		} else {
+			newTrap.transform.rotation = transform.rotation;
+			return true;
+		} else if (potentialTraps[trapInd].GetComponent<FanRotation>() != null){
+			GameObject newTrap = Instantiate (potentialTraps [trapInd]);
 			newTrap.transform.position = transform.position;
+			newTrap.transform.parent = transform;
 			FanRotation fan = newTrap.GetComponent<FanRotation> ();
 			if (fan != null) {
 				fan.playerHealth = GameObject.Find ("WorldController").GetComponent<PlayerHealth> ();
 			}
+			newTrap.transform.rotation = transform.rotation;
+			return true;
 		}
-		newTrap.transform.rotation = transform.rotation;
-		return true;
+		return false;
 	}
 
 	private bool CheckSides() {
