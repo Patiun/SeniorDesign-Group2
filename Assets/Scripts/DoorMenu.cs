@@ -25,6 +25,13 @@ public class DoorMenu : AbstractHackMenu
         close = transform.Find("CloseButton").gameObject;
         open = transform.Find("OpenButton").gameObject;
         hack = transform.Find("HackButton").gameObject;
+        int rand = Random.Range(0, 2);
+        if (rand == 0)
+            level = PuzzleDifficultiesLevel.Easy;
+        else if (rand == 1)
+            level = PuzzleDifficultiesLevel.Medium;
+        else if (rand == 2)
+            level = PuzzleDifficultiesLevel.Hard;
     }
 
     public void CallOpen()

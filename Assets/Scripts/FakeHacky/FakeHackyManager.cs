@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class FakeHackyManager : MonoBehaviour {
 
     public Text[] row;
-
+    public Image hackBar;
     private List<Text> texts;
     private bool isInital;
 
@@ -50,6 +50,7 @@ public class FakeHackyManager : MonoBehaviour {
                     t = NextLine();
 
                 SetTextLetters(t);
+                hackBar.fillAmount = codeWords.PercentageCompleted();
             }
         }
 	}
@@ -128,7 +129,7 @@ public class FakeHackyManager : MonoBehaviour {
         row[1].transform.SetSiblingIndex(1);
         row[2].transform.SetSiblingIndex(2);
         row[3].transform.SetSiblingIndex(3);
-
+        hackBar.fillAmount = 0;
         gameObject.SetActive(false);
     }
 

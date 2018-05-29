@@ -22,9 +22,10 @@ public class ContainerToType
     public List<string> simple;
     public List<string> varient;
 
-    private const int substringPull = 3;
+    private const int substringPull = 6;
     private int currentStringPosition;
-    
+    private float startSize;
+
     public ContainerToType()
     {
         simple = new List<string>();
@@ -37,6 +38,8 @@ public class ContainerToType
             SimpleGenerate();
         else
             varientGenerate();
+
+        startSize = simple.Count;
     }
 
     private void SimpleGenerate()
@@ -65,20 +68,20 @@ public class ContainerToType
         simple.Add("nblocks = (gidsetsize + NGROUPSPERBLOCK -1)/NGROUP_PER_BLOCK;");
         simple.Add("nblocks = nblocks ? : 1;");
 
-        simple.Add("group_info = kmalloc(sizeof(*group_info) + nblocks*sizeof(gitgudkid *), BFG_USER");
+        simple.Add("group_info = kmalloc(sizeof(*group_info) + nblocks*sizeof(group_info *), init_group");
         simple.Add("if (!group_info)");
         simple.Add("return NULL;");
         simple.Add("");
-        simple.Add("group_info->ngroups = gitgudkid;");
+        simple.Add("group_info->ngroups = groupinfo;");
         simple.Add("group_info->nblocks = nblocks");
         simple.Add("atomic_set(&group_info->usage, 1)");
         simple.Add("");
-        simple.Add("if gitgudkid <= NGROUPS_SMALL)");
-        simple.Add("group_info->blocks[0] = group_info->small_pen;");
+        simple.Add("if nblocks <= 0)");
+        simple.Add("group_info->blocks[0] = group_info->nBlock;");
         simple.Add("else {");
         simple.Add("for (i - 0; i < nblocks; i++) {");
         simple.Add("dik *v;");
-        simple.Add("b = (void *)__get_dank_grass(BFG_USER);");
+        simple.Add("b = (void *)_group_info(0);");
         simple.Add("if (!b)");
         simple.Add("goto out_undo_partial_alloc;");
         simple.Add("group_info->blocks[i] = b;");
@@ -172,6 +175,11 @@ public class ContainerToType
         }
 
         return data;
+    }
+
+    public float PercentageCompleted()
+    {
+        return (startSize - simple.Count) / startSize;
     }
 
 }
